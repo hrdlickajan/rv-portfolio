@@ -19,18 +19,18 @@ export default function Contact() {
         <div className="p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
           <div className="space-y-4">
             <a
-              href="mailto:info@example.com"
+              href="mailto:rv.romanavitkova@gmail.com"
               className="flex items-center text-gray-600 hover:text-orange-500 transition-colors"
             >
               <Mail size={20} className="mr-3" />
-              info@example.com
+              rv.romanavitkova@gmail.com
             </a>
             <a
-              href="tel:+420123456789"
+              href="tel:+420734113441"
               className="flex items-center text-gray-600 hover:text-orange-500 transition-colors"
             >
               <Phone size={20} className="mr-3" />
-              +420 123 456 789
+              +420 734 113 441
             </a>
             <div className="flex items-start text-gray-600">
               <MapPin size={20} className="mr-3 mt-1 flex-shrink-0" />
