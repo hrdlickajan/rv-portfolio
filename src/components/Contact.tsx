@@ -26,11 +26,11 @@ export default function Contact() {
               rv.romanavitkova@gmail.com
             </a>
             <a
-              href="tel:+420123456789"
+              href="tel:+420734113441"
               className="flex items-center text-gray-600 hover:text-orange-500 transition-colors"
             >
               <Phone size={20} className="mr-3" />
-              +420 123 456 789
+              +420 734 113 441
             </a>
             <div className="flex items-start text-gray-600">
               <MapPin size={20} className="mr-3 mt-1 flex-shrink-0" />
