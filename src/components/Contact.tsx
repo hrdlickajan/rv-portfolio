@@ -63,8 +63,8 @@ export default function Contact() {
               href="https://www.linkedin.com/in/romana-vitkova"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-12 h-12 bg-gradient-to-tr from-blue-500 to-blue-700 rounded-full flex items-center justify-center text-white shadow-md hover:scale-110 transition-transform"
-            >
+              className="w-12 h-12 bg-gradient-to-tr from-[#0A66C2] to-[#005983] rounded-full flex items-center justify-center text-white shadow-md hover:scale-110 transition-transform"
+>
               <Linkedin size={22} />
             </a>
           </div>
