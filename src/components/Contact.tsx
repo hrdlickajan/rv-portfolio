@@ -1,4 +1,4 @@
-import { Instagram, Facebook, Mail, Phone, MapPin } from 'lucide-react';
+import { Instagram, Facebook, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
 import { useLanguage } from '../LanguageContext';
 
 export default function Contact() {
@@ -43,7 +43,7 @@ export default function Contact() {
           <h4 className="text-lg font-semibold text-gray-800 mb-4">{t.footer.followUs}</h4>
           <div className="flex space-x-4">
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/romana.vitkova_/"
               target="_blank"
               rel="noopener noreferrer"
               className="w-12 h-12 bg-gradient-to-tr from-orange-400 to-orange-600 rounded-full flex items-center justify-center text-white shadow-md hover:scale-110 transition-transform"
@@ -51,12 +51,21 @@ export default function Contact() {
               <Instagram size={22} />
             </a>
             <a
-              href="https://facebook.com"
+              href="https://www.facebook.com/RomanaVitkov"
               target="_blank"
               rel="noopener noreferrer"
               className="w-12 h-12 bg-gradient-to-tr from-blue-500 to-blue-700 rounded-full flex items-center justify-center text-white shadow-md hover:scale-110 transition-transform"
             >
               <Facebook size={22} />
+            </a>
+            
+            <a
+              href="https://www.linkedin.com/in/romana-vitkova"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-12 h-12 bg-gradient-to-tr from-blue-500 to-blue-700 rounded-full flex items-center justify-center text-white shadow-md hover:scale-110 transition-transform"
+            >
+              <Linkedin size={22} />
             </a>
           </div>
         </div>
