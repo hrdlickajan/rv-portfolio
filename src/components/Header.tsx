@@ -1,8 +1,11 @@
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
+import { useLanguage } from '../LanguageContext';
+import LanguageSwitcher from './LanguageSwitcher';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { t } = useLanguage();
 
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
@@ -16,20 +19,22 @@ export default function Header() {
 
           <div className="hidden md:flex items-center space-x-8">
             <a href="#home" className="text-gray-700 hover:text-orange-500 transition-colors font-medium">
-              Domů
+              {t.header.home}
             </a>
             <a href="#about" className="text-gray-700 hover:text-orange-500 transition-colors font-medium">
-              O mně
+              {t.header.about}
             </a>
             <a href="#services" className="text-gray-700 hover:text-orange-500 transition-colors font-medium">
-              Služby
+              {t.header.services}
             </a>
             <a href="#contact" className="bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition-colors font-medium">
-              Kontakt
+              {t.header.contact}
             </a>
+            <LanguageSwitcher />
           </div>
 
-          <div className="md:hidden">
+          <div className="md:hidden flex items-center gap-4">
+            <LanguageSwitcher />
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="text-gray-700 hover:text-orange-500 transition-colors"
@@ -42,19 +47,16 @@ export default function Header() {
         {isMenuOpen && (
           <div className="md:hidden py-4 space-y-3">
             <a href="#home" className="block text-gray-700 hover:text-orange-500 transition-colors font-medium">
-              Domů
+              {t.header.home}
             </a>
             <a href="#about" className="block text-gray-700 hover:text-orange-500 transition-colors font-medium">
-              O mně
+              {t.header.about}
             </a>
             <a href="#services" className="block text-gray-700 hover:text-orange-500 transition-colors font-medium">
-              Služby
-            </a>
-            <a href="#testimonials" className="block text-gray-700 hover:text-orange-500 transition-colors font-medium">
-              Reference
+              {t.header.services}
             </a>
             <a href="#contact" className="block bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition-colors font-medium text-center">
-              Kontakt
+              {t.header.contact}
             </a>
           </div>
         )}

@@ -4,23 +4,25 @@ import Footer from './components/Footer';
 import Services from './components/Services';
 import About from './components/About';
 import Contact from './components/Contact';
-
+import { LanguageProvider } from './LanguageContext';
 
 function App() {
   return (
-    <div className="min-h-screen flex flex-col bg-gradient-to-br from-orange-50 via-amber-50 to-orange-50">
-      <Header />
+    <LanguageProvider>
+      <div className="min-h-screen flex flex-col bg-gradient-to-br from-orange-50 via-amber-50 to-orange-50">
+        <Header />
 
-      <main className="flex-grow">
-        <Hero />
-        <About />
-        
-        <Services />
-        <Contact />
-      </main>
+        <main className="flex-grow">
+          <Hero />
+          <About />
 
-      <Footer />
-    </div>
+          <Services />
+          <Contact />
+        </main>
+
+        <Footer />
+      </div>
+    </LanguageProvider>
   );
 }
 
