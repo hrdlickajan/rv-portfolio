@@ -1,80 +1,71 @@
-import { Dumbbell, Users, Zap } from 'lucide-react';
+import { Instagram, Facebook, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
 import { useLanguage } from '../LanguageContext';
 
-export default function Services() {
+export default function Contact() {
   const { t } = useLanguage();
 
-  const services = [
-    {
-      icon: Dumbbell,
-      title: t.services.personalTraining,
-      description: t.services.personalTrainingDesc,
-    },
-    {
-      icon: Zap,
-      title: t.services.hybridCoaching,
-      description: t.services.hybridCoachingDesc,
-    },
-    {
-      icon: Users,
-      title: t.services.onlineCoaching,
-      description: t.services.onlineCoachinDesc,
-    },
-  ];
-
   return (
-    <section id="services" className="bg-white py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-800 mb-4">
-            {t.services.title}
-            <span className="block bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent">
-              {t.services.subtitle}
-            </span>
-          </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            {t.services.description}
+    <section id="contact" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+          <h3 className="text-2xl font-bold bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent mb-4">
+            {t.contact.title}
+          </h3>
+          <p className="text-gray-600 leading-relaxed">
+            Romana Vítková - fitness trenérka působící v Praze
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
-          {services.map((service, index) => {
-            const Icon = service.icon;
-            return (
-              <div
-                key={index}
-                className="bg-gradient-to-br from-orange-50 to-amber-50 p-8 rounded-xl border border-orange-200 hover:shadow-lg transition-shadow"
-              >
-                <div className="bg-gradient-to-br from-orange-500 to-orange-600 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                  <Icon size={24} className="text-white" />
-                </div>
-                <h3 className="text-xl font-bold text-gray-800 mb-3">{service.title}</h3>
-                <p className="text-gray-600 leading-relaxed">{service.description}</p>
-              </div>
-            );
-          })}
-        </div>
-
-        <div className="bg-gradient-to-r from-orange-500 to-orange-600 rounded-2xl p-12 text-white">
-          <div className="max-w-3xl">
-            <h3 className="text-2xl font-bold mb-6">{t.services.specialization}</h3>
-            <div className="space-y-4 text-lg leading-relaxed">
-              <p>{t.services.spec1}</p>
-              <p>{t.services.spec2}</p>
-              <p>{t.services.spec3}</p>
+        <div className="p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+          <div className="space-y-4">
+            <a
+              href="mailto:info@example.com"
+              className="flex items-center text-gray-600 hover:text-orange-500 transition-colors"
+            >
+              <Mail size={20} className="mr-3" />
+              info@example.com
+            </a>
+            <a
+              href="tel:+420123456789"
+              className="flex items-center text-gray-600 hover:text-orange-500 transition-colors"
+            >
+              <Phone size={20} className="mr-3" />
+              +420 123 456 789
+            </a>
+            <div className="flex items-start text-gray-600">
+              <MapPin size={20} className="mr-3 mt-1 flex-shrink-0" />
+              <span>Praha, Česká republika</span>
             </div>
           </div>
         </div>
 
-        <div className="mt-12 grid md:grid-cols-2 gap-8">
-          <div className="bg-orange-50 border-l-4 border-orange-500 p-8 rounded-lg">
-            <h3 className="text-xl font-bold text-gray-800 mb-4">{t.services.goal}</h3>
-            <p className="text-gray-700 leading-relaxed">{t.services.goalText}</p>
-          </div>
-
-          <div className="bg-orange-50 border-l-4 border-orange-500 p-8 rounded-lg">
-            <h3 className="text-xl font-bold text-gray-800 mb-4">{t.services.forWho}</h3>
-            <p className="text-gray-700 leading-relaxed">{t.services.forWhoText}</p>
+        <div className="p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+          <h4 className="text-lg font-semibold text-gray-800 mb-4">{t.footer.followUs}</h4>
+          <div className="flex space-x-4">
+            <a
+              href="https://www.instagram.com/romana.vitkova_/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-12 h-12 bg-gradient-to-tr from-orange-400 to-orange-600 rounded-full flex items-center justify-center text-white shadow-md hover:scale-110 transition-transform"
+            >
+              <Instagram size={22} />
+            </a>
+            <a
+              href="https://www.facebook.com/RomanaVitkov"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-12 h-12 bg-gradient-to-tr from-blue-500 to-blue-700 rounded-full flex items-center justify-center text-white shadow-md hover:scale-110 transition-transform"
+            >
+              <Facebook size={22} />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/romana-vitkova"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-12 h-12 bg-gradient-to-tr from-blue-300 to-blue-500 rounded-full flex items-center justify-center text-white shadow-md hover:scale-110 transition-transform"
+            >
+              <Linkedin size={22} />
+            </a>
           </div>
         </div>
       </div>
