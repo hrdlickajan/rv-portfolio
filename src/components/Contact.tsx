@@ -6,6 +6,18 @@ export default function Contact() {
 
   return (
     <section id="contact" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold text-gray-800 mb-4">
+            {t.services.title}
+            <span className="block bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent">
+              {t.services.subtitle}
+            </span>
+          </h2>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            {t.services.description}
+          </p>
+        </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div className="p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
           <h3 className="text-2xl font-bold bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent mb-4">
