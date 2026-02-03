@@ -88,6 +88,7 @@ export const translations = {
       message_label: 'Zpráva',
       send: 'Poslat',
       sending: 'Odesílám...',
+      success: 'Vaše zpráva byla úspěšně odeslána!',
     },
   },
   en: {
@@ -179,6 +180,7 @@ export const translations = {
       message_label: 'Message',
       send: 'Send',
       sending: 'Sending...',
+      success: 'Your message has been sent successfully!',
     },
   },
 };
