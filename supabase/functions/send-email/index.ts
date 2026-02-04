@@ -41,9 +41,9 @@ Message: ${message}
 This email was sent via your contact form.
     `.trim();
 
-    const sendgridApiKey = Deno.env.get("SENDGRID_API_KEY");
+    const resendApiKey = Deno.env.get("RESEND_API_KEY");
 
-    if (!sendgridApiKey) {
+    if (!resendApiKey) {
       console.log("Email service not configured, but form data received:", {
         name,
         email,
@@ -56,33 +56,32 @@ This email was sent via your contact form.
       });
     }
 
-    const response = await fetch("https://api.sendgrid.com/v3/mail/send", {
+    const response = await fetch("https://api.resend.com/emails", {
       method: "POST",
       headers: {
-        "Authorization": `Bearer ${sendgridApiKey}`,
+        "Authorization": `Bearer ${resendApiKey}`,
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        personalizations: [
-          {
-            to: [{ email: "rv.romanavitkova@gmail.com" }],
-          },
-        ],
-        from: { email: "noreply@romanavitkova.cz" },
+        from: "Contact Form <onboarding@resend.dev>",
+        to: "rv.romanavitkova@gmail.com",
+        reply_to: email,
         subject: `Nová zpráva z kontaktního formuláře - ${name}`,
-        content: [
-          {
-            type: "text/plain",
-            value: emailContent,
-          },
-        ],
-        reply_to: { email },
+        html: `
+          <div style="font-family: sans-serif; color: #333;">
+            <h2>Nová zpráva z kontaktního formuláře</h2>
+            <p><strong>Jméno:</strong> ${name}</p>
+            <p><strong>E-mail:</strong> <a href="mailto:${email}">${email}</a></p>
+            <p><strong>Zpráva:</strong></p>
+            <p style="background: #f5f5f5; padding: 12px; border-radius: 4px;">${message.replace(/\n/g, '<br>')}</p>
+          </div>
+        `,
       }),
     });
 
     if (!response.ok) {
       const error = await response.text();
-      console.error("SendGrid error:", error);
+      console.error("Resend error:", error);
       return new Response(JSON.stringify({ error: "Failed to send email" }), {
         status: 500,
         headers: { ...corsHeaders, "Content-Type": "application/json" },

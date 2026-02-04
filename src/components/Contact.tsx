@@ -60,7 +60,7 @@ export default function Contact() {
               <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-lg flex items-center justify-center">
                 <Mail className="text-white" size={24} />
               </div>
-              <h3 className="text-lg font-bold text-gray-800">Email</h3>
+              <h3 className="text-lg font-bold text-gray-800">{t.contact.emailLabel}</h3>
             </div>
             <a
               href="mailto:rv.romanavitkova@gmail.com"
@@ -75,7 +75,7 @@ export default function Contact() {
               <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-lg flex items-center justify-center">
                 <Phone className="text-white" size={24} />
               </div>
-              <h3 className="text-lg font-bold text-gray-800">Telefon</h3>
+              <h3 className="text-lg font-bold text-gray-800">{t.contact.phoneLabel}</h3>
             </div>
             <a
               href="tel:+420734113441"
@@ -90,9 +90,9 @@ export default function Contact() {
               <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-lg flex items-center justify-center">
                 <MapPin className="text-white" size={24} />
               </div>
-              <h3 className="text-lg font-bold text-gray-800">Lokace</h3>
+              <h3 className="text-lg font-bold text-gray-800">{t.contact.locationLabel}</h3>
             </div>
-            <p className="text-gray-600 font-medium">Praha, Česká republika</p>
+            <p className="text-gray-600 font-medium">{t.contact.location}</p>
           </div>
         </div>
 
@@ -109,7 +109,7 @@ export default function Contact() {
                 onChange={handleChange}
                 required
                 className="w-full px-4 py-3 rounded-lg border border-orange-200 focus:border-orange-500 focus:outline-none transition-colors bg-orange-50 text-gray-800"
-                placeholder="Vaše jméno"
+                placeholder={t.contact.namePlaceholder}
               />
             </div>
 
@@ -124,7 +124,7 @@ export default function Contact() {
                 onChange={handleChange}
                 required
                 className="w-full px-4 py-3 rounded-lg border border-orange-200 focus:border-orange-500 focus:outline-none transition-colors bg-orange-50 text-gray-800"
-                placeholder="Váš e-mail"
+                placeholder={t.contact.emailPlaceholder}
               />
             </div>
 
@@ -139,7 +139,7 @@ export default function Contact() {
                 required
                 rows={5}
                 className="w-full px-4 py-3 rounded-lg border border-orange-200 focus:border-orange-500 focus:outline-none transition-colors bg-orange-50 text-gray-800 resize-none"
-                placeholder="Napište svou zprávu..."
+                placeholder={t.contact.messagePlaceholder}
               />
             </div>
 
@@ -164,23 +164,23 @@ export default function Contact() {
 
           <div className="space-y-8">
             <div className="bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl p-8 text-white">
-              <h3 className="text-2xl font-bold mb-4">Proč mi napsat?</h3>
+              <h3 className="text-2xl font-bold mb-4">{t.contact.whyContact}</h3>
               <ul className="space-y-3">
                 <li className="flex gap-3">
                   <span className="text-orange-200 font-bold">✓</span>
-                  <span>Individuální konzultace a plán</span>
+                  <span>{t.contact.consultation}</span>
                 </li>
                 <li className="flex gap-3">
                   <span className="text-orange-200 font-bold">✓</span>
-                  <span>Odpověď do 24 hodin</span>
+                  <span>{t.contact.response24h}</span>
                 </li>
                 <li className="flex gap-3">
                   <span className="text-orange-200 font-bold">✓</span>
-                  <span>Žádné skryté poplatky</span>
+                  <span>{t.contact.noHiddenFees}</span>
                 </li>
                 <li className="flex gap-3">
                   <span className="text-orange-200 font-bold">✓</span>
-                  <span>Osobní přístup a podpora</span>
+                  <span>{t.contact.personalSupport}</span>
                 </li>
               </ul>
             </div>
