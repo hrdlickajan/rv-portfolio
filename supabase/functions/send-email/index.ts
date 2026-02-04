@@ -64,7 +64,7 @@ This email was sent via your contact form.
       },
       body: JSON.stringify({
         from: "Contact Form <onboarding@resend.dev>",
-        to: "rv.romanavitkova@gmail.com",
+        to: "romana.vitkova.coach@gmail.com",
         reply_to: email,
         subject: `Nová zpráva z kontaktního formuláře - ${name}`,
         html: `

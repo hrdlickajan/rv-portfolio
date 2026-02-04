@@ -63,10 +63,10 @@ export default function Contact() {
               <h3 className="text-lg font-bold text-gray-800">{t.contact.emailLabel}</h3>
             </div>
             <a
-              href="mailto:rv.romanavitkova@gmail.com"
+              href="mailto:romana.vitkova.coach@gmail.com"
               className="text-gray-600 hover:text-orange-500 transition-colors font-medium"
             >
-              rv.romanavitkova@gmail.com
+              romana.vitkova.coach@gmail.com
             </a>
           </div>
 
