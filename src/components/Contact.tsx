@@ -1,10 +1,12 @@
 import { Instagram, Facebook, Linkedin, Mail, Phone, MapPin, Send, CheckCircle } from 'lucide-react';
 import { useState } from 'react';
+import ReCAPTCHA from 'react-google-recaptcha';
 import { useLanguage } from '../LanguageContext';
 
 export default function Contact() {
   const { t } = useLanguage();
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+  const [captchaToken, setCaptchaToken] = useState<string | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
 
@@ -15,6 +17,12 @@ export default function Contact() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    
+    if (!captchaToken) {
+      alert('Please complete the CAPTCHA verification');
+      return;
+    }
+
     setIsSubmitting(true);
 
     try {
@@ -24,12 +32,13 @@ export default function Contact() {
           'Content-Type': 'application/json',
           'Authorization': `Bearer ${import.meta.env.VITE_SUPABASE_ANON_KEY}`,
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({ ...formData, captchaToken }),
       });
 
       if (response.ok) {
         setIsSuccess(true);
         setFormData({ name: '', email: '', message: '' });
+        setCaptchaToken(null);
         setTimeout(() => setIsSuccess(false), 5000);
       }
     } catch (error) {
@@ -140,6 +149,14 @@ export default function Contact() {
                 rows={5}
                 className="w-full px-4 py-3 rounded-lg border border-orange-200 focus:border-orange-500 focus:outline-none transition-colors bg-orange-50 text-gray-800 resize-none"
                 placeholder={t.contact.messagePlaceholder}
+              />
+            </div>
+
+            <div className="flex justify-center">
+              <ReCAPTCHA
+                sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY || ''}
+                onChange={(token) => setCaptchaToken(token)}
+                onExpired={() => setCaptchaToken(null)}
               />
             </div>
 

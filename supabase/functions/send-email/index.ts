@@ -10,6 +10,7 @@ interface ContactMessage {
   name: string;
   email: string;
   message: string;
+  captchaToken: string;
 }
 
 Deno.serve(async (req: Request) => {
@@ -21,10 +22,44 @@ Deno.serve(async (req: Request) => {
   }
 
   try {
-    const { name, email, message }: ContactMessage = await req.json();
+    const { name, email, message, captchaToken }: ContactMessage = await req.json();
 
     if (!name || !email || !message) {
       return new Response(JSON.stringify({ error: "Missing required fields" }), {
+        status: 400,
+        headers: { ...corsHeaders, "Content-Type": "application/json" },
+      });
+    }
+
+    // Verify CAPTCHA
+    if (!captchaToken) {
+      return new Response(JSON.stringify({ error: "CAPTCHA verification required" }), {
+        status: 400,
+        headers: { ...corsHeaders, "Content-Type": "application/json" },
+      });
+    }
+
+    const recaptchaSecret = Deno.env.get("RECAPTCHA_SECRET_KEY");
+    if (!recaptchaSecret) {
+      console.error("RECAPTCHA_SECRET_KEY not configured");
+      return new Response(JSON.stringify({ error: "Server configuration error" }), {
+        status: 500,
+        headers: { ...corsHeaders, "Content-Type": "application/json" },
+      });
+    }
+
+    const captchaResponse = await fetch("https://www.google.com/recaptcha/api/siteverify", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
+      body: `secret=${recaptchaSecret}&response=${captchaToken}`,
+    });
+
+    const captchaData = await captchaResponse.json();
+
+    if (!captchaData.success || captchaData.score < 0.5) {
+      return new Response(JSON.stringify({ error: "CAPTCHA verification failed" }), {
         status: 400,
         headers: { ...corsHeaders, "Content-Type": "application/json" },
       });
