@@ -4,18 +4,14 @@ import { useLanguage } from '../LanguageContext';
 export default function About() {
   const { t } = useLanguage();
 
-  const qualifications = [
-    'International Certified Personal Trainer (NASM)',
-    'Instruktor fitness (Fitness Institut)',
-    '200h Yoga Teacher Training (House of Om Bali)',
-  ];
+  const qualifications = t.about.qualificationsList;
 
   return (
     <section id="about" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
       <div className="text-center mb-16">
-        <h2 className="text-4xl font-bold text-gray-800 mb-4">
+        <h2 className="text-4xl font-bold text-gray-800 mb-4 leading-tight">
           {t.about.title}
-          <span className="block bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent">
+          <span className="block bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent mb-4">
             {t.about.subtitle}
           </span>
         </h2>
@@ -88,7 +84,7 @@ export default function About() {
         <div className="bg-white rounded-xl p-8 shadow-lg border-l-4 border-orange-500">
           <h3 className="text-xl font-bold text-gray-800 mb-4">{t.about.values}</h3>
           <ul className="space-y-3 text-gray-700">
-            {['Autentičnost', 'Empowerment', 'Dlouhodobost', 'Radost'].map((value, i) => (
+            {t.about.valuesList.map((value, i) => (
               <li key={i} className="flex items-center gap-2">
                 <span className="text-orange-500 font-bold">◆</span> {value}
               </li>
@@ -99,7 +95,7 @@ export default function About() {
         <div className="bg-white rounded-xl p-8 shadow-lg border-l-4 border-orange-500">
           <h3 className="text-xl font-bold text-gray-800 mb-4">{t.about.trainingPhilosophy}</h3>
           <div className="grid grid-cols-2 gap-3">
-            {['Holistický přístup', 'Nebát se vah', 'Udržitelnost', 'Radost'].map((philosophy, i) => (
+            {t.about.philosophyList.map((philosophy, i) => (
               <p key={i} className="text-sm text-gray-600 bg-orange-50 px-3 py-2 rounded-lg">
                 {philosophy}
               </p>

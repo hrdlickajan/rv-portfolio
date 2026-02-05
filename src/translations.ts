@@ -9,6 +9,7 @@ export const translations = {
     hero: {
       title1: 'Transformujte své tělo,',
       title2: 'změňte svůj život',
+      subtitle: 'Osobní trenérka',
       tagline: 'Treat your body like a temple – care for it with love, and it will carry you through life.',
       cta1: 'Začněte dnes',
       cta2: 'Zjistit více',
@@ -50,6 +51,13 @@ export const translations = {
         'Ráda čtu — převážně non-fiction, ale čas od času to proložím nějakou oddychovkou. Mým nejoblíbenějším drinkem je káva, která mi chutná nejlíp ve společnosti přátel nebo rodiny, stejně jako dobré jídlo všeho druhu. A pokud se mě zeptáte, jaké je moje nejoblíbenější – nečekejte jednu odpověď. Miluju prostě všechno!',
       values: 'Moje hodnoty',
       trainingPhilosophy: 'Tréninková filozofie',
+      qualificationsList: [
+        'International Certified Personal Trainer (NASM)',
+        'Instruktor fitness (Fitness Institut)',
+        '200h Yoga Teacher Training (House of Om Bali)',
+      ],
+      valuesList: ['Autentičnost', 'Empowerment', 'Dlouhodobost', 'Radost'],
+      philosophyList: ['Holistický přístup', 'Nebát se vah', 'Udržitelnost', 'Radost'],
     },
     services: {
       title: 'Jak spolu můžeme',
@@ -101,6 +109,8 @@ export const translations = {
       namePlaceholder: 'Vaše jméno',
       emailPlaceholder: 'Váš e-mail',
       messagePlaceholder: 'Napište svou zprávu...',
+      captchaRequired: 'Prosím, dokončete ověření CAPTCHA',
+      errorSending: 'Chyba při odesílání zprávy',
     },
   },
   en: {
@@ -113,6 +123,7 @@ export const translations = {
     hero: {
       title1: 'Transform your body,',
       title2: 'change your life',
+      subtitle: 'Personal Trainer',
       tagline: 'Treat your body like a temple – care for it with love, and it will carry you through life.',
       cta1: 'Get Started',
       cta2: 'Learn More',
@@ -154,6 +165,13 @@ export const translations = {
         'I love reading — mostly non-fiction, but occasionally I mix in something lighter. My favorite drink is coffee, which tastes best when shared with friends or family, along with good food of all kinds. If you ask me which is my favorite, don\'t expect a single answer. I simply love it all!',
       values: 'My Values',
       trainingPhilosophy: 'Training Philosophy',
+      qualificationsList: [
+        'International Certified Personal Trainer (NASM)',
+        'Fitness Instructor (Fitness Institut)',
+        '200h Yoga Teacher Training (House of Om Bali)',
+      ],
+      valuesList: ['Authenticity', 'Empowerment', 'Long-term Approach', 'Joy'],
+      philosophyList: ['Holistic Approach', 'No Fear of Weights', 'Sustainability', 'Joy'],
     },
     services: {
       title: 'How we can',
@@ -205,6 +223,8 @@ export const translations = {
       namePlaceholder: 'Your name',
       emailPlaceholder: 'Your email',
       messagePlaceholder: 'Write your message...',
+      captchaRequired: 'Please complete the CAPTCHA verification',
+      errorSending: 'Error sending message',
     },
   },
 };
