@@ -1,4 +1,4 @@
-import { Award, Heart, Zap } from 'lucide-react';
+import { Award, Heart, Zap, Target } from 'lucide-react';
 import { useLanguage } from '../LanguageContext';
 
 export default function About() {
@@ -17,8 +17,15 @@ export default function About() {
         </h2>
       </div>
 
-      <div className="grid lg:grid-cols-3 gap-12 mb-16">
+      {/* KDO JSEM */}
+      <div className="bg-white rounded-xl p-8 shadow-lg mb-8">
+        <h3 className="text-2xl font-bold text-gray-800 mb-6">{t.about.whoAmI}</h3>
+        <p className="text-gray-700 leading-relaxed text-lg">{t.about.whoAmIText}</p>
+      </div>
+
+      <div className="grid lg:grid-cols-3 gap-12 mb-8">
         <div className="lg:col-span-2">
+          {/* MOJE MISE */}
           <div className="bg-white rounded-xl p-8 shadow-lg mb-8">
             <h3 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-3">
               <Heart className="text-orange-500" size={28} />
@@ -32,6 +39,7 @@ export default function About() {
             </p>
           </div>
 
+          {/* PROČ SI MĚ VYBRAT */}
           <div className="bg-white rounded-xl p-8 shadow-lg">
             <h3 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-3">
               <Zap className="text-orange-500" size={28} />
@@ -50,6 +58,7 @@ export default function About() {
           </div>
         </div>
 
+        {/* KVALIFIKACE */}
         <div>
           <div className="bg-gradient-to-br from-orange-500 to-orange-600 text-white rounded-xl p-8 shadow-lg sticky top-24">
             <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
@@ -67,41 +76,24 @@ export default function About() {
         </div>
       </div>
 
-      <div className="bg-orange-50 rounded-xl p-8 border-2 border-orange-200 mb-12">
-        <h3 className="text-2xl font-bold text-gray-800 mb-6">{t.about.myPath}</h3>
-        <p className="text-gray-700 leading-relaxed mb-4">
-          {t.about.myPathText1}
-        </p>
-        <p className="text-gray-700 leading-relaxed mb-4">
-          {t.about.myPathText2}
-        </p>
-        <p className="text-gray-700 leading-relaxed">
-          {t.about.myPathText3}
-        </p>
+      {/* JAK PRACUJI */}
+      <div className="bg-orange-50 rounded-xl p-8 border-2 border-orange-200 mb-8">
+        <h3 className="text-2xl font-bold text-gray-800 mb-6">{t.about.howIWork}</h3>
+        <p className="text-gray-700 leading-relaxed mb-4">{t.about.howIWorkText1}</p>
+        <p className="text-gray-700 leading-relaxed mb-4">{t.about.howIWorkText2}</p>
+        <p className="text-gray-700 leading-relaxed">{t.about.howIWorkText3}</p>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-8">
-        <div className="bg-white rounded-xl p-8 shadow-lg border-l-4 border-orange-500">
-          <h3 className="text-xl font-bold text-gray-800 mb-4">{t.about.values}</h3>
-          <ul className="space-y-3 text-gray-700">
-            {t.about.valuesList.map((value, i) => (
-              <li key={i} className="flex items-center gap-2">
-                <span className="text-orange-500 font-bold">◆</span> {value}
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <div className="bg-white rounded-xl p-8 shadow-lg border-l-4 border-orange-500">
-          <h3 className="text-xl font-bold text-gray-800 mb-4">{t.about.trainingPhilosophy}</h3>
-          <div className="grid grid-cols-2 gap-3">
-            {t.about.philosophyList.map((philosophy, i) => (
-              <p key={i} className="text-sm text-gray-600 bg-orange-50 px-3 py-2 rounded-lg">
-                {philosophy}
-              </p>
-            ))}
-          </div>
-        </div>
+      {/* MŮJ CÍL */}
+      <div className="bg-white rounded-xl p-8 shadow-lg border-l-4 border-orange-500">
+        <h3 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-3">
+          <Target className="text-orange-500" size={28} />
+          {t.about.goal}
+        </h3>
+        <p className="text-gray-700 leading-relaxed mb-3">{t.about.goalText1}</p>
+        <p className="text-gray-700 leading-relaxed mb-3">{t.about.goalText2}</p>
+        <p className="text-gray-700 leading-relaxed mb-3">{t.about.goalText3}</p>
+        <p className="text-gray-700 leading-relaxed">{t.about.goalText4}</p>
       </div>
     </section>
   );
