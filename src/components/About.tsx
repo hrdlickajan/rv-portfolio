@@ -7,15 +7,16 @@ export default function About() {
   const qualifications = t.about.qualificationsList;
 
   return (
-    <section id="about" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-      <div className="text-center mb-16">
+    <section id="about" className="bg-gradient-to-br from-orange-50 via-amber-50 to-orange-50 py-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="text-center mb-16 animate-on-scroll" data-delay="0s">
         <h2 className="text-4xl font-bold text-gray-800 mb-4 leading-tight">
           {t.about.title}
         </h2>
       </div>
 
       {/* KDO JSEM */}
-      <div className="bg-white/70 backdrop-blur-sm rounded-xl p-8 shadow-xl border border-white/60 mb-8">
+      <div className="bg-white/70 backdrop-blur-sm rounded-xl p-8 shadow-xl border border-white/60 mb-8 animate-on-scroll card-glow" data-delay="0.1s">
         <h3 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-3">
           <User className="text-orange-500" size={28} />
           {t.about.whoAmI}
@@ -26,7 +27,7 @@ export default function About() {
       <div className="grid lg:grid-cols-3 gap-12 mb-8">
         <div className="lg:col-span-2">
           {/* MOJE MISE */}
-          <div className="bg-white/70 backdrop-blur-sm rounded-xl p-8 shadow-xl border border-white/60 mb-8">
+          <div className="bg-white/70 backdrop-blur-sm rounded-xl p-8 shadow-xl border border-white/60 mb-8 animate-on-scroll card-glow" data-delay="0s">
             <h3 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-3">
               <Heart className="text-orange-500" size={28} />
               {t.about.mission}
@@ -40,7 +41,7 @@ export default function About() {
           </div>
 
           {/* PROČ SI MĚ VYBRAT */}
-          <div className="bg-white/70 backdrop-blur-sm rounded-xl p-8 shadow-xl border border-white/60">
+          <div className="bg-white/70 backdrop-blur-sm rounded-xl p-8 shadow-xl border border-white/60 animate-on-scroll card-glow" data-delay="0.1s">
             <h3 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-3">
               <Zap className="text-orange-500" size={28} />
               {t.about.why}
@@ -60,7 +61,7 @@ export default function About() {
 
         {/* KVALIFIKACE */}
         <div>
-          <div className="bg-gradient-to-br from-orange-500 to-orange-600 text-white rounded-xl p-8 shadow-lg sticky top-24">
+          <div className="bg-gradient-to-br from-orange-500 to-orange-600 text-white rounded-xl p-8 shadow-lg sticky top-24 animate-on-scroll" data-delay="0.15s">
             <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
               <Award size={28} />
               {t.about.qualifications}
@@ -77,7 +78,7 @@ export default function About() {
       </div>
 
       {/* JAK PRACUJI */}
-      <div className="bg-orange-50/80 backdrop-blur-sm rounded-xl p-8 border-2 border-orange-200/60 shadow-lg mb-8">
+      <div className="bg-orange-50/80 backdrop-blur-sm rounded-xl p-8 border-2 border-orange-200/60 shadow-lg mb-8 animate-on-scroll card-glow" data-delay="0s">
         <h3 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-3">
           <Layers className="text-orange-500" size={28} />
           {t.about.howIWork}
@@ -88,7 +89,7 @@ export default function About() {
       </div>
 
       {/* MŮJ CÍL */}
-      <div className="bg-white/70 backdrop-blur-sm rounded-xl p-8 shadow-xl border border-white/60 border-l-4 border-l-orange-500">
+      <div className="bg-white/70 backdrop-blur-sm rounded-xl p-8 shadow-xl border border-white/60 border-l-4 border-l-orange-500 animate-on-scroll card-glow" data-delay="0.1s">
         <h3 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-3">
           <Target className="text-orange-500" size={28} />
           {t.about.goal}
@@ -97,6 +98,7 @@ export default function About() {
         <p className="text-gray-700 leading-relaxed mb-3">{t.about.goalText2}</p>
         <p className="text-gray-700 leading-relaxed mb-3">{t.about.goalText3}</p>
         <p className="text-gray-700 leading-relaxed">{t.about.goalText4}</p>
+      </div>
       </div>
     </section>
   );

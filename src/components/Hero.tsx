@@ -5,6 +5,17 @@ export default function Hero() {
 
   return (
     <section id="home" className="relative min-h-screen flex items-center overflow-hidden bg-white">
+      {/* Mobile background image */}
+      <div className="absolute inset-0 block md:hidden">
+        <img
+          src="/resources/hero.jpg"
+          alt=""
+          aria-hidden="true"
+          className="w-full h-full object-cover object-top"
+        />
+        <div className="absolute inset-0 bg-white/55" />
+      </div>
+
       {/* Right half: photo with left-to-transparent gradient overlay */}
       <div className="absolute inset-y-0 right-0 w-1/2 hidden md:block">
         <img
@@ -18,13 +29,13 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full">
         <div className="max-w-lg">
-          <h2 className="text-5xl font-bold text-gray-800 mb-6">
+          <h2 className="text-5xl font-bold text-gray-800 mb-6 hero-text-shadow">
             Romana Vítková
             <span className="block bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent">
               Women's Fitness Coach
             </span>
           </h2>
-          <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+          <p className="text-xl text-gray-600 mb-8 leading-relaxed hero-text-shadow">
             {t.hero.tagline}
           </p>
           <div className="flex flex-col sm:flex-row gap-4">

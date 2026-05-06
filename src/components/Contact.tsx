@@ -49,9 +49,9 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="bg-white py-20">
+    <section id="contact" className="bg-gradient-to-br from-orange-50 via-amber-50 to-orange-50 py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-on-scroll" data-delay="0s">
           <h2 className="text-4xl font-bold text-gray-800 mb-4 leading-tight">
             {t.contact.title}
             <span className="block bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent">
@@ -64,7 +64,7 @@ export default function Contact() {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 mb-12">
-          <form onSubmit={handleSubmit} className="space-y-6">
+          <form onSubmit={handleSubmit} className="space-y-6 animate-on-scroll" data-delay="0.1s">
             <div>
               <label className="block text-sm font-semibold text-gray-800 mb-2">
                 {t.contact.name}
@@ -137,8 +137,8 @@ export default function Contact() {
             </button>
           </form>
 
-          <div className="space-y-6">
-            <div className="bg-white/70 backdrop-blur-sm rounded-xl border border-orange-200/60 shadow-xl p-5">
+          <div className="space-y-6 animate-on-scroll" data-delay="0.2s">
+            <div className="bg-white/70 backdrop-blur-sm rounded-xl border border-orange-200/60 shadow-xl p-5 card-glow">
               <div className="flex items-center gap-3 py-2 border-b border-orange-100">
                 <Mail size={16} className="text-orange-500 shrink-0" />
                 <a
