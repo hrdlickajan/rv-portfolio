@@ -11,9 +11,6 @@ export default function About() {
       <div className="text-center mb-16">
         <h2 className="text-4xl font-bold text-gray-800 mb-4 leading-tight">
           {t.about.title}
-          <span className="block bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent mb-4">
-            {t.about.subtitle}
-          </span>
         </h2>
       </div>
 

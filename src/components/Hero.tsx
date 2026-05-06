@@ -10,7 +10,7 @@ export default function Hero() {
           <h2 className="text-5xl font-bold text-gray-800 mb-6">
             Romana Vítková
             <span className="block bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent">
-              Personal trainer
+              Women's Fitness Coach
             </span>
           </h2>
           <p className="text-xl text-gray-600 mb-8 leading-relaxed">
@@ -18,13 +18,13 @@ export default function Hero() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
-              href="#contact"
+              href="#services"
               className="bg-orange-500 text-white px-8 py-3 rounded-full hover:bg-orange-600 transition-all font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 text-center"
             >
-              {t.header.contact}
+              {t.hero.cta1}
             </a>
             <a
-              href="#services"
+              href="#contact"
               className="bg-white text-orange-500 px-8 py-3 rounded-full hover:bg-orange-50 transition-all font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 border border-orange-200 text-center"
             >
               {t.hero.cta2}
