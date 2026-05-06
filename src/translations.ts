@@ -62,7 +62,7 @@ export const translations = {
       goalText4: 'Chci, abys z naší spolupráce odcházela silnější, než jsi přišla – fyzicky i mentálně.',
     },
     services: {
-      title: 'Jak spolu můžeme',
+      title: 'Formy spolupráce',
       subtitle: 'pracovat',
       description:
         'Každá z nás je v jiné fázi života a má jiné potřeby. Vyber si formu spolupráce, která ti dává největší smysl právě teď.',
