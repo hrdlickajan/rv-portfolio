@@ -34,7 +34,7 @@ export default function Hero() {
       </div>
 
       {/* Content — upper third: flex-centered then shifted up via bottom padding */}
-      <div className="relative z-10 w-full pb-[25%]">
+      <div className="relative z-10 w-full">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="w-[58%] md:max-w-lg md:w-auto">
             <h2 className="font-display text-4xl md:text-6xl leading-tight mb-3 md:mb-4 text-gray-900 hero-name">
