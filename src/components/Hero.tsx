@@ -21,8 +21,20 @@ export default function Hero() {
       className="relative flex items-center overflow-hidden"
       style={{ backgroundColor: 'var(--c-cream)', height: 'calc(100vh - 4rem)' }}
     >
-      {/* Right: photo with soft left-edge fade — shown on all screen sizes */}
-      <div className="absolute inset-y-0 right-0 w-[40%] md:w-[58%] overflow-hidden">
+      {/* Mobile: full-bleed background photo */}
+      <div className="absolute inset-0 block md:hidden">
+        <img
+          src="/resources/hero.jpg"
+          alt=""
+          aria-hidden="true"
+          className="w-full h-full object-cover object-top"
+        />
+        {/* Dark overlay so white text is readable over the dark photo */}
+        <div className="absolute inset-0" style={{ background: 'rgba(0,0,0,0.52)' }} />
+      </div>
+
+      {/* Desktop: right-column photo with soft left-edge fade */}
+      <div className="absolute inset-y-0 right-0 w-[58%] hidden md:block overflow-hidden">
         <div ref={photoRef} className="absolute -top-[10%] -bottom-[10%] left-0 right-0" style={{ willChange: 'transform' }}>
           <img
             src="/resources/hero.jpg"
@@ -33,17 +45,17 @@ export default function Hero() {
         <div className="absolute inset-0 hero-photo-fade" />
       </div>
 
-      {/* Content — upper third: flex-centered then shifted up via bottom padding */}
-      <div className="relative z-10 w-full">
+      {/* Content */}
+      <div className="relative z-10 w-full pb-[25%]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-          <div className="w-[58%] md:max-w-lg md:w-auto">
-            <h2 className="font-display text-4xl md:text-6xl leading-tight mb-3 md:mb-4 text-gray-900 hero-name">
+          <div className="md:max-w-lg">
+            <h2 className="font-display text-4xl md:text-6xl leading-tight mb-3 md:mb-4 text-white md:text-gray-900 hero-name">
               Romana Vítková
-              <span className="block text-gray-400 font-light">
+              <span className="block text-white/70 md:text-gray-400 font-light">
                 Women's Fitness Coach
               </span>
             </h2>
-            <p className="text-sm md:text-lg text-gray-600 mb-6 md:mb-10 leading-relaxed hero-tagline">
+            <p className="text-sm md:text-lg text-white/85 md:text-gray-600 mb-6 md:mb-10 leading-relaxed hero-tagline">
               {t.hero.tagline}
             </p>
             <div className="flex flex-col gap-3 md:flex-row md:gap-4 hero-ctas">
