@@ -8,7 +8,7 @@ export default function Hero() {
       {/* Right half: photo with left-to-transparent gradient overlay */}
       <div className="absolute inset-y-0 right-0 w-1/2 hidden md:block">
         <img
-          src="https://www.formfactory.cz/wp-content/uploads/2024/06/DSC_2436_PP-SQUARE-700x700.jpg"
+          src="/resources/hero.jpg"
           alt="Romana Vitkova"
           className="w-full h-full object-cover object-top"
         />
