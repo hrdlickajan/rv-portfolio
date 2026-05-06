@@ -2,7 +2,13 @@
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        display: ['Bebas Neue', 'sans-serif'],
+        body: ['Nunito', 'sans-serif'],
+        sans: ['Nunito', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 };

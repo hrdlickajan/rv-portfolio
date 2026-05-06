@@ -7,18 +7,18 @@ export default function About() {
   const qualifications = t.about.qualificationsList;
 
   return (
-    <section id="about" className="bg-gradient-to-br from-orange-50 via-amber-50 to-orange-50 py-20">
+    <section id="about" className="bg-gradient-to-br from-orange-50 via-amber-50/60 to-orange-50 py-20 pattern-bg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="text-center mb-16 animate-on-scroll" data-delay="0s">
-        <h2 className="text-4xl font-bold text-gray-800 mb-4 leading-tight">
+        <h2 className="font-display text-5xl md:text-6xl tracking-wider text-gray-900 mb-4 leading-none">
           {t.about.title}
         </h2>
       </div>
 
       {/* KDO JSEM */}
-      <div className="bg-white/70 backdrop-blur-sm rounded-xl p-8 shadow-xl border border-white/60 mb-8 animate-on-scroll card-glow" data-delay="0.1s">
-        <h3 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-3">
-          <User className="text-orange-500" size={28} />
+      <div className="glass-card rounded-xl p-8 shadow-xl mb-8 animate-on-scroll card-glow" data-delay="0.1s">
+        <h3 className="font-display text-3xl tracking-wide text-gray-900 mb-6 flex items-center gap-3">
+          <span className="icon-box"><User className="text-orange-500" size={28} /></span>
           {t.about.whoAmI}
         </h3>
         <p className="text-gray-700 leading-relaxed text-lg">{t.about.whoAmIText}</p>
@@ -27,9 +27,9 @@ export default function About() {
       <div className="grid lg:grid-cols-3 gap-12 mb-8">
         <div className="lg:col-span-2">
           {/* MOJE MISE */}
-          <div className="bg-white/70 backdrop-blur-sm rounded-xl p-8 shadow-xl border border-white/60 mb-8 animate-on-scroll card-glow" data-delay="0s">
-            <h3 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-3">
-              <Heart className="text-orange-500" size={28} />
+          <div className="glass-card rounded-xl p-8 shadow-xl mb-8 animate-on-scroll card-glow" data-delay="0s">
+            <h3 className="font-display text-3xl tracking-wide text-gray-900 mb-6 flex items-center gap-3">
+              <span className="icon-box"><Heart className="text-orange-500" size={28} /></span>
               {t.about.mission}
             </h3>
             <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -41,9 +41,9 @@ export default function About() {
           </div>
 
           {/* PROČ SI MĚ VYBRAT */}
-          <div className="bg-white/70 backdrop-blur-sm rounded-xl p-8 shadow-xl border border-white/60 animate-on-scroll card-glow" data-delay="0.1s">
-            <h3 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-3">
-              <Zap className="text-orange-500" size={28} />
+          <div className="glass-card rounded-xl p-8 shadow-xl animate-on-scroll card-glow" data-delay="0.1s">
+            <h3 className="font-display text-3xl tracking-wide text-gray-900 mb-6 flex items-center gap-3">
+              <span className="icon-box"><Zap className="text-orange-500" size={28} /></span>
               {t.about.why}
             </h3>
             <ul className="space-y-4 text-gray-700">
@@ -62,13 +62,13 @@ export default function About() {
         {/* KVALIFIKACE */}
         <div>
           <div className="bg-gradient-to-br from-orange-500 to-orange-600 text-white rounded-xl p-8 shadow-lg sticky top-24 animate-on-scroll" data-delay="0.15s">
-            <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
+            <h3 className="font-display text-3xl tracking-wide mb-6 flex items-center gap-3">
               <Award size={28} />
               {t.about.qualifications}
             </h3>
             <ul className="space-y-4">
               {qualifications.map((cert, index) => (
-                <li key={index} className="pb-4 border-b border-orange-400 last:border-b-0">
+                <li key={index} className="qual-item pb-4 border-b border-orange-400 last:border-b-0">
                   <p className="font-semibold text-orange-100">{cert}</p>
                 </li>
               ))}
@@ -78,9 +78,9 @@ export default function About() {
       </div>
 
       {/* JAK PRACUJI */}
-      <div className="bg-orange-50/80 backdrop-blur-sm rounded-xl p-8 border-2 border-orange-200/60 shadow-lg mb-8 animate-on-scroll card-glow" data-delay="0s">
-        <h3 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-3">
-          <Layers className="text-orange-500" size={28} />
+      <div className="glass-card rounded-xl p-8 border-l-4 border-l-orange-500 shadow-lg mb-8 animate-on-scroll card-glow" data-delay="0s">
+        <h3 className="font-display text-3xl tracking-wide text-gray-900 mb-6 flex items-center gap-3">
+          <span className="icon-box"><Layers className="text-orange-500" size={28} /></span>
           {t.about.howIWork}
         </h3>
         <p className="text-gray-700 leading-relaxed mb-4">{t.about.howIWorkText1}</p>
@@ -89,9 +89,9 @@ export default function About() {
       </div>
 
       {/* MŮJ CÍL */}
-      <div className="bg-white/70 backdrop-blur-sm rounded-xl p-8 shadow-xl border border-white/60 border-l-4 border-l-orange-500 animate-on-scroll card-glow" data-delay="0.1s">
-        <h3 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-3">
-          <Target className="text-orange-500" size={28} />
+      <div className="glass-card rounded-xl p-8 shadow-xl border-l-4 border-l-blue-500 animate-on-scroll card-glow" data-delay="0.1s">
+        <h3 className="font-display text-3xl tracking-wide text-gray-900 mb-6 flex items-center gap-3">
+          <span className="icon-box"><Target className="text-blue-500" size={28} /></span>
           {t.about.goal}
         </h3>
         <p className="text-gray-700 leading-relaxed mb-3">{t.about.goalText1}</p>

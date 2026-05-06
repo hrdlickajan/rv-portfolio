@@ -30,7 +30,7 @@ function App() {
   }, []);
   return (
     <LanguageProvider>
-      <div className="min-h-screen flex flex-col bg-gradient-to-br from-orange-50 via-amber-50 to-orange-50">
+      <div className="min-h-screen flex flex-col bg-white">
         <Header />
 
         <main className="flex-grow">

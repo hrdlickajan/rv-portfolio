@@ -49,12 +49,12 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="bg-gradient-to-br from-orange-50 via-amber-50 to-orange-50 py-20">
+    <section id="contact" className="bg-gradient-to-br from-orange-50 via-amber-50/60 to-orange-50 py-20 pattern-bg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-on-scroll" data-delay="0s">
-          <h2 className="text-4xl font-bold text-gray-800 mb-4 leading-tight">
+          <h2 className="font-display text-5xl md:text-6xl tracking-wider text-gray-900 mb-4 leading-none">
             {t.contact.title}
-            <span className="block bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent">
+            <span className="block text-orange-500">
               {t.contact.subtitle}
             </span>
           </h2>
@@ -75,7 +75,7 @@ export default function Contact() {
                 value={formData.name}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 rounded-lg border border-orange-200 focus:border-orange-500 focus:outline-none transition-colors bg-orange-50 text-gray-800"
+                className="input-field w-full px-4 py-3 rounded-lg border border-orange-200 transition-colors bg-white/80 text-gray-800"
                 placeholder={t.contact.namePlaceholder}
               />
             </div>
@@ -90,7 +90,7 @@ export default function Contact() {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 rounded-lg border border-orange-200 focus:border-orange-500 focus:outline-none transition-colors bg-orange-50 text-gray-800"
+                className="input-field w-full px-4 py-3 rounded-lg border border-orange-200 transition-colors bg-white/80 text-gray-800"
                 placeholder={t.contact.emailPlaceholder}
               />
             </div>
@@ -105,7 +105,7 @@ export default function Contact() {
                 onChange={handleChange}
                 required
                 rows={5}
-                className="w-full px-4 py-3 rounded-lg border border-orange-200 focus:border-orange-500 focus:outline-none transition-colors bg-orange-50 text-gray-800 resize-none"
+                className="input-field w-full px-4 py-3 rounded-lg border border-orange-200 transition-colors bg-white/80 text-gray-800 resize-none"
                 placeholder={t.contact.messagePlaceholder}
               />
             </div>
@@ -130,7 +130,7 @@ export default function Contact() {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-orange-500 to-orange-600 text-white px-8 py-4 rounded-full font-semibold hover:shadow-lg transition-all disabled:opacity-70 disabled:cursor-not-allowed transform hover:-translate-y-0.5"
+              className="btn-sporty w-full flex items-center justify-center gap-2 bg-orange-500 text-white px-8 py-4 hover:bg-orange-600 disabled:opacity-70 disabled:cursor-not-allowed"
             >
               <Send size={20} />
               {isSubmitting ? t.contact.sending : t.contact.send}
@@ -138,7 +138,7 @@ export default function Contact() {
           </form>
 
           <div className="space-y-6 animate-on-scroll" data-delay="0.2s">
-            <div className="bg-white/70 backdrop-blur-sm rounded-xl border border-orange-200/60 shadow-xl p-5 card-glow">
+            <div className="glass-card rounded-xl shadow-xl p-5 card-glow">
               <div className="flex items-center gap-3 py-2 border-b border-orange-100">
                 <Mail size={16} className="text-orange-500 shrink-0" />
                 <a
