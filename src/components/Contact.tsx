@@ -1,4 +1,4 @@
-import { Instagram, Facebook, Linkedin, Mail, Phone, MapPin, Send, CheckCircle } from 'lucide-react';
+import { Instagram, Mail, Phone, MapPin, Send, CheckCircle } from 'lucide-react';
 import { useState } from 'react';
 import ReCAPTCHA from 'react-google-recaptcha';
 import { useLanguage } from '../LanguageContext';
@@ -138,7 +138,7 @@ export default function Contact() {
           </form>
 
           <div className="space-y-6">
-            <div className="bg-gradient-to-br from-orange-50 to-amber-50 rounded-xl border border-orange-200 p-5">
+            <div className="bg-white/70 backdrop-blur-sm rounded-xl border border-orange-200/60 shadow-xl p-5">
               <div className="flex items-center gap-3 py-2 border-b border-orange-100">
                 <Mail size={16} className="text-orange-500 shrink-0" />
                 <a
@@ -157,42 +157,20 @@ export default function Contact() {
                   +420 734 113 441
                 </a>
               </div>
-              <div className="flex items-center gap-3 py-2">
-                <MapPin size={16} className="text-orange-500 shrink-0" />
-                <p className="text-sm text-gray-600">{t.contact.location}</p>
-              </div>
-            </div>
-
-            <div className="bg-white border-2 border-orange-200 rounded-2xl p-6">
-              <h3 className="text-xl font-bold text-gray-800 mb-4">{t.footer.followUs}</h3>
-              <div className="flex gap-4">
+              <div className="flex items-center gap-3 py-2 border-b border-orange-100">
+                <Instagram size={16} className="text-orange-500 shrink-0" />
                 <a
                   href="https://www.instagram.com/romana.vitkova_/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-14 h-14 bg-gradient-to-br from-orange-400 to-orange-600 rounded-full flex items-center justify-center text-white shadow-md hover:scale-110 transition-transform"
-                  title="Instagram"
+                  className="text-sm text-gray-600 hover:text-orange-500 transition-colors"
                 >
-                  <Instagram size={24} />
+                  @romana.vitkova_
                 </a>
-                <a
-                  href="https://www.facebook.com/RomanaVitkov"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full flex items-center justify-center text-white shadow-md hover:scale-110 transition-transform"
-                  title="Facebook"
-                >
-                  <Facebook size={24} />
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/romana-vitkova"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-14 h-14 bg-gradient-to-br from-blue-300 to-blue-500 rounded-full flex items-center justify-center text-white shadow-md hover:scale-110 transition-transform"
-                  title="LinkedIn"
-                >
-                  <Linkedin size={24} />
-                </a>
+              </div>
+              <div className="flex items-center gap-3 py-2">
+                <MapPin size={16} className="text-orange-500 shrink-0" />
+                <p className="text-sm text-gray-600">{t.contact.location}</p>
               </div>
             </div>
           </div>

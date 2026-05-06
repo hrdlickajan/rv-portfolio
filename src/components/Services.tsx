@@ -21,7 +21,7 @@ export default function Services() {
 
         <div className="grid md:grid-cols-2 gap-8 mb-16">
           {/* Hybridní spolupráce */}
-          <div className="bg-gradient-to-br from-orange-50 to-amber-50 p-8 rounded-xl border border-orange-200 hover:shadow-lg transition-shadow">
+          <div className="bg-white/70 backdrop-blur-sm p-8 rounded-xl border border-orange-200/60 shadow-xl hover:shadow-2xl transition-shadow">
             <div className="bg-gradient-to-br from-orange-500 to-orange-600 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
               <Zap size={24} className="text-white" />
             </div>
@@ -40,7 +40,7 @@ export default function Services() {
           </div>
 
           {/* Online spolupráce */}
-          <div className="bg-gradient-to-br from-orange-50 to-amber-50 p-8 rounded-xl border border-orange-200 hover:shadow-lg transition-shadow">
+          <div className="bg-white/70 backdrop-blur-sm p-8 rounded-xl border border-orange-200/60 shadow-xl hover:shadow-2xl transition-shadow">
             <div className="bg-gradient-to-br from-orange-500 to-orange-600 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
               <Users size={24} className="text-white" />
             </div>
@@ -75,7 +75,7 @@ export default function Services() {
           </div>
 
           {/* Spolupráce pro tebe není, pokud… */}
-          <div className="bg-orange-50 border-l-4 border-orange-500 p-8 rounded-lg">
+          <div className="bg-orange-50/80 backdrop-blur-sm border-l-4 border-orange-500 p-8 rounded-lg shadow-lg">
             <h3 className="text-xl font-bold text-gray-800 mb-6">{t.services.notForYou}</h3>
             <ul className="space-y-3">
               {t.services.notForYouList.map((item, i) => (

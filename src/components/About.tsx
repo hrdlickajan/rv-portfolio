@@ -1,4 +1,4 @@
-import { Award, Heart, Zap, Target } from 'lucide-react';
+import { Award, Heart, Zap, Target, Venus, Layers } from 'lucide-react';
 import { useLanguage } from '../LanguageContext';
 
 export default function About() {
@@ -15,15 +15,18 @@ export default function About() {
       </div>
 
       {/* KDO JSEM */}
-      <div className="bg-white rounded-xl p-8 shadow-lg mb-8">
-        <h3 className="text-2xl font-bold text-gray-800 mb-6">{t.about.whoAmI}</h3>
+      <div className="bg-white/70 backdrop-blur-sm rounded-xl p-8 shadow-xl border border-white/60 mb-8">
+        <h3 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-3">
+          <Venus className="text-orange-500" size={28} />
+          {t.about.whoAmI}
+        </h3>
         <p className="text-gray-700 leading-relaxed text-lg">{t.about.whoAmIText}</p>
       </div>
 
       <div className="grid lg:grid-cols-3 gap-12 mb-8">
         <div className="lg:col-span-2">
           {/* MOJE MISE */}
-          <div className="bg-white rounded-xl p-8 shadow-lg mb-8">
+          <div className="bg-white/70 backdrop-blur-sm rounded-xl p-8 shadow-xl border border-white/60 mb-8">
             <h3 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-3">
               <Heart className="text-orange-500" size={28} />
               {t.about.mission}
@@ -37,7 +40,7 @@ export default function About() {
           </div>
 
           {/* PROČ SI MĚ VYBRAT */}
-          <div className="bg-white rounded-xl p-8 shadow-lg">
+          <div className="bg-white/70 backdrop-blur-sm rounded-xl p-8 shadow-xl border border-white/60">
             <h3 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-3">
               <Zap className="text-orange-500" size={28} />
               {t.about.why}
@@ -74,15 +77,18 @@ export default function About() {
       </div>
 
       {/* JAK PRACUJI */}
-      <div className="bg-orange-50 rounded-xl p-8 border-2 border-orange-200 mb-8">
-        <h3 className="text-2xl font-bold text-gray-800 mb-6">{t.about.howIWork}</h3>
+      <div className="bg-orange-50/80 backdrop-blur-sm rounded-xl p-8 border-2 border-orange-200/60 shadow-lg mb-8">
+        <h3 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-3">
+          <Layers className="text-orange-500" size={28} />
+          {t.about.howIWork}
+        </h3>
         <p className="text-gray-700 leading-relaxed mb-4">{t.about.howIWorkText1}</p>
         <p className="text-gray-700 leading-relaxed mb-4">{t.about.howIWorkText2}</p>
         <p className="text-gray-700 leading-relaxed">{t.about.howIWorkText3}</p>
       </div>
 
       {/* MŮJ CÍL */}
-      <div className="bg-white rounded-xl p-8 shadow-lg border-l-4 border-orange-500">
+      <div className="bg-white/70 backdrop-blur-sm rounded-xl p-8 shadow-xl border border-white/60 border-l-4 border-l-orange-500">
         <h3 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-3">
           <Target className="text-orange-500" size={28} />
           {t.about.goal}
