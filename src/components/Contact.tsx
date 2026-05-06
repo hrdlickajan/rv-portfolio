@@ -63,48 +63,6 @@ export default function Contact() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8 mb-12">
-          <div className="p-8 bg-gradient-to-br from-orange-50 to-amber-50 rounded-2xl border border-orange-200 hover:shadow-lg transition-shadow">
-            <div className="flex items-center gap-4 mb-4">
-              <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-lg flex items-center justify-center">
-                <Mail className="text-white" size={24} />
-              </div>
-              <h3 className="text-lg font-bold text-gray-800">{t.contact.emailLabel}</h3>
-            </div>
-            <a
-              href="mailto:romana.vitkova.coach@gmail.com"
-              className="text-gray-600 hover:text-orange-500 transition-colors font-medium"
-            >
-              romana.vitkova.coach@gmail.com
-            </a>
-          </div>
-
-          <div className="p-8 bg-gradient-to-br from-orange-50 to-amber-50 rounded-2xl border border-orange-200 hover:shadow-lg transition-shadow">
-            <div className="flex items-center gap-4 mb-4">
-              <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-lg flex items-center justify-center">
-                <Phone className="text-white" size={24} />
-              </div>
-              <h3 className="text-lg font-bold text-gray-800">{t.contact.phoneLabel}</h3>
-            </div>
-            <a
-              href="tel:+420734113441"
-              className="text-gray-600 hover:text-orange-500 transition-colors font-medium"
-            >
-              +420 734 113 441
-            </a>
-          </div>
-
-          <div className="p-8 bg-gradient-to-br from-orange-50 to-amber-50 rounded-2xl border border-orange-200 hover:shadow-lg transition-shadow">
-            <div className="flex items-center gap-4 mb-4">
-              <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-lg flex items-center justify-center">
-                <MapPin className="text-white" size={24} />
-              </div>
-              <h3 className="text-lg font-bold text-gray-800">{t.contact.locationLabel}</h3>
-            </div>
-            <p className="text-gray-600 font-medium">{t.contact.location}</p>
-          </div>
-        </div>
-
         <div className="grid lg:grid-cols-2 gap-12 mb-12">
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
@@ -179,32 +137,35 @@ export default function Contact() {
             </button>
           </form>
 
-          <div className="space-y-8">
-            <div className="bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl p-8 text-white">
-              <h3 className="text-2xl font-bold mb-4">{t.contact.whyContact}</h3>
-              <ul className="space-y-3">
-                <li className="flex gap-3">
-                  <span className="text-orange-200 font-bold">✓</span>
-                  <span>{t.contact.consultation}</span>
-                </li>
-                <li className="flex gap-3">
-                  <span className="text-orange-200 font-bold">✓</span>
-                  <span>{t.contact.response24h}</span>
-                </li>
-                <li className="flex gap-3">
-                  <span className="text-orange-200 font-bold">✓</span>
-                  <span>{t.contact.noHiddenFees}</span>
-                </li>
-                <li className="flex gap-3">
-                  <span className="text-orange-200 font-bold">✓</span>
-                  <span>{t.contact.personalSupport}</span>
-                </li>
-              </ul>
+          <div className="space-y-6">
+            <div className="bg-gradient-to-br from-orange-50 to-amber-50 rounded-xl border border-orange-200 p-5">
+              <div className="flex items-center gap-3 py-2 border-b border-orange-100">
+                <Mail size={16} className="text-orange-500 shrink-0" />
+                <a
+                  href="mailto:romana.vitkova.coach@gmail.com"
+                  className="text-sm text-gray-600 hover:text-orange-500 transition-colors"
+                >
+                  romana.vitkova.coach@gmail.com
+                </a>
+              </div>
+              <div className="flex items-center gap-3 py-2 border-b border-orange-100">
+                <Phone size={16} className="text-orange-500 shrink-0" />
+                <a
+                  href="tel:+420734113441"
+                  className="text-sm text-gray-600 hover:text-orange-500 transition-colors"
+                >
+                  +420 734 113 441
+                </a>
+              </div>
+              <div className="flex items-center gap-3 py-2">
+                <MapPin size={16} className="text-orange-500 shrink-0" />
+                <p className="text-sm text-gray-600">{t.contact.location}</p>
+              </div>
             </div>
 
-            <div className="bg-white border-2 border-orange-200 rounded-2xl p-8">
-              <h3 className="text-xl font-bold text-gray-800 mb-6">{t.footer.followUs}</h3>
-              <div className="grid grid-cols-3 gap-4">
+            <div className="bg-white border-2 border-orange-200 rounded-2xl p-6">
+              <h3 className="text-xl font-bold text-gray-800 mb-4">{t.footer.followUs}</h3>
+              <div className="flex gap-4">
                 <a
                   href="https://www.instagram.com/romana.vitkova_/"
                   target="_blank"
