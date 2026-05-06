@@ -49,10 +49,10 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="bg-gradient-to-br from-orange-50 via-amber-50/60 to-orange-50 py-20 pattern-bg">
+    <section id="contact" className="py-20" style={{ backgroundColor: 'var(--c-cream-alt)' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-on-scroll" data-delay="0s">
-          <h2 className="font-display text-5xl md:text-6xl tracking-wider text-gray-900 mb-4 leading-none">
+          <h2 className="font-display text-5xl md:text-6xl text-gray-900 mb-4 leading-none">
             {t.contact.title}
             <span className="block text-orange-500">
               {t.contact.subtitle}
@@ -75,7 +75,7 @@ export default function Contact() {
                 value={formData.name}
                 onChange={handleChange}
                 required
-                className="input-field w-full px-4 py-3 rounded-lg border border-orange-200 transition-colors bg-white/80 text-gray-800"
+                className="input-field w-full px-4 py-3 rounded-lg border border-gray-200 transition-colors bg-white text-gray-800"
                 placeholder={t.contact.namePlaceholder}
               />
             </div>
@@ -90,7 +90,7 @@ export default function Contact() {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="input-field w-full px-4 py-3 rounded-lg border border-orange-200 transition-colors bg-white/80 text-gray-800"
+                className="input-field w-full px-4 py-3 rounded-lg border border-gray-200 transition-colors bg-white text-gray-800"
                 placeholder={t.contact.emailPlaceholder}
               />
             </div>
@@ -105,7 +105,7 @@ export default function Contact() {
                 onChange={handleChange}
                 required
                 rows={5}
-                className="input-field w-full px-4 py-3 rounded-lg border border-orange-200 transition-colors bg-white/80 text-gray-800 resize-none"
+                className="input-field w-full px-4 py-3 rounded-lg border border-gray-200 transition-colors bg-white text-gray-800 resize-none"
                 placeholder={t.contact.messagePlaceholder}
               />
             </div>
@@ -130,7 +130,7 @@ export default function Contact() {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="btn-sporty w-full flex items-center justify-center gap-2 bg-orange-500 text-white px-8 py-4 hover:bg-orange-600 disabled:opacity-70 disabled:cursor-not-allowed"
+              className="btn-pill w-full flex items-center justify-center gap-2 bg-orange-500 text-white px-8 py-4 hover:bg-orange-600 disabled:opacity-70 disabled:cursor-not-allowed"
             >
               <Send size={20} />
               {isSubmitting ? t.contact.sending : t.contact.send}
@@ -138,8 +138,8 @@ export default function Contact() {
           </form>
 
           <div className="space-y-6 animate-on-scroll" data-delay="0.2s">
-            <div className="glass-card rounded-xl shadow-xl p-5 card-glow">
-              <div className="flex items-center gap-3 py-2 border-b border-orange-100">
+            <div className="flat-card rounded-xl p-5">
+              <div className="flex items-center gap-3 py-2 border-b border-gray-100">
                 <Mail size={16} className="text-orange-500 shrink-0" />
                 <a
                   href="mailto:romana.vitkova.coach@gmail.com"
@@ -148,7 +148,7 @@ export default function Contact() {
                   romana.vitkova.coach@gmail.com
                 </a>
               </div>
-              <div className="flex items-center gap-3 py-2 border-b border-orange-100">
+              <div className="flex items-center gap-3 py-2 border-b border-gray-100">
                 <Phone size={16} className="text-orange-500 shrink-0" />
                 <a
                   href="tel:+420734113441"
@@ -157,7 +157,7 @@ export default function Contact() {
                   +420 734 113 441
                 </a>
               </div>
-              <div className="flex items-center gap-3 py-2 border-b border-orange-100">
+              <div className="flex items-center gap-3 py-2 border-b border-gray-100">
                 <Instagram size={16} className="text-orange-500 shrink-0" />
                 <a
                   href="https://www.instagram.com/romana.vitkova_/"

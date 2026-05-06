@@ -4,9 +4,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        display: ['Bebas Neue', 'sans-serif'],
-        body: ['Nunito', 'sans-serif'],
-        sans: ['Nunito', 'sans-serif'],
+        display: ['Cormorant Garamond', 'serif'],
+        body: ['Lato', 'sans-serif'],
+        sans: ['Lato', 'sans-serif'],
       },
     },
   },
