@@ -18,7 +18,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative flex overflow-hidden"
+      className="relative flex items-center overflow-hidden"
       style={{ backgroundColor: 'var(--c-cream)', height: 'calc(100vh - 4rem)' }}
     >
       {/* Right: photo with soft left-edge fade — shown on all screen sizes */}
@@ -33,8 +33,8 @@ export default function Hero() {
         <div className="absolute inset-0 hero-photo-fade" />
       </div>
 
-      {/* Content — positioned at golden ratio (~38% from top) */}
-      <div className="relative z-10 w-full flex items-start pt-[23%]">
+      {/* Content — upper third: flex-centered then shifted up via bottom padding */}
+      <div className="relative z-10 w-full pb-[25%]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="w-[58%] md:max-w-lg md:w-auto">
             <h2 className="font-display text-4xl md:text-6xl leading-tight mb-3 md:mb-4 text-gray-900 hero-name">
