@@ -1,4 +1,4 @@
-import { Award, Heart, Zap, Target, Venus, Layers } from 'lucide-react';
+import { Award, Heart, Zap, Target, User, Layers } from 'lucide-react';
 import { useLanguage } from '../LanguageContext';
 
 export default function About() {
@@ -17,7 +17,7 @@ export default function About() {
       {/* KDO JSEM */}
       <div className="bg-white/70 backdrop-blur-sm rounded-xl p-8 shadow-xl border border-white/60 mb-8">
         <h3 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-3">
-          <Venus className="text-orange-500" size={28} />
+          <User className="text-orange-500" size={28} />
           {t.about.whoAmI}
         </h3>
         <p className="text-gray-700 leading-relaxed text-lg">{t.about.whoAmIText}</p>
