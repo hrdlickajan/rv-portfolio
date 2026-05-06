@@ -103,17 +103,6 @@ h1, h2, h3, h4, h5, h6 {
   pointer-events: none;
 }
 
-/* ─── Mobile hero overlay ────────────────────────────────────── */
-@media (max-width: 767px) {
-  .hero-mobile-overlay {
-    background: linear-gradient(
-      160deg,
-      rgba(20, 14, 8, 0.62) 0%,
-      rgba(20, 14, 8, 0.42) 100%
-    );
-  }
-}
-
 /* ─── Scroll reveal ──────────────────────────────────────────── */
 @keyframes fadeInUp {
   from {
