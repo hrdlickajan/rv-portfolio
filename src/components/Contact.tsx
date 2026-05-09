@@ -65,40 +65,45 @@ export default function Contact() {
         <div className="grid lg:grid-cols-2 gap-12 mb-12">
           <form onSubmit={handleSubmit} className="space-y-6 animate-on-scroll" data-delay="0.1s">
             <div>
-              <label className="block text-sm font-semibold text-gray-800 mb-2">
+              <label htmlFor="contact-name" className="block text-sm font-semibold text-gray-800 mb-2">
                 {t.contact.name}
               </label>
               <input
+                id="contact-name"
                 type="text"
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
                 required
+                autoComplete="name"
                 className="input-field w-full px-4 py-3 rounded-lg border border-gray-200 transition-colors bg-white text-gray-800"
                 placeholder={t.contact.namePlaceholder}
               />
             </div>
 
             <div>
-              <label className="block text-sm font-semibold text-gray-800 mb-2">
+              <label htmlFor="contact-email" className="block text-sm font-semibold text-gray-800 mb-2">
                 {t.contact.email}
               </label>
               <input
+                id="contact-email"
                 type="email"
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
                 required
+                autoComplete="email"
                 className="input-field w-full px-4 py-3 rounded-lg border border-gray-200 transition-colors bg-white text-gray-800"
                 placeholder={t.contact.emailPlaceholder}
               />
             </div>
 
             <div>
-              <label className="block text-sm font-semibold text-gray-800 mb-2">
+              <label htmlFor="contact-message" className="block text-sm font-semibold text-gray-800 mb-2">
                 {t.contact.message_label}
               </label>
               <textarea
+                id="contact-message"
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
@@ -117,14 +122,16 @@ export default function Contact() {
               />
             </div>
 
-            {isSuccess && (
-              <div className="flex items-center gap-3 p-4 bg-green-50 border border-green-200 rounded-lg">
-                <CheckCircle className="text-green-600" size={20} />
-                <p className="text-green-700 font-medium">
-                  {t.contact.success || 'Vaše zpráva byla úspěšně odeslána!'}
-                </p>
-              </div>
-            )}
+            <div aria-live="polite" aria-atomic="true">
+              {isSuccess && (
+                <div role="status" className="flex items-center gap-3 p-4 bg-green-50 border border-green-200 rounded-lg">
+                  <CheckCircle className="text-green-600" size={20} aria-hidden="true" />
+                  <p className="text-green-700 font-medium">
+                    {t.contact.success || 'Vaše zpráva byla úspěšně odeslána!'}
+                  </p>
+                </div>
+              )}
+            </div>
 
             <button
               type="submit"

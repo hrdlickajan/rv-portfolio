@@ -9,6 +9,16 @@ import { LanguageProvider } from './LanguageContext';
 
 function App() {
   useEffect(() => {
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    if (prefersReducedMotion) {
+      // Make all elements immediately visible without animation
+      document.querySelectorAll('.animate-on-scroll').forEach((el) => {
+        (el as HTMLElement).classList.add('is-visible');
+      });
+      return;
+    }
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
