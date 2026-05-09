@@ -6,6 +6,9 @@ export default function Hero() {
   const photoRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (prefersReducedMotion) return;
+
     const handleScroll = () => {
       if (photoRef.current) {
         photoRef.current.style.transform = `translateY(${window.scrollY * 0.15}px)`;
@@ -38,7 +41,7 @@ export default function Hero() {
         <div ref={photoRef} className="absolute -top-[10%] -bottom-[10%] left-0 right-0" style={{ willChange: 'transform' }}>
           <img
             src="/resources/hero.jpg"
-            alt="Romana Vitkova"
+            alt="Romana Vítková, personal fitness coach"
             className="w-full h-full object-cover object-top"
           />
         </div>

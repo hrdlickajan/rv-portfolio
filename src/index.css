@@ -250,3 +250,47 @@ h1, h2, h3, h4, h5, h6 {
 .qual-item:hover {
   transform: translateX(5px);
 }
+
+/* ─── Focus visible styles ───────────────────────────────────── */
+:focus-visible {
+  outline: 3px solid var(--c-orange);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Input fields use their own border ring via .input-field:focus */
+.input-field:focus-visible {
+  outline: none;
+}
+
+/* ─── Reduced motion ─────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .animate-on-scroll {
+    opacity: 1;
+    transform: none;
+  }
+
+  .hero-name,
+  .hero-tagline,
+  .hero-ctas {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+
+  .flat-card:hover {
+    transform: none;
+  }
+
+  .btn-pill:hover {
+    transform: none;
+  }
+}
