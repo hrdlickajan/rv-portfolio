@@ -4,9 +4,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        display: ['Cormorant Garamond', 'serif'],
-        body: ['Lato', 'sans-serif'],
-        sans: ['Lato', 'sans-serif'],
+        display: ['Oswald', 'sans-serif'],
+        body: ['Inter', 'sans-serif'],
+        sans: ['Inter', 'sans-serif'],
       },
     },
   },

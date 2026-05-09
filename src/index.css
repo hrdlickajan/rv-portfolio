@@ -16,13 +16,13 @@
 
 /* ─── Base typography ────────────────────────────────────────── */
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Inter', sans-serif;
   background-color: var(--c-cream);
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Cormorant Garamond', serif;
-  letter-spacing: 0.01em;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 0.02em;
 }
 
 /* ─── Flat card ──────────────────────────────────────────────── */
@@ -43,7 +43,7 @@ h1, h2, h3, h4, h5, h6 {
 /* ─── Pill button ────────────────────────────────────────────── */
 .btn-pill {
   border-radius: 9999px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: uppercase;

@@ -3,7 +3,7 @@ export const translations = {
     header: {
       home: 'Domů',
       about: 'O mně',
-      services: 'Jak spolu můžeme pracovat',
+      services: 'Formy spolupráce',
       contact: 'Kontakt',
     },
     hero: {
@@ -14,8 +14,13 @@ export const translations = {
     about: {
       title: 'O mně',
       whoAmI: 'Kdo jsem',
-      whoAmIText:
-        'Ahoj, jsem Romana – a především žena. Žena, která si prošla tím, čím si možná procházíš právě teď. Diety, přetrénování, nízký příjem, ztráta menstruace, neustálé pochybnosti o sobě. Navenek jsem možná splňovala ideál, ale uvnitř jsem se necítila dobře. Postupně mi došlo, že změna nezačíná tím, jak vypadáme, ale tím, jak o sobě přemýšlíme a jak se k sobě chováme. Moje vlastní cesta – včetně vyhoření v korporátu – mě dovedla až sem. Dnes pomáhám ženám najít rovnováhu mezi pohybem, stravou a životem tak, aby se cítily silné, spokojené a samy sebou – nejen v posilovně, ale především mimo ni.',
+      whoAmITexts: [
+        'Ahoj, jsem Romana – a především žena.',
+        'Uvědomuji si, že pokud se o sebe dnes nebudu starat, jednou se bude muset někdo starat o mě. A to je pro mě nepředstavitelné.',
+        'Mým cílem je žít dlouhý, ale hlavně kvalitní život. Mít dostatek energie dělat věci, které mě baví, cítit se jistě ve svém těle a mít odvahu zkoušet nové věci.',
+        'Chci moct blbnout se svými dětmi – a později i vnoučaty. A i ve stáří si život užívat, ne ho jen dožívat.',
+        'Pokud se v tom poznáváš, jsi tu správně.',
+      ],
       mission: 'Moje mise',
       missionText1: 'Věřím, že ženy nepotřebují další extrémy, ale udržitelný přístup, který dává smysl.',
       missionText2:
@@ -28,7 +33,7 @@ export const translations = {
         },
         {
           title: 'Vedu tě k samostatnosti',
-          text: 'Mým cílem není, abys mě potřebovala navždy. Naučím tě rozumět svému tělu a vědět, jak na to.',
+          text: 'Naučíš se, jak si tréninky odcvičit sama – s jistotou a bez stresu.',
         },
         {
           title: 'Flexibilita v reálném životě',
@@ -139,8 +144,13 @@ export const translations = {
     about: {
       title: 'About',
       whoAmI: 'Who I Am',
-      whoAmIText:
-        "Hi, I'm Romana — and above all, a woman. A woman who has been through what you might be going through right now. Diets, overtraining, low intake, loss of period, constant self-doubt. On the outside I may have looked the part, but on the inside I didn't feel good. Gradually I realized that change doesn't start with how we look, but with how we think about ourselves and how we treat ourselves. My own journey — including burnout in the corporate world — led me here. Today I help women find balance between movement, nutrition, and life so they can feel strong, at peace, and like themselves — not just in the gym, but especially outside of it.",
+      whoAmITexts: [
+        "Hi, I'm Romana — and above all, a woman.",
+        "I realise that if I don't take care of myself today, someone will have to take care of me one day. And that is unimaginable to me.",
+        "My goal is to live a long, but above all a quality life. To have enough energy to do the things I love, to feel confident in my body, and to have the courage to try new things.",
+        "I want to have fun with my children — and later with my grandchildren. And even in old age, to enjoy life, not just endure it.",
+        "If you recognise yourself in this, you're in the right place.",
+      ],
       mission: 'My Mission',
       missionText1: "I believe women don't need more extremes, but a sustainable approach that actually makes sense.",
       missionText2:
@@ -153,7 +163,7 @@ export const translations = {
         },
         {
           title: 'I Guide You Toward Independence',
-          text: "My goal isn't for you to need me forever. I'll teach you to understand your body and know what to do.",
+          text: "You'll learn how to train on your own — with confidence and without stress.",
         },
         {
           title: 'Flexibility in Real Life',

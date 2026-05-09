@@ -46,12 +46,12 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 w-full pb-[25%]">
+      <div className="relative z-10 w-full pt-40 md:pt-0">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="md:max-w-lg">
-            <h2 className="font-display text-4xl md:text-6xl leading-tight mb-3 md:mb-4 text-white md:text-gray-900 hero-name">
+            <h2 className="font-display font-bold uppercase tracking-wide text-4xl md:text-6xl leading-tight mb-2 md:mb-3 text-white md:text-gray-900 hero-name">
               Romana Vítková
-              <span className="block text-white/70 md:text-gray-400 font-light">
+              <span className="block font-body font-semibold normal-case text-orange-500 text-lg md:text-2xl tracking-normal mt-1">
                 Women's Fitness Coach
               </span>
             </h2>

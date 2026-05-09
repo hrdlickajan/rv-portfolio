@@ -12,7 +12,7 @@ export default function Header() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
-            <h1 className="font-display text-3xl tracking-widest bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent leading-none">
+            <h1 className="font-display xs:text-md sm:text-lg md:text-xl font-bold tracking-widest uppercase bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent leading-none">
               Romana Vítková
             </h1>
           </div>

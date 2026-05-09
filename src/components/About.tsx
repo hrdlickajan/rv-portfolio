@@ -21,7 +21,11 @@ export default function About() {
           <User className="text-orange-500" size={26} />
           {t.about.whoAmI}
         </h3>
-        <p className="text-gray-600 leading-relaxed text-lg">{t.about.whoAmIText}</p>
+        <div className="space-y-4">
+          {t.about.whoAmITexts.map((paragraph, index) => (
+            <p key={index} className="text-gray-600 leading-relaxed text-lg">{paragraph}</p>
+          ))}
+        </div>
       </div>
 
       <div className="grid lg:grid-cols-3 gap-12 mb-8">
