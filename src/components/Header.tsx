@@ -18,14 +18,14 @@ export default function Header() {
           </div>
 
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#home" className="nav-link text-gray-700 font-semibold">
-              {t.header.home}
+            <a href="#your-journey" className="nav-link text-gray-700 font-semibold">
+              {t.header.yourJourney}
             </a>
-            <a href="#about" className="nav-link text-gray-700 font-semibold">
-              {t.header.about}
+            <a href="#choose-your-path" className="nav-link text-gray-700 font-semibold">
+              {t.header.chooseYourPath}
             </a>
-            <a href="#services" className="nav-link text-gray-700 font-semibold">
-              {t.header.services}
+            <a href="#why-i-do-this" className="nav-link text-gray-700 font-semibold">
+              {t.header.whyIDoThis}
             </a>
             <a href="#contact" className="btn-sporty bg-orange-500 text-white px-6 py-2 hover:bg-orange-600">
               {t.header.contact}
@@ -51,14 +51,14 @@ export default function Header() {
 
         {isMenuOpen && (
           <div id="mobile-menu" className="md:hidden py-4 space-y-3 border-t border-orange-100 mt-2">
-            <a href="#home" onClick={() => setIsMenuOpen(false)} className="block text-gray-700 hover:text-orange-500 transition-colors font-semibold">
-              {t.header.home}
+            <a href="#your-journey" onClick={() => setIsMenuOpen(false)} className="block text-gray-700 hover:text-orange-500 transition-colors font-semibold">
+              {t.header.yourJourney}
             </a>
-            <a href="#about" onClick={() => setIsMenuOpen(false)} className="block text-gray-700 hover:text-orange-500 transition-colors font-semibold">
-              {t.header.about}
+            <a href="#choose-your-path" onClick={() => setIsMenuOpen(false)} className="block text-gray-700 hover:text-orange-500 transition-colors font-semibold">
+              {t.header.chooseYourPath}
             </a>
-            <a href="#services" onClick={() => setIsMenuOpen(false)} className="block text-gray-700 hover:text-orange-500 transition-colors font-semibold">
-              {t.header.services}
+            <a href="#why-i-do-this" onClick={() => setIsMenuOpen(false)} className="block text-gray-700 hover:text-orange-500 transition-colors font-semibold">
+              {t.header.whyIDoThis}
             </a>
             <a href="#contact" onClick={() => setIsMenuOpen(false)} className="block btn-sporty bg-orange-500 text-white px-6 py-2 hover:bg-orange-600 text-center w-fit">
               {t.header.contact}

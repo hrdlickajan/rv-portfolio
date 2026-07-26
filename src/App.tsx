@@ -2,8 +2,17 @@ import { useEffect } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Footer from './components/Footer';
-import Services from './components/Services';
-import About from './components/About';
+import Manifesto from './components/Manifesto';
+import StuckInCircle from './components/StuckInCircle';
+import Foundations from './components/Foundations';
+import WhyStrength from './components/WhyStrength';
+import YourJourney from './components/YourJourney';
+import HowICanHelp from './components/HowICanHelp';
+import ChooseYourPath from './components/ChooseYourPath';
+import WhyIDoThis from './components/WhyIDoThis';
+import MovementShared from './components/MovementShared';
+import FAQ from './components/FAQ';
+import ClosingBanner from './components/ClosingBanner';
 import Contact from './components/Contact';
 import { LanguageProvider } from './LanguageContext';
 
@@ -45,9 +54,17 @@ function App() {
 
         <main className="flex-grow">
           <Hero />
-          <About />
-
-          <Services />
+          <Manifesto />
+          <StuckInCircle />
+          <Foundations />
+          <WhyStrength />
+          <YourJourney />
+          <HowICanHelp />
+          <ChooseYourPath />
+          <WhyIDoThis />
+          <MovementShared />
+          <FAQ />
+          <ClosingBanner />
           <Contact />
         </main>
 

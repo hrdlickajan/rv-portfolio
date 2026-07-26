@@ -10,6 +10,7 @@
   --c-orange-glow: rgba(249, 115, 22, 0.18);
   --c-cream: #FAF8F5;
   --c-cream-alt: #F4F0EB;
+  --c-dark: #1B1815;
   --transition-smooth: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-spring: 0.45s cubic-bezier(0.22, 1, 0.36, 1);
 }
@@ -261,6 +262,120 @@ h1, h2, h3, h4, h5, h6 {
 /* Input fields use their own border ring via .input-field:focus */
 .input-field:focus-visible {
   outline: none;
+}
+
+/* ─── Editorial text-block pattern ───────────────────────────── */
+.editorial-eyebrow {
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--c-orange);
+  margin-bottom: 1rem;
+}
+
+.editorial-heading em {
+  font-style: italic;
+  font-weight: 400;
+}
+
+.editorial-block--dark {
+  background: var(--c-dark);
+  color: #F5F1EC;
+}
+
+.editorial-block--dark .editorial-heading {
+  color: #FFFFFF;
+}
+
+.editorial-thought {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+}
+
+/* ─── Closing-statement pattern ───────────────────────────────── */
+.closing-statement {
+  font-family: 'Oswald', sans-serif;
+  font-style: italic;
+  color: var(--c-orange-dark);
+  text-align: center;
+}
+
+/* ─── Quote pattern ──────────────────────────────────────────── */
+.quote-block {
+  border-left: 3px solid var(--c-orange);
+  padding-left: 1.75rem;
+}
+
+.quote-block__text {
+  font-family: 'Oswald', sans-serif;
+  font-style: italic;
+}
+
+.quote-block__attribution {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--c-orange);
+}
+
+/* ─── Horizontal timeline pattern ────────────────────────────── */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.timeline__node {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 9999px;
+  background: var(--c-orange);
+  color: #FFFFFF;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.timeline__line {
+  background: var(--c-orange-light);
+}
+
+@media (min-width: 768px) {
+  .timeline {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 0;
+  }
+
+  .timeline__item {
+    flex: 1;
+    position: relative;
+  }
+
+  .timeline__line {
+    position: absolute;
+    top: 1.375rem;
+    left: 50%;
+    width: 100%;
+    height: 2px;
+  }
+
+  .timeline__item:last-child .timeline__line {
+    display: none;
+  }
+}
+
+/* ─── Color-band banner pattern ──────────────────────────────── */
+.color-band {
+  background: linear-gradient(135deg, var(--c-orange) 0%, var(--c-orange-dark) 100%);
 }
 
 /* ─── Reduced motion ─────────────────────────────────────────── */
