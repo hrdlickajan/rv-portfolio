@@ -19,23 +19,29 @@ export default function Manifesto() {
               </span>
             ))}
           </p>
-          <div className="space-y-4 animate-on-scroll" data-delay="0.1s">
-            {m.sideTexts.map((text, index) => (
-              <p key={index} className="text-lg text-gray-600 leading-relaxed">
-                {text}
-              </p>
-            ))}
+          <div className="space-y-6 animate-on-scroll" data-delay="0.1s">
+            <div className="space-y-4">
+              {m.sideTexts.map((text, index) => (
+                <p
+                  key={index}
+                  className={`text-lg leading-relaxed ${index === 0 ? 'font-bold text-gray-900' : 'text-gray-600'}`}
+                >
+                  {text}
+                </p>
+              ))}
+            </div>
+            <hr className="border-t border-gray-200" />
+            <div className="space-y-3">
+              {m.bottomTexts.map((text, index) => (
+                <p
+                  key={index}
+                  className={`text-lg leading-relaxed ${index === 0 ? 'font-bold text-gray-900' : 'text-gray-600'}`}
+                >
+                  {text}
+                </p>
+              ))}
+            </div>
           </div>
-        </div>
-
-        <hr className="border-t border-gray-200 my-14 md:my-20" />
-
-        <div className="max-w-2xl mx-auto text-center space-y-3 animate-on-scroll" data-delay="0.1s">
-          {m.bottomTexts.map((text, index) => (
-            <p key={index} className="font-display text-xl md:text-2xl leading-snug text-gray-900">
-              {text}
-            </p>
-          ))}
         </div>
       </div>
     </section>

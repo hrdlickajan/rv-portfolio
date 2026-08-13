@@ -30,11 +30,15 @@ export default function Header() {
             <a href="#contact" className="btn-sporty bg-orange-500 text-white px-6 py-2 hover:bg-orange-600">
               {t.header.contact}
             </a>
+            {/*
             <LanguageSwitcher />
+            */}
           </div>
 
           <div className="md:hidden flex items-center gap-2 sm:gap-4">
+            {/*
             <LanguageSwitcher />
+            */}
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               aria-expanded={isMenuOpen}
