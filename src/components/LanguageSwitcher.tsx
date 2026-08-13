@@ -5,14 +5,14 @@ export default function LanguageSwitcher() {
   const { language, setLanguage } = useLanguage();
 
   return (
-    <div className="flex items-center gap-2 ml-4">
-      <Globe size={18} className="text-gray-600" aria-hidden="true" />
+    <div className="flex items-center gap-1 sm:gap-2 ml-1 sm:ml-4">
+      <Globe size={18} className="hidden sm:block text-gray-600" aria-hidden="true" />
       <div role="group" aria-label="Language selection" className="flex gap-1 bg-gray-100 rounded-full p-1">
         <button
           onClick={() => setLanguage('cs')}
           aria-pressed={language === 'cs'}
           aria-label="Switch to Czech"
-          className={`px-3 py-1 rounded-full font-medium transition-all ${
+          className={`px-2 sm:px-3 py-1 rounded-full font-medium transition-all ${
             language === 'cs'
               ? 'bg-orange-500 text-white'
               : 'text-gray-600 hover:text-orange-500'
@@ -24,7 +24,7 @@ export default function LanguageSwitcher() {
           onClick={() => setLanguage('en')}
           aria-pressed={language === 'en'}
           aria-label="Switch to English"
-          className={`px-3 py-1 rounded-full font-medium transition-all ${
+          className={`px-2 sm:px-3 py-1 rounded-full font-medium transition-all ${
             language === 'en'
               ? 'bg-orange-500 text-white'
               : 'text-gray-600 hover:text-orange-500'

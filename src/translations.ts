@@ -11,8 +11,8 @@ export const translations = {
       headlineLine2: 'budovat sílu,',
       headlineLine3: 'která vydrží',
       headlineLine4: 'celý život.',
-      tagline:
-        'Síla není jen o tom, kolik zvedneš na čince. Je o zdraví, energii, sebevědomí a svobodě dělat to, co máš ráda. V každé životní etapě.',
+      taglineLine1: 'Síla není jen o tom, kolik zvedneš na čince. Je o zdraví, energii,',
+      taglineLine2: 'sebevědomí a svobodě dělat to, co máš ráda. V každé životní etapě.',
       cta1: 'Mám zájem o spolupráci',
       cta2: 'Zjistit více',
     },
@@ -319,8 +319,8 @@ export const translations = {
       headlineLine2: 'budovat sílu,',
       headlineLine3: 'která vydrží',
       headlineLine4: 'celý život.',
-      tagline:
-        'Síla není jen o tom, kolik zvedneš na čince. Je o zdraví, energii, sebevědomí a svobodě dělat to, co máš ráda. V každé životní etapě.',
+      taglineLine1: 'Síla není jen o tom, kolik zvedneš na čince. Je o zdraví, energii, sebevědomí',
+      taglineLine2: 'a svobodě dělat to, co máš ráda. V každé životní etapě.',
       cta1: 'Mám zájem o spolupráci',
       cta2: 'Zjistit více',
     },
