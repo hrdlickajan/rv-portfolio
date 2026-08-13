@@ -52,15 +52,17 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-10 w-full pt-40 md:pt-0">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-          <div className="md:max-w-xl">
-            <h1 className="font-display font-bold text-3xl md:text-5xl leading-tight mb-4 md:mb-6 text-white md:text-gray-900 hero-name">
+          <div className="md:max-w-xs lg:max-w-2xl">
+            <h1 className="font-display font-bold text-3xl md:text-4xl lg:text-7xl leading-tight mb-4 md:mb-6 text-white md:text-gray-900 hero-name">
               {t.hero.headlineLine1}
               <br />
               {t.hero.headlineLine2}
               <br />
               {t.hero.headlineLine3}
+              <br />
+              {t.hero.headlineLine4}
             </h1>
-            <p className="text-sm md:text-lg text-white/85 md:text-gray-600 mb-6 md:mb-10 leading-relaxed hero-tagline">
+            <p className="text-sm md:text-sm lg:text-lg text-white/85 md:text-gray-600 mb-6 md:mb-10 leading-relaxed hero-tagline md:max-w-[15rem] lg:max-w-none">
               {t.hero.tagline}
             </p>
             <div className="flex flex-col gap-3 md:flex-row md:gap-4 hero-ctas">

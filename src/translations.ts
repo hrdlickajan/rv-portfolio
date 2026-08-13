@@ -9,7 +9,8 @@ export const translations = {
     hero: {
       headlineLine1: 'Pomáhám ženám',
       headlineLine2: 'budovat sílu,',
-      headlineLine3: 'která vydrží celý život.',
+      headlineLine3: 'která vydrží',
+      headlineLine4: 'celý život.',
       tagline:
         'Síla není jen o tom, kolik zvedneš na čince. Je o zdraví, energii, sebevědomí a svobodě dělat to, co máš ráda. V každé životní etapě.',
       cta1: 'Mám zájem o spolupráci',
@@ -316,7 +317,8 @@ export const translations = {
     hero: {
       headlineLine1: 'Pomáhám ženám',
       headlineLine2: 'budovat sílu,',
-      headlineLine3: 'která vydrží celý život.',
+      headlineLine3: 'která vydrží',
+      headlineLine4: 'celý život.',
       tagline:
         'Síla není jen o tom, kolik zvedneš na čince. Je o zdraví, energii, sebevědomí a svobodě dělat to, co máš ráda. V každé životní etapě.',
       cta1: 'Mám zájem o spolupráci',
