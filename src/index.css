@@ -10,20 +10,20 @@
   --c-orange-glow: rgba(249, 115, 22, 0.18);
   --c-cream: #FAF8F5;
   --c-cream-alt: #F4F0EB;
-  --c-dark: #1B1815;
+  --c-dark: #1F1B18;
   --transition-smooth: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-spring: 0.45s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 /* ─── Base typography ────────────────────────────────────────── */
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Manrope', sans-serif;
   background-color: var(--c-cream);
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Oswald', sans-serif;
-  letter-spacing: 0.02em;
+  font-family: 'Lora', serif;
+  letter-spacing: 0;
 }
 
 /* ─── Flat card ──────────────────────────────────────────────── */
@@ -44,7 +44,7 @@ h1, h2, h3, h4, h5, h6 {
 /* ─── Pill button ────────────────────────────────────────────── */
 .btn-pill {
   border-radius: 9999px;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Manrope', sans-serif;
   font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -267,7 +267,7 @@ h1, h2, h3, h4, h5, h6 {
 /* ─── Editorial text-block pattern ───────────────────────────── */
 .editorial-eyebrow {
   display: block;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Manrope', sans-serif;
   font-weight: 700;
   font-size: 0.78rem;
   letter-spacing: 0.16em;
@@ -291,13 +291,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .editorial-thought {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Lora', serif;
   font-weight: 500;
 }
 
 /* ─── Closing-statement pattern ───────────────────────────────── */
 .closing-statement {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Lora', serif;
   font-style: italic;
   color: var(--c-orange-dark);
   text-align: center;
@@ -310,12 +310,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .quote-block__text {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Lora', serif;
   font-style: italic;
 }
 
 .quote-block__attribution {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Manrope', sans-serif;
   font-weight: 700;
   font-size: 0.78rem;
   letter-spacing: 0.14em;
@@ -339,9 +339,11 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 9999px;
   background: var(--c-orange);
   color: #FFFFFF;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Lora', serif;
   font-size: 1.1rem;
   flex-shrink: 0;
+  position: relative;
+  z-index: 1;
 }
 
 .timeline__line {
@@ -362,9 +364,10 @@ h1, h2, h3, h4, h5, h6 {
 
   .timeline__line {
     position: absolute;
+    z-index: 0;
     top: 1.375rem;
-    left: 50%;
-    width: 100%;
+    left: calc(50% + 1.375rem);
+    width: calc(100% - 2.75rem);
     height: 2px;
   }
 

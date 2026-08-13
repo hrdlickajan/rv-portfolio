@@ -8,7 +8,7 @@ export default function Header() {
   const { t } = useLanguage();
 
   return (
-    <header className="sticky top-0 z-50 backdrop-blur-md bg-white/82 border-b border-orange-100/60 shadow-[0_2px_24px_rgba(249,115,22,0.07)]">
+    <header className="sticky top-0 z-50 backdrop-blur-md bg-white/90 border-b border-orange-100/60 shadow-[0_2px_24px_rgba(249,115,22,0.07)]">
       <nav aria-label="Main navigation" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">

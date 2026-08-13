@@ -15,7 +15,7 @@ export default function Foundations() {
             {f.heading}
           </h2>
           <p className="text-gray-600 text-lg leading-relaxed">{f.intro}</p>
-          <p className="font-display text-2xl text-gray-900 mt-10">{f.subheading}</p>
+          <span className="editorial-eyebrow justify-center flex mt-10">{f.subheading}</span>
         </div>
 
         <div className="grid sm:grid-cols-2 gap-8 mb-16">
@@ -28,10 +28,7 @@ export default function Foundations() {
                 data-delay={`${index * 0.1}s`}
               >
                 <div className="flex items-center gap-4 mb-4">
-                  <span className="flex items-center justify-center w-10 h-10 rounded-full bg-orange-500 text-white font-display text-lg flex-shrink-0">
-                    {pillar.number}
-                  </span>
-                  <Icon className="text-orange-500" size={26} />
+                  <Icon className="text-orange-700" size={34} />
                   <h3 className="font-display text-2xl text-gray-900">{pillar.title}</h3>
                 </div>
                 <p className="text-gray-600 leading-relaxed">{pillar.text}</p>
@@ -41,7 +38,7 @@ export default function Foundations() {
         </div>
 
         <p
-          className="closing-statement text-2xl md:text-3xl max-w-2xl mx-auto animate-on-scroll"
+          className="closing-statement text-xl md:text-2xl max-w-xl mx-auto animate-on-scroll"
           data-delay="0.1s"
         >
           {f.closing}

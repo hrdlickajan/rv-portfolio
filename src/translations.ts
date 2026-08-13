@@ -7,17 +7,23 @@ export const translations = {
       contact: 'Kontakt',
     },
     hero: {
-      headline: 'Pomáhám ženám vybudovat sílu, která vydrží celý život.',
+      headlineLine1: 'Pomáhám ženám',
+      headlineLine2: 'budovat sílu,',
+      headlineLine3: 'která vydrží celý život.',
       tagline:
         'Síla není jen o tom, kolik zvedneš na čince. Je o zdraví, energii, sebevědomí a svobodě dělat to, co máš ráda. V každé životní etapě.',
-      cta1: 'Rezervovat úvodní konzultaci',
+      cta1: 'Mám zájem o spolupráci',
       cta2: 'Zjistit více',
     },
     manifesto: {
-      texts: [
-        'Věřím v malé kroky, které se časem promění ve velkou změnu.',
-        'Věřím, že každá žena si zaslouží cítit se silná – bez ohledu na věk, zkušenosti nebo to, kde právě začíná.',
+      statementLines: ['Věřím v malé kroky,', 'které se časem promění', 've velkou změnu.'],
+      sideTexts: [
+        'Každá žena si zaslouží cítit se silná.',
+        'Bez ohledu na věk, zkušenosti nebo to, kde právě začíná.',
+      ],
+      bottomTexts: [
         'Nevěřím na zázračné proměny za 30 dní.',
+        'Věřím v změny, které mají smysl i za několik let.',
       ],
     },
     stuckInCircle: {
@@ -125,14 +131,15 @@ export const translations = {
         },
         {
           title: 'Vytváříš si vlastní systém',
-          text: 'Postupně přestaneš spoléhat na motivaci nebo univerzální návody. Naučíš se rozumět svému tělu, vytvoříš si pevné základy a systém, který bude fungovat právě pro tvůj život.',
+          text: 'Postupně se učíš rozumět svému tělu a vytváříš si systém, který funguje právě pro tvůj život.',
         },
       ],
       closing:
         'Mým cílem není, abys mě potřebovala navždy. Mým cílem je naučit tě rozumět vlastnímu tělu a dělat rozhodnutí, kterým budeš věřit.',
     },
     howICanHelp: {
-      heading: 'S čím ti mohu pomoci',
+      eyebrow: 'S čím ti mohu pomoci?',
+      heading: 'Ať už začínáš kdekoliv.',
       topics: [
         {
           title: 'Začátky v posilovně',
@@ -156,14 +163,14 @@ export const translations = {
         },
         {
           title: 'Životní změny',
-          text: 'Přizpůsobíme spolupráci tomu, co právě tvoje tělo potřebuje – ať už jsi na začátku, po porodu nebo procházíš hormonálními změnami.',
+          text: 'Ať už procházíš jakoukoli životní fází, společně přizpůsobíme pohyb, výživu i návyky tomu, co právě tvoje tělo a život potřebují.',
         },
       ],
     },
     chooseYourPath: {
-      heading: 'Vyber si cestu, která ti dává smysl',
+      heading: 'Spolupráce, která se přizpůsobí tobě.',
       intro:
-        'Každá žena je v jiné životní situaci. Některé potřebují pravidelné vedení v posilovně, jiné větší flexibilitu nebo podporu na dálku. Společně najdeme způsob spolupráce, který bude dávat smysl právě tobě.',
+        'Každá jsme v jiné životní situaci. Některé potřebujeme pravidelné vedení v posilovně, jiné větší flexibilitu nebo podporu na dálku. Společně najdeme způsob spolupráce, který bude dávat smysl právě tobě.',
       popularBadge: 'Nejoblíbenější',
       paths: [
         {
@@ -186,6 +193,9 @@ export const translations = {
           ideal: 'Ideální, pokud začínáš nebo preferuješ osobní kontakt při tréninku.',
         },
       ],
+      reassurance: 'Nevíš, která varianta je pro tebe ta pravá?',
+      reassuranceSub: 'To vůbec nevadí. Probereme to společně na úvodní konzultaci.',
+      cta: 'Mám zájem o spolupráci',
     },
     whyIDoThis: {
       eyebrow: 'Proč tohle dělám',
@@ -196,10 +206,12 @@ export const translations = {
         'Mým cílem je žít dlouhý, ale hlavně kvalitní život. Mít dostatek energie dělat věci, které mě baví, cítit se jistě ve svém těle a mít odvahu zkoušet nové věci.',
         'Chci, aby moje tělo zvládlo těhotenství, mohla jsem jednou blbnout se svými dětmi – a později i vnoučaty. A chci si život užívat i ve stáří, ne ho jen dožívat.',
       ],
-      closingLines: [
+      leftStatement: [
         'Kdysi jsem si myslela, že síla znamená zvednout těžkou činku.',
         'Dnes vím, že síla znamená mnohem víc. Znamená pro mě svobodu – v těle i v životě.',
-        'Je to možnost bez bolesti vzít dítě do náruče.',
+      ],
+      rightList: [
+        'Vzít bez bolesti dítě do náruče.',
         'Nebát se vstoupit do posilovny.',
         'Být připravená na změny, které život přináší.',
         'Mít tělo, které tě podporuje místo toho, aby tě omezovalo.',
@@ -210,24 +222,23 @@ export const translations = {
       eyebrow: 'Sdílený pohyb',
       heading: 'Pohyb je lepší, když ho můžeš sdílet',
       intro:
-        'Věřím, že změna není jen o tréninkovém plánu. Je také o prostředí, které tě podporuje. Proto kromě individuální spolupráce tvořím prostor, kde se ženy mohou potkávat, sdílet své zkušenosti a navzájem se motivovat.',
-      cards: [
-        {
-          title: 'Run club',
-          text: 'Společné běhy pro radost z pohybu.',
-        },
-        {
-          title: 'Komunita',
-          text: 'Místo, kde se můžeš zeptat, sdílet pokroky nebo jen vědět, že v tom nejsi sama.',
-        },
-        {
-          title: 'Instagram',
-          text: 'Praktické tipy, vzdělávání a inspirace.',
-        },
-      ],
+        'Věřím, že změna není jen o tréninkovém plánu. Je také o prostředí, které tě podporuje. Proto vytvářím prostor pro společný pohyb, sdílím své zkušenosti a ukazuji, že pohyb může být i něčím, co nás spojuje.',
+      runClub: {
+        title: 'Run club',
+        lead: 'Pojď si zaběhat s námi.',
+        text: 'Společné běhy pro radost z pohybu, bez tlaku na tempo nebo výkon.',
+        cta: 'Přidat se do Run Clubu',
+        link: 'https://chat.whatsapp.com/De7umV9RmREJfPC3ztjshC?mode=gi_t',
+      },
+      instagram: {
+        title: 'Instagram',
+        lead: 'Inspirace i mimo trénink.',
+        text: 'Praktické tipy, vzdělávání a inspirace pro pohyb, výživu a zdravější každodenní život.',
+        cta: 'Sledovat na Instagramu',
+        link: 'https://www.instagram.com/romana.vitkova_/',
+      },
     },
     faq: {
-      eyebrow: 'Nejčastější otázky',
       heading: 'Nejčastější otázky',
       items: [
         {
@@ -238,12 +249,12 @@ export const translations = {
         {
           question: 'Ve fitku se necítím dobře. Je spolupráce pro mě?',
           answer:
-            'Právě naopak. Většina žen, se kterými spolupracuji, nezačínala jako zkušené sportovkyně. Na začátku se zaměříme na úplné základy a budeme postupovat tempem, které bude dávat smysl právě tobě. Mým cílem je, aby ses při cvičení cítila jistě a věděla, co děláš a proč.',
+            'Rozumím. Spousta žen, se kterými spolupracuji, měla na začátku stejný pocit. Nemusíš vědět, jaké cviky cvičit ani jak používat stroje. Od toho jsem tu já. Postupně získáš nejen nové dovednosti, ale i sebevědomí, díky kterému se ve fitku budeš cítit jako doma.',
         },
         {
           question: 'Musím držet dietu nebo počítat kalorie?',
           answer:
-            'Rozumím. Spousta žen, se kterými spolupracuji, měla na začátku stejný pocit. Nemusíš vědět, jaké cviky cvičit ani jak používat stroje. Od toho jsem tu já. Postupně získáš nejen nové dovednosti, ale i sebevědomí, díky kterému se ve fitku budeš cítit jako doma.',
+            'Ne. Mým cílem není, abys celý život vážila jídlo a počítala každou kalorii. Společně se zaměříme na návyky a principy, které ti pomohou lépe rozumět tomu, co tvoje tělo potřebuje, a které dokážeš dlouhodobě udržet. Počítání kalorií může být v některých případech užitečný nástroj, ale rozhodně není podmínkou spolupráce.',
         },
         {
           question: 'Nemám moc času. Má vůbec smysl začít, když zvládnu cvičit jen 1–2× týdně?',
@@ -253,21 +264,23 @@ export const translations = {
         {
           question: 'Jak probíhá první konzultace?',
           answer:
-            'Ano. Mnoho mých klientek skládá dohromady práci, rodinu i další povinnosti. I jeden nebo dva kvalitní silové tréninky týdně mohou přinést skvělé výsledky. Nehledáme dokonalý plán – hledáme plán, který budeš schopná dodržovat dlouhodobě.',
+            'Na úvodní konzultaci se poznáme a probereme tvoje cíle, zkušenosti i očekávání. Zajímá mě, jaký život vedeš, co tě motivuje a co ti naopak v minulosti nefungovalo. Díky tomu společně vybereme formu spolupráce, která pro tebe bude dávat největší smysl.',
         },
         {
           question: 'Jak poznám, jestli je pro mě vhodnější osobní, hybridní nebo online spolupráce?',
           answer:
-            'Na úvodní konzultaci se poznáme a probereme tvoje cíle, zkušenosti i očekávání. Zajímá mě, jaký život vedeš, co tě motivuje a co ti naopak v minulosti nefungovalo. Díky tomu společně vybereme formu spolupráce, která pro tebe bude dávat největší smysl.',
+            'Záleží na tom, kolik podpory potřebuješ a jak moc chceš být při tréninku samostatná. Osobní spolupráce je vhodná, pokud chceš pravidelně cvičit se mnou a mít vedení přímo na tréninku. Hybridní varianta kombinuje osobní tréninky se samostatným cvičením podle plánu a online podporou. Online spolupráce je pak ideální, pokud už zvládáš cvičit samostatně nebo nejsi z Prahy, ale chceš mít jasný plán, vedení a pravidelnou zpětnou vazbu.',
+          answerNote:
+            'Nemusíš se ale rozhodnout sama. Po vyplnění vstupního dotazníku společně probereme tvoje cíle, zkušenosti i možnosti a doporučím ti formu spolupráce, která pro tebe bude dávat největší smysl.',
         },
       ],
-      reassurance: 'Každá z nás někdy začínala. Důležité není, kde jsi dnes. Důležité je udělat první krok.',
-      cta: 'Rezervovat úvodní konzultaci',
     },
     closingBanner: {
       heading: 'Každá žena si zaslouží cítit se silná.',
       subline:
         'Ať už začínáš úplně od nuly, nebo jen hledáš cestu, která bude dlouhodobě fungovat, ráda na té cestě budu tvou partnerkou.',
+      cta: 'Mám zájem o spolupráci',
+      ctaNote: 'Nejdřív tě čeká krátký vstupní dotazník. Po jeho vyplnění si vybereš termín úvodní konzultace.',
     },
     footer: {
       followUs: 'Sledujte mě',
@@ -275,10 +288,10 @@ export const translations = {
       copyright: 'Všechna práva vyhrazena',
     },
     contact: {
-      title: 'Jsi připravená',
-      subtitle: 'začít?',
+      eyebrow: 'MÁŠ DOTAZ?',
+      heading: 'Napiš mi.',
       message:
-        'Vyplň formulář a já se ti ozvu. Pošlu ti krátký dotazník a následně si domluvíme úvodní konzultaci, kde společně doladíme detaily.',
+        'Pokud si nejsi jistá, jestli je spolupráce pro tebe, nebo se mě chceš na něco zeptat, napiš mi. Ozvu se ti co nejdříve.',
       name: 'Jméno',
       email: 'E-mail',
       message_label: 'Zpráva',
@@ -301,17 +314,23 @@ export const translations = {
       contact: 'Contact',
     },
     hero: {
-      headline: 'Pomáhám ženám vybudovat sílu, která vydrží celý život.',
+      headlineLine1: 'Pomáhám ženám',
+      headlineLine2: 'budovat sílu,',
+      headlineLine3: 'která vydrží celý život.',
       tagline:
         'Síla není jen o tom, kolik zvedneš na čince. Je o zdraví, energii, sebevědomí a svobodě dělat to, co máš ráda. V každé životní etapě.',
-      cta1: 'Rezervovat úvodní konzultaci',
+      cta1: 'Mám zájem o spolupráci',
       cta2: 'Zjistit více',
     },
     manifesto: {
-      texts: [
-        'Věřím v malé kroky, které se časem promění ve velkou změnu.',
-        'Věřím, že každá žena si zaslouží cítit se silná – bez ohledu na věk, zkušenosti nebo to, kde právě začíná.',
+      statementLines: ['Věřím v malé kroky,', 'které se časem promění', 've velkou změnu.'],
+      sideTexts: [
+        'Každá žena si zaslouží cítit se silná.',
+        'Bez ohledu na věk, zkušenosti nebo to, kde právě začíná.',
+      ],
+      bottomTexts: [
         'Nevěřím na zázračné proměny za 30 dní.',
+        'Věřím v změny, které mají smysl i za několik let.',
       ],
     },
     stuckInCircle: {
@@ -419,14 +438,15 @@ export const translations = {
         },
         {
           title: 'Vytváříš si vlastní systém',
-          text: 'Postupně přestaneš spoléhat na motivaci nebo univerzální návody. Naučíš se rozumět svému tělu, vytvoříš si pevné základy a systém, který bude fungovat právě pro tvůj život.',
+          text: 'Postupně se učíš rozumět svému tělu a vytváříš si systém, který funguje právě pro tvůj život.',
         },
       ],
       closing:
         'Mým cílem není, abys mě potřebovala navždy. Mým cílem je naučit tě rozumět vlastnímu tělu a dělat rozhodnutí, kterým budeš věřit.',
     },
     howICanHelp: {
-      heading: 'S čím ti mohu pomoci',
+      eyebrow: 'S čím ti mohu pomoci?',
+      heading: 'Ať už začínáš kdekoliv.',
       topics: [
         {
           title: 'Začátky v posilovně',
@@ -450,14 +470,14 @@ export const translations = {
         },
         {
           title: 'Životní změny',
-          text: 'Přizpůsobíme spolupráci tomu, co právě tvoje tělo potřebuje – ať už jsi na začátku, po porodu nebo procházíš hormonálními změnami.',
+          text: 'Ať už procházíš jakoukoli životní fází, společně přizpůsobíme pohyb, výživu i návyky tomu, co právě tvoje tělo a život potřebují.',
         },
       ],
     },
     chooseYourPath: {
-      heading: 'Vyber si cestu, která ti dává smysl',
+      heading: 'Spolupráce, která se přizpůsobí tobě.',
       intro:
-        'Každá žena je v jiné životní situaci. Některé potřebují pravidelné vedení v posilovně, jiné větší flexibilitu nebo podporu na dálku. Společně najdeme způsob spolupráce, který bude dávat smysl právě tobě.',
+        'Každá jsme v jiné životní situaci. Některé potřebujeme pravidelné vedení v posilovně, jiné větší flexibilitu nebo podporu na dálku. Společně najdeme způsob spolupráce, který bude dávat smysl právě tobě.',
       popularBadge: 'Nejoblíbenější',
       paths: [
         {
@@ -480,6 +500,9 @@ export const translations = {
           ideal: 'Ideální, pokud začínáš nebo preferuješ osobní kontakt při tréninku.',
         },
       ],
+      reassurance: 'Nevíš, která varianta je pro tebe ta pravá?',
+      reassuranceSub: 'To vůbec nevadí. Probereme to společně na úvodní konzultaci.',
+      cta: 'Mám zájem o spolupráci',
     },
     whyIDoThis: {
       eyebrow: 'Proč tohle dělám',
@@ -490,10 +513,12 @@ export const translations = {
         'Mým cílem je žít dlouhý, ale hlavně kvalitní život. Mít dostatek energie dělat věci, které mě baví, cítit se jistě ve svém těle a mít odvahu zkoušet nové věci.',
         'Chci, aby moje tělo zvládlo těhotenství, mohla jsem jednou blbnout se svými dětmi – a později i vnoučaty. A chci si život užívat i ve stáří, ne ho jen dožívat.',
       ],
-      closingLines: [
+      leftStatement: [
         'Kdysi jsem si myslela, že síla znamená zvednout těžkou činku.',
         'Dnes vím, že síla znamená mnohem víc. Znamená pro mě svobodu – v těle i v životě.',
-        'Je to možnost bez bolesti vzít dítě do náruče.',
+      ],
+      rightList: [
+        'Vzít bez bolesti dítě do náruče.',
         'Nebát se vstoupit do posilovny.',
         'Být připravená na změny, které život přináší.',
         'Mít tělo, které tě podporuje místo toho, aby tě omezovalo.',
@@ -504,24 +529,23 @@ export const translations = {
       eyebrow: 'Sdílený pohyb',
       heading: 'Pohyb je lepší, když ho můžeš sdílet',
       intro:
-        'Věřím, že změna není jen o tréninkovém plánu. Je také o prostředí, které tě podporuje. Proto kromě individuální spolupráce tvořím prostor, kde se ženy mohou potkávat, sdílet své zkušenosti a navzájem se motivovat.',
-      cards: [
-        {
-          title: 'Run club',
-          text: 'Společné běhy pro radost z pohybu.',
-        },
-        {
-          title: 'Komunita',
-          text: 'Místo, kde se můžeš zeptat, sdílet pokroky nebo jen vědět, že v tom nejsi sama.',
-        },
-        {
-          title: 'Instagram',
-          text: 'Praktické tipy, vzdělávání a inspirace.',
-        },
-      ],
+        'Věřím, že změna není jen o tréninkovém plánu. Je také o prostředí, které tě podporuje. Proto vytvářím prostor pro společný pohyb, sdílím své zkušenosti a ukazuji, že pohyb může být i něčím, co nás spojuje.',
+      runClub: {
+        title: 'Run club',
+        lead: 'Pojď si zaběhat s námi.',
+        text: 'Společné běhy pro radost z pohybu, bez tlaku na tempo nebo výkon.',
+        cta: 'Přidat se do Run Clubu',
+        link: 'https://chat.whatsapp.com/De7umV9RmREJfPC3ztjshC?mode=gi_t',
+      },
+      instagram: {
+        title: 'Instagram',
+        lead: 'Inspirace i mimo trénink.',
+        text: 'Praktické tipy, vzdělávání a inspirace pro pohyb, výživu a zdravější každodenní život.',
+        cta: 'Sledovat na Instagramu',
+        link: 'https://www.instagram.com/romana.vitkova_/',
+      },
     },
     faq: {
-      eyebrow: 'Nejčastější otázky',
       heading: 'Nejčastější otázky',
       items: [
         {
@@ -547,21 +571,23 @@ export const translations = {
         {
           question: 'Jak probíhá první konzultace?',
           answer:
-            'Ano. Mnoho mých klientek skládá dohromady práci, rodinu i další povinnosti. I jeden nebo dva kvalitní silové tréninky týdně mohou přinést skvělé výsledky. Nehledáme dokonalý plán – hledáme plán, který budeš schopná dodržovat dlouhodobě.',
+            'Na úvodní konzultaci se poznáme a probereme tvoje cíle, zkušenosti i očekávání. Zajímá mě, jaký život vedeš, co tě motivuje a co ti naopak v minulosti nefungovalo. Díky tomu společně vybereme formu spolupráce, která pro tebe bude dávat největší smysl.',
         },
         {
           question: 'Jak poznám, jestli je pro mě vhodnější osobní, hybridní nebo online spolupráce?',
           answer:
-            'Na úvodní konzultaci se poznáme a probereme tvoje cíle, zkušenosti i očekávání. Zajímá mě, jaký život vedeš, co tě motivuje a co ti naopak v minulosti nefungovalo. Díky tomu společně vybereme formu spolupráce, která pro tebe bude dávat největší smysl.',
+            'Záleží na tom, kolik podpory potřebuješ a jak moc chceš být při tréninku samostatná. Osobní spolupráce je vhodná, pokud chceš pravidelně cvičit se mnou a mít vedení přímo na tréninku. Hybridní varianta kombinuje osobní tréninky se samostatným cvičením podle plánu a online podporou. Online spolupráce je pak ideální, pokud už zvládáš cvičit samostatně nebo nejsi z Prahy, ale chceš mít jasný plán, vedení a pravidelnou zpětnou vazbu.',
+          answerNote:
+            'Nemusíš se ale rozhodnout sama. Po vyplnění vstupního dotazníku společně probereme tvoje cíle, zkušenosti i možnosti a doporučím ti formu spolupráce, která pro tebe bude dávat největší smysl.',
         },
       ],
-      reassurance: 'Každá z nás někdy začínala. Důležité není, kde jsi dnes. Důležité je udělat první krok.',
-      cta: 'Rezervovat úvodní konzultaci',
     },
     closingBanner: {
       heading: 'Každá žena si zaslouží cítit se silná.',
       subline:
         'Ať už začínáš úplně od nuly, nebo jen hledáš cestu, která bude dlouhodobě fungovat, ráda na té cestě budu tvou partnerkou.',
+      cta: 'Mám zájem o spolupráci',
+      ctaNote: 'Nejdřív tě čeká krátký vstupní dotazník. Po jeho vyplnění si vybereš termín úvodní konzultace.',
     },
     footer: {
       followUs: 'Follow Me',
@@ -569,10 +595,10 @@ export const translations = {
       copyright: 'All rights reserved',
     },
     contact: {
-      title: 'Are You Ready',
-      subtitle: 'to Get Started?',
+      eyebrow: 'GOT A QUESTION?',
+      heading: 'Write to me.',
       message:
-        "Fill in the form and I'll get back to you. I'll send you a short questionnaire and then we'll arrange an introductory consultation to work out the details.",
+        "If you're not sure whether working together is right for you, or you just want to ask something, send me a message. I'll get back to you as soon as possible.",
       name: 'Name',
       email: 'Email',
       message_label: 'Message',

@@ -64,8 +64,8 @@ function App() {
           <WhyIDoThis />
           <MovementShared />
           <FAQ />
-          <ClosingBanner />
           <Contact />
+          <ClosingBanner />
         </main>
 
         <Footer />

@@ -9,14 +9,14 @@ export default function WhyStrength() {
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="animate-on-scroll" data-delay="0s">
           <span className="editorial-eyebrow">{w.eyebrow}</span>
-          <h2 className="editorial-heading font-display text-4xl md:text-6xl leading-tight mb-14 md:mb-20">
+          <h2 className="editorial-heading font-display text-4xl md:text-6xl leading-tight mb-20 md:mb-28">
             {w.headingLine1}
             <br />
             <em>{w.headingEmphasis}</em>
           </h2>
         </div>
 
-        <div className="space-y-12 md:space-y-16 mb-20 md:mb-28">
+        <div className="grid sm:grid-cols-2 gap-x-10 gap-y-14 md:gap-y-16 mb-24 md:mb-32">
           {w.reasons.map((reason, index) => (
             <div
               key={index}

@@ -51,11 +51,9 @@ export default function Contact() {
     <section id="contact" className="py-20" style={{ backgroundColor: 'var(--c-cream-alt)' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-on-scroll" data-delay="0s">
+          <span className="editorial-eyebrow justify-center flex">{t.contact.eyebrow}</span>
           <h2 className="font-display text-5xl md:text-6xl text-gray-900 mb-4 leading-none">
-            {t.contact.title}
-            <span className="block text-orange-500">
-              {t.contact.subtitle}
-            </span>
+            {t.contact.heading}
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             {t.contact.message}

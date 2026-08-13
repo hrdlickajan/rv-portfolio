@@ -1,5 +1,6 @@
 import { Zap, Globe, Users } from 'lucide-react';
 import { useLanguage } from '../LanguageContext';
+import { INTAKE_FORM_URL } from '../constants';
 
 const icons = [Zap, Globe, Users];
 
@@ -17,14 +18,14 @@ export default function ChooseYourPath() {
           <p className="text-gray-600 text-lg leading-relaxed">{c.intro}</p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-8 mb-16">
           {c.paths.map((path, index) => {
             const Icon = icons[index];
             return (
               <div
                 key={path.title}
-                className={`relative flat-card rounded-xl p-8 animate-on-scroll ${
-                  path.popular ? 'border-2 border-orange-400' : ''
+                className={`relative rounded-xl p-8 bg-orange-50 animate-on-scroll ${
+                  path.popular ? 'border-2 border-orange-600' : 'border border-orange-100'
                 }`}
                 data-delay={`${index * 0.1}s`}
               >
@@ -33,7 +34,7 @@ export default function ChooseYourPath() {
                     {c.popularBadge}
                   </span>
                 )}
-                <div className="w-10 h-10 rounded-full bg-orange-50 flex items-center justify-center mb-4">
+                <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center mb-4">
                   <Icon size={20} className="text-orange-500" />
                 </div>
                 <h3 className="font-display text-2xl text-gray-900 mb-3">{path.title}</h3>
@@ -43,6 +44,19 @@ export default function ChooseYourPath() {
               </div>
             );
           })}
+        </div>
+
+        <div className="text-center animate-on-scroll" data-delay="0.1s">
+          <p className="font-display text-xl md:text-2xl text-gray-900 mb-2">{c.reassurance}</p>
+          <p className="text-gray-600 mb-8">{c.reassuranceSub}</p>
+          <a
+            href={INTAKE_FORM_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-pill inline-flex bg-orange-500 text-white px-8 py-3.5 hover:bg-orange-600"
+          >
+            {c.cta}
+          </a>
         </div>
       </div>
     </section>

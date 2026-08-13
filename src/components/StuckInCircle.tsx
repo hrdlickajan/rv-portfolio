@@ -16,14 +16,15 @@ export default function StuckInCircle() {
           </h2>
         </div>
 
-        <div className="space-y-10 md:space-y-14 mb-16 md:mb-20">
+        <div className="space-y-3 md:space-y-4 mb-24 md:mb-32">
           {s.thoughts.map((thought, index) => (
             <p
               key={index}
-              className="editorial-thought text-xl md:text-2xl leading-relaxed animate-on-scroll"
+              className="editorial-thought flex items-baseline gap-3 text-xl md:text-2xl leading-relaxed animate-on-scroll"
               data-delay={`${0.1 + index * 0.1}s`}
             >
-              {thought}
+              <span className="text-orange-500" aria-hidden="true">—</span>
+              <span>{thought}</span>
             </p>
           ))}
         </div>

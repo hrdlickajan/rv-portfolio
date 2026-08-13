@@ -32,7 +32,7 @@ export default function YourJourney() {
         </div>
 
         <p
-          className="closing-statement text-2xl md:text-3xl max-w-2xl mx-auto animate-on-scroll"
+          className="closing-statement text-xl md:text-2xl max-w-xl mx-auto animate-on-scroll"
           data-delay="0.1s"
         >
           {j.closing}

@@ -4,9 +4,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        display: ['Oswald', 'sans-serif'],
-        body: ['Inter', 'sans-serif'],
-        sans: ['Inter', 'sans-serif'],
+        display: ['Lora', 'serif'],
+        body: ['Manrope', 'sans-serif'],
+        sans: ['Manrope', 'sans-serif'],
       },
     },
   },
