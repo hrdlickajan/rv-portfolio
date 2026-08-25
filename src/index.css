@@ -412,3 +412,74 @@ h1, h2, h3, h4, h5, h6 {
     transform: none;
   }
 }
+
+/* ══════════════════════════════════════════════════════════════
+   PROTOTYPE — throwaway layout variants (V1/V2/V3).
+   Scoped entirely under [data-ui-variant], no colors touched,
+   no copy touched. Safe to delete this whole block + the
+   src/components/prototype folder once a layout is chosen.
+   ══════════════════════════════════════════════════════════════ */
+
+/* ─── V1 · Breathing Room — calmer reading column, generous gaps ─── */
+[data-ui-variant="1"] main > section + section {
+  margin-top: clamp(1.5rem, 4vw, 3.5rem);
+}
+
+[data-ui-variant="1"] main > section:not(#home) .max-w-7xl {
+  max-width: 56rem;
+}
+
+[data-ui-variant="1"] main > section {
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+[data-ui-variant="1"] main > section:not(#home) {
+  max-width: 92%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ─── V2 · Card Journey — each section floats as an elevated card ─── */
+[data-ui-variant="2"] main {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1.5rem, 3vw, 2.5rem);
+  padding: clamp(1rem, 3vw, 2.5rem) clamp(0.75rem, 4vw, 2rem);
+}
+
+[data-ui-variant="2"] main > section {
+  border-radius: 1.75rem;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(31, 27, 24, 0.08);
+  border: 1px solid rgba(31, 27, 24, 0.06);
+}
+
+[data-ui-variant="2"] main > section .max-w-7xl {
+  max-width: 64rem;
+}
+
+/* ─── V3 · Vertical Rhythm — tall sections, quiet dot dividers, side rail ─── */
+[data-ui-variant="3"] main > section {
+  position: relative;
+  padding-top: clamp(4rem, 8vw, 7rem);
+  padding-bottom: clamp(4rem, 8vw, 7rem);
+}
+
+[data-ui-variant="3"] main > section:not(:first-child)::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 48px;
+  height: 3px;
+  border-radius: 9999px;
+  background: var(--c-orange-light);
+  opacity: 0.7;
+}
+
+[data-ui-variant="3"] main > section .max-w-7xl {
+  max-width: 68rem;
+}
+

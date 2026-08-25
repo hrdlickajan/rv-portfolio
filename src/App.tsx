@@ -15,8 +15,11 @@ import FAQ from './components/FAQ';
 import ClosingBanner from './components/ClosingBanner';
 import Contact from './components/Contact';
 import { LanguageProvider } from './LanguageContext';
+import PrototypeLayoutSwitcher, { useUIVariant } from './components/prototype/PrototypeLayoutSwitcher';
+import PrototypeScrollRail from './components/prototype/PrototypeScrollRail';
 
 function App() {
+  const [uiVariant, setUiVariant] = useUIVariant();
   useEffect(() => {
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -49,7 +52,11 @@ function App() {
   }, []);
   return (
     <LanguageProvider>
-      <div className="min-h-screen flex flex-col" style={{ backgroundColor: 'var(--c-cream)' }}>
+      <div
+        data-ui-variant={uiVariant}
+        className="min-h-screen flex flex-col"
+        style={{ backgroundColor: 'var(--c-cream)' }}
+      >
         <Header />
 
         <main className="flex-grow">
@@ -69,6 +76,9 @@ function App() {
         </main>
 
         <Footer />
+
+        {uiVariant === '3' && <PrototypeScrollRail />}
+        <PrototypeLayoutSwitcher variant={uiVariant} onChange={setUiVariant} />
       </div>
     </LanguageProvider>
   );
