@@ -190,7 +190,7 @@ export const translations = {
           ideal: 'Ideální, pokud zvládáš trénovat samostatně a chceš mít jasný směr, podporu a vedení.',
         },
         {
-          title: 'Personal coaching',
+          title: 'Osobní tréninky',
           subtitle: 'Pravidelné tréninky pod mým přímým vedením.',
           text: 'Společně se zaměříme na správnou techniku, postupný progres a vybudování jistoty v posilovně.',
           ideal: 'Ideální, pokud s posilováním začínáš nebo jednoduše preferuješ pravidelný osobní kontakt při tréninku.',
@@ -366,7 +366,7 @@ export const translations = {
       ],
       bottomTexts: [
         'Nevěřím na zázračné proměny za 30 dní.',
-        'Věřím v změny, které mají smysl i za několik let.',
+        'Věřím ve změny, které mají smysl i za několik let.',
       ],
     },
     stuckInCircle: {
@@ -451,7 +451,7 @@ export const translations = {
           text: 'Protože když věříš svému tělu, mnohem snáz věříš i sama sobě.',
         },
       ],
-      quote: 'Pro mě síla už dávno není o tom být nejlepší. Je o tom mít svobodu žít život podle svých představ.',
+      quote: 'Pro mě už síla dávno není jen o výkonu. Je o svobodě žít život podle vlastních představ.',
       quoteAttribution: 'Romana Vítková',
     },
     yourJourney: {
@@ -532,7 +532,7 @@ export const translations = {
           ideal: 'Ideální, pokud nejsi z Prahy nebo preferuješ cvičení podle vlastního rozvrhu.',
         },
         {
-          title: 'Personal coaching',
+          title: 'Osobní tréninky',
           subtitle: 'Pokud se chceš cítit jistě v posilovně a oceníš osobní vedení.',
           text: 'Naučíš se správnou techniku, získáš jistotu při cvičení a společně vybudujeme pevné základy, na kterých můžeš dlouhodobě stavět.',
           ideal: 'Ideální, pokud začínáš nebo preferuješ osobní kontakt při tréninku.',
