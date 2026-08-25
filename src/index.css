@@ -785,5 +785,635 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: none;
 }
 
+/* ══════════════════════════════════════════════════════════════
+   PROTOTYPE — throwaway aesthetic skins (V11-V20).
+   Unlike V1-V10, these DO touch typography, color and background —
+   that's the question they answer. Each skin sets a handful of
+   --v-* custom properties + a font pair + one background/motion
+   flourish; a shared remap block below reads those (falling back
+   to the shipped Tailwind colors so V0-V10 stay pixel-identical).
+   Safe to delete this whole block + the extra Google Fonts link in
+   index.html once a direction is chosen.
+   ══════════════════════════════════════════════════════════════ */
+
+@keyframes proto-drift {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(3%, -4%) scale(1.06); }
+}
+
+@keyframes proto-pulse-glow {
+  0%, 100% { opacity: 0.55; }
+  50% { opacity: 1; }
+}
+
+@keyframes proto-shimmer {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+
+@keyframes proto-flicker {
+  0%, 92%, 100% { opacity: 1; }
+  94% { opacity: 0.4; }
+  96% { opacity: 0.9; }
+}
+
+/* ─── Shared remap: Tailwind utility classes → variant custom props ─── */
+[data-ui-variant] .bg-orange-500 { background-color: var(--v-accent, #F97316) !important; }
+[data-ui-variant] .hover\:bg-orange-600:hover { background-color: var(--v-accent-dark, #EA580C) !important; }
+[data-ui-variant] .text-orange-500 { color: var(--v-accent, #F97316) !important; }
+[data-ui-variant] .text-orange-700 { color: var(--v-accent-dark, #C2410C) !important; }
+[data-ui-variant] .hover\:text-orange-500:hover { color: var(--v-accent, #F97316) !important; }
+[data-ui-variant] .hover\:text-orange-600:hover { color: var(--v-accent-dark, #EA580C) !important; }
+[data-ui-variant] .bg-orange-50 { background-color: var(--v-surface-tint, #FFF7ED) !important; }
+[data-ui-variant] .hover\:bg-orange-50:hover { background-color: var(--v-surface-tint, #FFF7ED) !important; }
+[data-ui-variant] .border-orange-100 { border-color: var(--v-line-tint, #FFEDD5) !important; }
+[data-ui-variant] .border-orange-100\/60 { border-color: var(--v-line-tint, rgba(255, 237, 213, 0.6)) !important; }
+[data-ui-variant] .border-orange-200 { border-color: var(--v-line-tint, #FED7AA) !important; }
+[data-ui-variant] .border-orange-400 { border-color: var(--v-accent-light, #FB923C) !important; }
+[data-ui-variant] .border-orange-600 { border-color: var(--v-accent-dark, #EA580C) !important; }
+[data-ui-variant] .from-orange-500 { --tw-gradient-from: var(--v-accent, #F97316) !important; }
+[data-ui-variant] .to-orange-600 { --tw-gradient-to: var(--v-accent-dark, #EA580C) !important; }
+
+[data-ui-variant] .bg-white { background-color: var(--v-surface, #FFFFFF) !important; }
+[data-ui-variant] header.sticky { background-color: var(--v-header-bg, rgba(255, 255, 255, 0.9)) !important; }
+[data-ui-variant] footer.bg-white { background-color: var(--v-surface, #FFFFFF) !important; }
+[data-ui-variant] .bg-gray-100 { background-color: var(--v-line-tint, #F3F4F6) !important; }
+[data-ui-variant] .text-gray-900 { color: var(--v-ink, #111827) !important; }
+[data-ui-variant] .text-gray-800 { color: var(--v-ink-strong, #1F2937) !important; }
+[data-ui-variant] .text-gray-700 { color: var(--v-ink-nav, #374151) !important; }
+[data-ui-variant] .text-gray-600 { color: var(--v-ink-soft, #4B5563) !important; }
+[data-ui-variant] .text-gray-500 { color: var(--v-ink-softer, #6B7280) !important; }
+[data-ui-variant] .border-gray-100 { border-color: var(--v-line, #F3F4F6) !important; }
+[data-ui-variant] .border-gray-200 { border-color: var(--v-line, #E5E7EB) !important; }
+
+/* Fonts + page-level tokens: cascade from the wrapper div's own [data-ui-variant] attribute */
+[data-ui-variant="11"], [data-ui-variant="12"], [data-ui-variant="13"], [data-ui-variant="14"],
+[data-ui-variant="15"], [data-ui-variant="16"], [data-ui-variant="17"], [data-ui-variant="18"],
+[data-ui-variant="19"], [data-ui-variant="20"], [data-ui-variant="21"], [data-ui-variant="22"],
+[data-ui-variant="23"], [data-ui-variant="24"], [data-ui-variant="25"] {
+  font-family: var(--v-body-font);
+}
+
+[data-ui-variant^="1"] h1, [data-ui-variant^="1"] h2, [data-ui-variant^="1"] h3,
+[data-ui-variant^="1"] h4, [data-ui-variant^="1"] h5, [data-ui-variant^="1"] h6,
+[data-ui-variant^="2"] h1, [data-ui-variant^="2"] h2, [data-ui-variant^="2"] h3 {
+  font-family: var(--v-display-font, 'Lora', serif) !important;
+}
+
+[data-ui-variant="11"] .font-display, [data-ui-variant="12"] .font-display, [data-ui-variant="13"] .font-display,
+[data-ui-variant="14"] .font-display, [data-ui-variant="15"] .font-display, [data-ui-variant="16"] .font-display,
+[data-ui-variant="17"] .font-display, [data-ui-variant="18"] .font-display, [data-ui-variant="19"] .font-display,
+[data-ui-variant="20"] .font-display, [data-ui-variant="21"] .font-display, [data-ui-variant="22"] .font-display,
+[data-ui-variant="23"] .font-display, [data-ui-variant="24"] .font-display, [data-ui-variant="25"] .font-display {
+  font-family: var(--v-display-font) !important;
+}
+
+/* ─── V11 · Terracotta Botanical — warm clay & olive, blooming blob backdrop ─── */
+[data-ui-variant="11"] {
+  --v-accent: #B5502F;
+  --v-accent-dark: #8C3A21;
+  --v-accent-light: #D98452;
+  --v-surface: #FBF3E7;
+  --v-surface-tint: #F3E3CC;
+  --v-header-bg: rgba(251, 243, 231, 0.9);
+  --v-line: #E3D3B8;
+  --v-line-tint: #EFE3CC;
+  --v-ink: #2E2418;
+  --v-ink-strong: #3A2E1E;
+  --v-ink-nav: #4A3B28;
+  --v-ink-soft: #6B5A45;
+  --v-ink-softer: #8A7A63;
+  --v-display-font: 'Fraunces', serif;
+  --v-body-font: 'Instrument Sans', sans-serif;
+  --c-cream: #F3E9DC;
+  --c-cream-alt: #ECE0CC;
+  --c-dark: #2E2418;
+  --c-orange-glow: rgba(181, 80, 47, 0.2);
+}
+
+[data-ui-variant="11"] main {
+  position: relative;
+  overflow: hidden;
+}
+
+[data-ui-variant="11"] main::before,
+[data-ui-variant="11"] main::after {
+  content: '';
+  position: absolute;
+  width: 32rem;
+  height: 32rem;
+  border-radius: 9999px;
+  filter: blur(70px);
+  z-index: 0;
+  pointer-events: none;
+  animation: proto-drift 16s ease-in-out infinite;
+}
+
+[data-ui-variant="11"] main::before {
+  top: -10rem;
+  left: -12rem;
+  background: radial-gradient(circle, rgba(181, 80, 47, 0.28), transparent 70%);
+}
+
+[data-ui-variant="11"] main::after {
+  bottom: 5%;
+  right: -12rem;
+  background: radial-gradient(circle, rgba(138, 155, 110, 0.26), transparent 70%);
+  animation-delay: -8s;
+}
+
+[data-ui-variant="11"] main > section {
+  position: relative;
+  z-index: 1;
+}
+
+/* ─── V12 · Neon Dusk Arcade — near-black scanlines, magenta glow ─── */
+[data-ui-variant="12"] {
+  --v-accent: #FF2E88;
+  --v-accent-dark: #C4106A;
+  --v-accent-light: #FF7AB8;
+  --v-surface: #15152E;
+  --v-surface-tint: #1C1C3B;
+  --v-header-bg: rgba(11, 11, 24, 0.85);
+  --v-line: rgba(255, 255, 255, 0.08);
+  --v-line-tint: rgba(255, 255, 255, 0.06);
+  --v-ink: #F5F3FF;
+  --v-ink-strong: #E8E4FF;
+  --v-ink-nav: #C9C4E8;
+  --v-ink-soft: #A79DD6;
+  --v-ink-softer: #8A80B8;
+  --v-display-font: 'Bebas Neue', sans-serif;
+  --v-body-font: 'Space Mono', monospace;
+  --c-cream: #0B0B18;
+  --c-cream-alt: #12122A;
+  --c-dark: #05050D;
+  --c-orange-glow: rgba(255, 46, 136, 0.28);
+}
+
+[data-ui-variant="12"] h1, [data-ui-variant="12"] h2, [data-ui-variant="12"] h3 {
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+[data-ui-variant="12"] main {
+  position: relative;
+  background-image:
+    repeating-linear-gradient(0deg, rgba(34, 211, 238, 0.05) 0px, rgba(34, 211, 238, 0.05) 1px, transparent 1px, transparent 3px),
+    linear-gradient(180deg, rgba(34, 211, 238, 0.05), transparent 40%);
+}
+
+[data-ui-variant="12"] main > section {
+  animation: proto-flicker 7s ease-in-out infinite;
+}
+
+[data-ui-variant="12"] .btn-pill {
+  box-shadow: 0 0 18px var(--v-accent);
+  animation: proto-pulse-glow 2.4s ease-in-out infinite;
+}
+
+/* ─── V13 · Sunlit Citrus Paper — cream paper, gold-lime accent ─── */
+[data-ui-variant="13"] {
+  --v-accent: #C9A227;
+  --v-accent-dark: #9C7C15;
+  --v-accent-light: #E4C34E;
+  --v-surface: #FFFDF6;
+  --v-surface-tint: #F7EFC9;
+  --v-header-bg: rgba(255, 253, 246, 0.9);
+  --v-line: #EBDFB8;
+  --v-line-tint: #F2E8C6;
+  --v-ink: #2B2410;
+  --v-ink-strong: #332B14;
+  --v-ink-nav: #463C1E;
+  --v-ink-soft: #6B5E38;
+  --v-ink-softer: #8C7E56;
+  --v-display-font: 'DM Serif Display', serif;
+  --v-body-font: 'Albert Sans', sans-serif;
+  --c-cream: #FBF6E9;
+  --c-cream-alt: #F5EDD4;
+  --c-dark: #2B2410;
+  --c-orange-glow: rgba(201, 162, 39, 0.22);
+}
+
+[data-ui-variant="13"] main {
+  background-image: radial-gradient(rgba(43, 36, 16, 0.05) 1px, transparent 1px);
+  background-size: 14px 14px;
+}
+
+[data-ui-variant="13"] main > section:not(#home) {
+  box-shadow: inset 0 8px 0 -6px rgba(43, 36, 16, 0.08);
+}
+
+[data-ui-variant="13"] .flat-card:hover {
+  transform: rotate(-0.6deg) translateY(-3px);
+}
+
+/* ─── V14 · Midnight Jade Glass — dark jade glass panels, gold accent ─── */
+[data-ui-variant="14"] {
+  --v-accent: #D4A857;
+  --v-accent-dark: #A9822E;
+  --v-accent-light: #E6C787;
+  --v-surface: rgba(255, 255, 255, 0.04);
+  --v-surface-tint: rgba(212, 168, 87, 0.1);
+  --v-header-bg: rgba(7, 18, 15, 0.75);
+  --v-line: rgba(212, 168, 87, 0.18);
+  --v-line-tint: rgba(255, 255, 255, 0.06);
+  --v-ink: #F1F7F4;
+  --v-ink-strong: #E3EFE9;
+  --v-ink-nav: #C7DAD2;
+  --v-ink-soft: #9FB8AC;
+  --v-ink-softer: #7E9A8D;
+  --v-display-font: 'Cormorant Garamond', serif;
+  --v-body-font: 'Spectral', serif;
+  --c-cream: #07120F;
+  --c-cream-alt: #0B1B16;
+  --c-dark: #040B09;
+  --c-orange-glow: rgba(212, 168, 87, 0.25);
+}
+
+[data-ui-variant="14"] h1, [data-ui-variant="14"] h2, [data-ui-variant="14"] h3 {
+  font-style: italic;
+}
+
+[data-ui-variant="14"] main {
+  position: relative;
+  overflow: hidden;
+}
+
+[data-ui-variant="14"] main::before {
+  content: '';
+  position: absolute;
+  inset: -10% -10% auto auto;
+  width: 34rem;
+  height: 34rem;
+  background: radial-gradient(circle, rgba(212, 168, 87, 0.18), transparent 70%);
+  filter: blur(60px);
+  animation: proto-drift 18s ease-in-out infinite;
+  z-index: 0;
+}
+
+[data-ui-variant="14"] main > section {
+  position: relative;
+  z-index: 1;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--v-line);
+}
+
+/* ─── V15 · Retro Varsity Score — cream/navy/red athletic pennant ─── */
+[data-ui-variant="15"] {
+  --v-accent: #C8102E;
+  --v-accent-dark: #9A0C22;
+  --v-accent-light: #E23F55;
+  --v-surface: #FFFFFF;
+  --v-surface-tint: #F3E9D2;
+  --v-header-bg: rgba(255, 255, 255, 0.92);
+  --v-line: #DDD3BC;
+  --v-line-tint: #EDE4D0;
+  --v-ink: #151E2E;
+  --v-ink-strong: #1C2740;
+  --v-ink-nav: #28344E;
+  --v-ink-soft: #4B5772;
+  --v-ink-softer: #71809C;
+  --v-display-font: 'Bungee', cursive;
+  --v-body-font: 'Barlow', sans-serif;
+  --c-cream: #F6F1E6;
+  --c-cream-alt: #EDE4D0;
+  --c-dark: #151E2E;
+  --c-orange-glow: rgba(200, 16, 46, 0.22);
+}
+
+[data-ui-variant="15"] h1, [data-ui-variant="15"] h2, [data-ui-variant="15"] h3 {
+  letter-spacing: 0.02em;
+}
+
+[data-ui-variant="15"] main > section {
+  border-top: 6px solid var(--v-ink-nav);
+  border-bottom: 6px solid var(--v-accent);
+}
+
+[data-ui-variant="15"] main > section#home {
+  border-top: none;
+}
+
+/* ─── V16 · Botanical Ink Wash — sage & ink, painterly bloom ─── */
+[data-ui-variant="16"] {
+  --v-accent: #3F5A44;
+  --v-accent-dark: #2A3F2F;
+  --v-accent-light: #6C8A6F;
+  --v-surface: #FAFAF2;
+  --v-surface-tint: #E6E9D8;
+  --v-header-bg: rgba(250, 250, 242, 0.9);
+  --v-line: #DDE0CC;
+  --v-line-tint: #E9ECDC;
+  --v-ink: #1E231C;
+  --v-ink-strong: #262B22;
+  --v-ink-nav: #37402F;
+  --v-ink-soft: #57604C;
+  --v-ink-softer: #767F66;
+  --v-display-font: 'Newsreader', serif;
+  --v-body-font: 'Karla', sans-serif;
+  --c-cream: #F1F0E6;
+  --c-cream-alt: #E7E6D6;
+  --c-dark: #1E231C;
+  --c-orange-glow: rgba(63, 90, 68, 0.2);
+}
+
+[data-ui-variant="16"] h1, [data-ui-variant="16"] h2, [data-ui-variant="16"] h3 {
+  font-style: italic;
+  font-weight: 500;
+}
+
+[data-ui-variant="16"] main {
+  background-image: radial-gradient(circle at 15% 10%, rgba(63, 90, 68, 0.12), transparent 45%),
+    radial-gradient(circle at 85% 60%, rgba(63, 90, 68, 0.09), transparent 45%);
+}
+
+/* ─── V17 · Sunset Adobe Dusk — clay & dusty mauve sky glow ─── */
+[data-ui-variant="17"] {
+  --v-accent: #D66B4F;
+  --v-accent-dark: #A94A32;
+  --v-accent-light: #EC9678;
+  --v-surface: #FFF6EF;
+  --v-surface-tint: #F6DCC9;
+  --v-header-bg: rgba(255, 246, 239, 0.9);
+  --v-line: #EFCBB4;
+  --v-line-tint: #F5DFCE;
+  --v-ink: #2B1B16;
+  --v-ink-strong: #33221B;
+  --v-ink-nav: #4A342A;
+  --v-ink-soft: #6E5548;
+  --v-ink-softer: #8E7365;
+  --v-display-font: 'Bricolage Grotesque', sans-serif;
+  --v-body-font: 'Public Sans', sans-serif;
+  --c-cream: #F7E9DE;
+  --c-cream-alt: #F0D9C8;
+  --c-dark: #2B1B16;
+  --c-orange-glow: rgba(214, 107, 79, 0.24);
+}
+
+[data-ui-variant="17"] #home {
+  position: relative;
+  overflow: hidden;
+}
+
+[data-ui-variant="17"] #home::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 75% 20%, rgba(236, 150, 120, 0.55), transparent 55%),
+    linear-gradient(160deg, rgba(214, 107, 79, 0.18), rgba(124, 92, 107, 0.14));
+  animation: proto-pulse-glow 6s ease-in-out infinite;
+  pointer-events: none;
+}
+
+/* ─── V18 · Deep Ocean Bioluminescence — near-black teal glow, drifting particles ─── */
+[data-ui-variant="18"] {
+  --v-accent: #2DE1C2;
+  --v-accent-dark: #17A98F;
+  --v-accent-light: #7FF2DE;
+  --v-surface: #04202E;
+  --v-surface-tint: #05303F;
+  --v-header-bg: rgba(2, 12, 20, 0.8);
+  --v-line: rgba(45, 225, 194, 0.15);
+  --v-line-tint: rgba(255, 255, 255, 0.05);
+  --v-ink: #E7FBF6;
+  --v-ink-strong: #D3F5EC;
+  --v-ink-nav: #AEE3D6;
+  --v-ink-soft: #7FC1B3;
+  --v-ink-softer: #5C978C;
+  --v-display-font: 'Unbounded', sans-serif;
+  --v-body-font: 'IBM Plex Mono', monospace;
+  --c-cream: #020C14;
+  --c-cream-alt: #031824;
+  --c-dark: #010609;
+  --c-orange-glow: rgba(45, 225, 194, 0.3);
+}
+
+[data-ui-variant="18"] main {
+  position: relative;
+  overflow: hidden;
+}
+
+[data-ui-variant="18"] main::before,
+[data-ui-variant="18"] main::after {
+  content: '';
+  position: absolute;
+  width: 30rem;
+  height: 30rem;
+  border-radius: 9999px;
+  background: radial-gradient(circle, rgba(45, 225, 194, 0.22), transparent 70%);
+  filter: blur(70px);
+  z-index: 0;
+  pointer-events: none;
+  animation: proto-drift 14s ease-in-out infinite, proto-pulse-glow 5s ease-in-out infinite;
+}
+
+[data-ui-variant="18"] main::before { top: -8rem; left: 10%; }
+[data-ui-variant="18"] main::after { bottom: -6rem; right: 10%; animation-delay: -6s; }
+
+[data-ui-variant="18"] main > section {
+  position: relative;
+  z-index: 1;
+}
+
+/* ─── V19 · Vintage Letterpress — cream stock, rubric-red ink ─── */
+[data-ui-variant="19"] {
+  --v-accent: #9E2B25;
+  --v-accent-dark: #7A2019;
+  --v-accent-light: #C15850;
+  --v-surface: #F7F1E2;
+  --v-surface-tint: #EEE1BF;
+  --v-header-bg: rgba(247, 241, 226, 0.9);
+  --v-line: #DDD0AE;
+  --v-line-tint: #E9DFC4;
+  --v-ink: #221C14;
+  --v-ink-strong: #2B241A;
+  --v-ink-nav: #3B3324;
+  --v-ink-soft: #5C523E;
+  --v-ink-softer: #7C7258;
+  --v-display-font: 'Libre Caslon Display', serif;
+  --v-body-font: 'Crimson Pro', serif;
+  --c-cream: #EFE7D8;
+  --c-cream-alt: #E6DCC6;
+  --c-dark: #221C14;
+  --c-orange-glow: rgba(158, 43, 37, 0.2);
+}
+
+[data-ui-variant="19"] h1, [data-ui-variant="19"] h2, [data-ui-variant="19"] h3 {
+  text-shadow: 0.5px 0.5px 0 rgba(34, 28, 20, 0.15);
+}
+
+[data-ui-variant="19"] main {
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(34, 28, 20, 0.015) 0px,
+    rgba(34, 28, 20, 0.015) 2px,
+    transparent 2px,
+    transparent 8px
+  );
+}
+
+[data-ui-variant="19"] .btn-pill:active {
+  transform: scale(0.96);
+}
+
+/* ─── V20 · Golden Hour Studio — blush & gold editorial luxe ─── */
+[data-ui-variant="20"] {
+  --v-accent: #B8873B;
+  --v-accent-dark: #8F6524;
+  --v-accent-light: #D9AE6E;
+  --v-surface: #FFFAF3;
+  --v-surface-tint: #F3E2C4;
+  --v-header-bg: rgba(255, 250, 243, 0.9);
+  --v-line: #EBDBC0;
+  --v-line-tint: #F2E6D2;
+  --v-ink: #2A2118;
+  --v-ink-strong: #332920;
+  --v-ink-nav: #463A2C;
+  --v-ink-soft: #6B5C48;
+  --v-ink-softer: #8C7C64;
+  --v-display-font: 'Italiana', serif;
+  --v-body-font: 'Jost', sans-serif;
+  --c-cream: #FBF1E6;
+  --c-cream-alt: #F3E4D2;
+  --c-dark: #2A2118;
+  --c-orange-glow: rgba(184, 135, 59, 0.24);
+}
+
+[data-ui-variant="20"] h1, [data-ui-variant="20"] h2 {
+  letter-spacing: 0.02em;
+}
+
+[data-ui-variant="20"] #home::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 20% 15%, rgba(217, 174, 110, 0.4), transparent 55%);
+  pointer-events: none;
+}
+
+[data-ui-variant="20"] #home {
+  position: relative;
+  overflow: hidden;
+}
+
+[data-ui-variant="20"] .hero-name {
+  background: linear-gradient(90deg, var(--v-ink) 0%, var(--v-accent) 50%, var(--v-ink) 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: heroSlideIn 0.75s cubic-bezier(0.22, 1, 0.36, 1) 0.08s both, proto-shimmer 6s linear infinite 1s;
+}
+
+/* ══════════════════════════════════════════════════════════════
+   PROTOTYPE — throwaway "same palette" skins (V21-V25).
+   These leave --c-orange / --c-cream / --c-dark untouched (no
+   --v-accent etc. set, so the shared remap block falls back to
+   the shipped brand colors). Only typography, background texture
+   and motion change, to see how far the existing orange/cream
+   identity stretches with a different typographic personality.
+   ══════════════════════════════════════════════════════════════ */
+
+/* ─── V21 · Warm Editorial Hearth — soft serif display, warm grain ─── */
+[data-ui-variant="21"] {
+  --v-display-font: 'Petrona', serif;
+  --v-body-font: 'Onest', sans-serif;
+}
+
+[data-ui-variant="21"] main {
+  background-image: radial-gradient(rgba(31, 27, 24, 0.04) 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
+[data-ui-variant="21"] h1, [data-ui-variant="21"] h2, [data-ui-variant="21"] h3 {
+  font-style: italic;
+}
+
+/* ─── V22 · Sunlit Terracotta Grotesk — assertive slab display, crisp grotesk body ─── */
+[data-ui-variant="22"] {
+  --v-display-font: 'Besley', serif;
+  --v-body-font: 'Hanken Grotesk', sans-serif;
+}
+
+[data-ui-variant="22"] h1, [data-ui-variant="22"] h2, [data-ui-variant="22"] h3 {
+  letter-spacing: -0.01em;
+}
+
+[data-ui-variant="22"] main > section:not(#home)::before {
+  content: '';
+  display: block;
+  width: 3rem;
+  height: 4px;
+  border-radius: 9999px;
+  background: var(--c-orange);
+  margin: 0 auto 1.5rem;
+}
+
+/* ─── V23 · Golden Slab Warmth — chunky slab serif, humanist body, glow drift ─── */
+[data-ui-variant="23"] {
+  --v-display-font: 'Bitter', serif;
+  --v-body-font: 'Plus Jakarta Sans', sans-serif;
+}
+
+[data-ui-variant="23"] main {
+  position: relative;
+  overflow: hidden;
+}
+
+[data-ui-variant="23"] main::before {
+  content: '';
+  position: absolute;
+  top: -8rem;
+  right: -8rem;
+  width: 28rem;
+  height: 28rem;
+  border-radius: 9999px;
+  background: radial-gradient(circle, var(--c-orange-glow), transparent 70%);
+  filter: blur(50px);
+  z-index: 0;
+  pointer-events: none;
+  animation: proto-drift 15s ease-in-out infinite;
+}
+
+[data-ui-variant="23"] main > section {
+  position: relative;
+  z-index: 1;
+}
+
+/* ─── V24 · Classic Refined — original Lora/Manrope pairing, quieter tracking + shimmer accent ─── */
+[data-ui-variant="24"] {
+  --v-display-font: 'Marcellus', serif;
+  --v-body-font: 'Manrope', sans-serif;
+}
+
+[data-ui-variant="24"] h1, [data-ui-variant="24"] h2, [data-ui-variant="24"] h3 {
+  letter-spacing: 0.01em;
+}
+
+[data-ui-variant="24"] .editorial-eyebrow {
+  background: linear-gradient(90deg, var(--c-orange-dark), var(--c-orange), var(--c-orange-dark));
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: proto-shimmer 5s linear infinite;
+}
+
+/* ─── V25 · Boutique Warm Script — bold display headline, tidy grotesk body ─── */
+[data-ui-variant="25"] {
+  --v-display-font: 'Yeseva One', cursive;
+  --v-body-font: 'Work Sans', sans-serif;
+}
+
+[data-ui-variant="25"] h1, [data-ui-variant="25"] h2, [data-ui-variant="25"] h3 {
+  letter-spacing: 0;
+}
+
+[data-ui-variant="25"] .quote-block {
+  border-left-width: 5px;
+  border-left-style: double;
+}
+
 
 
