@@ -483,3 +483,307 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 68rem;
 }
 
+/* ─── V4 · Split Diagonal — alternating diagonal-cut, offset sections ─── */
+[data-ui-variant="4"] main > section {
+  position: relative;
+  padding-top: clamp(3.5rem, 7vw, 6rem);
+  padding-bottom: clamp(3.5rem, 7vw, 6rem);
+}
+
+[data-ui-variant="4"] main > section:nth-of-type(odd):not(#home) {
+  clip-path: polygon(0 1.5rem, 100% 0, 100% calc(100% - 1.5rem), 0 100%);
+}
+
+[data-ui-variant="4"] main > section:nth-of-type(even):not(#home) {
+  clip-path: polygon(0 0, 100% 1.5rem, 100% 100%, 0 calc(100% - 1.5rem));
+}
+
+[data-ui-variant="4"] main > section:nth-of-type(odd) .max-w-7xl {
+  max-width: 62rem;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+[data-ui-variant="4"] main > section:nth-of-type(even) .max-w-7xl {
+  max-width: 62rem;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+[data-ui-variant="4"] main > section:not(#home)::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-top: 3px solid var(--c-orange-light);
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* ─── V5 · Bento Overlap — layered cards with negative-margin overlap ─── */
+[data-ui-variant="5"] main {
+  padding: clamp(1.5rem, 4vw, 3rem) clamp(1rem, 5vw, 3.5rem);
+}
+
+[data-ui-variant="5"] main > section {
+  position: relative;
+  border-radius: 2.5rem 2.5rem 0.75rem 2.5rem;
+  overflow: hidden;
+  box-shadow: 0 30px 70px rgba(31, 27, 24, 0.12);
+  border: 1px solid rgba(31, 27, 24, 0.07);
+}
+
+[data-ui-variant="5"] main > section:not(#home) {
+  margin-top: -2.5rem;
+  z-index: 1;
+}
+
+[data-ui-variant="5"] main > section:nth-of-type(3n) {
+  border-radius: 0.75rem 2.5rem 2.5rem 2.5rem;
+}
+
+[data-ui-variant="5"] main > section:nth-of-type(3n + 1) {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+[data-ui-variant="5"] main > section:nth-of-type(3n + 2) {
+  max-width: 90%;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+[data-ui-variant="5"] main > section .max-w-7xl {
+  max-width: 60rem;
+}
+
+/* ─── V6 · Scrapbook Tilt — playful stacked-card rotation with numbering ─── */
+[data-ui-variant="6"] main {
+  counter-reset: proto-section;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(2.5rem, 5vw, 4rem);
+  padding: clamp(2rem, 5vw, 3.5rem) clamp(1rem, 4vw, 2.5rem);
+}
+
+[data-ui-variant="6"] main > section {
+  position: relative;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  border: 2px solid rgba(31, 27, 24, 0.08);
+  box-shadow: 10px 14px 0 rgba(31, 27, 24, 0.06);
+  transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
+  counter-increment: proto-section;
+}
+
+[data-ui-variant="6"] main > section:nth-of-type(odd) {
+  transform: rotate(-0.6deg);
+}
+
+[data-ui-variant="6"] main > section:nth-of-type(even) {
+  transform: rotate(0.6deg);
+}
+
+[data-ui-variant="6"] main > section:hover {
+  transform: rotate(0deg) translateY(-4px);
+  box-shadow: 14px 18px 0 rgba(31, 27, 24, 0.09);
+}
+
+[data-ui-variant="6"] main > section:not(#home)::before {
+  content: counter(proto-section, decimal-leading-zero);
+  position: absolute;
+  top: 0.5rem;
+  right: 1.25rem;
+  font-family: 'Lora', serif;
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: 700;
+  color: var(--c-orange);
+  opacity: 0.08;
+  line-height: 1;
+  pointer-events: none;
+  z-index: 0;
+}
+
+[data-ui-variant="6"] main > section .max-w-7xl {
+  max-width: 58rem;
+}
+
+/* ─── V7 · Magazine Pull-Quote — alternating rule + oversized quote mark ─── */
+[data-ui-variant="7"] main > section {
+  position: relative;
+  padding-top: clamp(3rem, 6vw, 5rem);
+  padding-bottom: clamp(3rem, 6vw, 5rem);
+}
+
+[data-ui-variant="7"] main > section:nth-of-type(odd):not(#home) {
+  border-left: 6px solid var(--c-orange);
+}
+
+[data-ui-variant="7"] main > section:nth-of-type(even):not(#home) {
+  border-right: 6px solid var(--c-orange);
+}
+
+[data-ui-variant="7"] main > section:not(#home) .max-w-7xl {
+  max-width: 52rem;
+}
+
+[data-ui-variant="7"] main > section:not(#home)::before {
+  content: '\201C';
+  position: absolute;
+  top: -1rem;
+  font-family: 'Lora', serif;
+  font-size: 9rem;
+  line-height: 1;
+  color: var(--c-orange);
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+[data-ui-variant="7"] main > section:nth-of-type(odd)::before {
+  left: 1.5rem;
+}
+
+[data-ui-variant="7"] main > section:nth-of-type(even)::before {
+  right: 1.5rem;
+}
+
+/* ─── V8 · Floating Glass — translucent blurred panels over soft blobs ─── */
+[data-ui-variant="8"] main {
+  position: relative;
+  padding: clamp(1.5rem, 4vw, 3rem) clamp(1rem, 5vw, 3rem);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1.5rem, 3vw, 2.5rem);
+  overflow: hidden;
+}
+
+[data-ui-variant="8"] main::before,
+[data-ui-variant="8"] main::after {
+  content: '';
+  position: absolute;
+  width: 26rem;
+  height: 26rem;
+  border-radius: 9999px;
+  background: var(--c-orange-glow);
+  filter: blur(60px);
+  z-index: 0;
+  pointer-events: none;
+}
+
+[data-ui-variant="8"] main::before {
+  top: -6rem;
+  left: -8rem;
+}
+
+[data-ui-variant="8"] main::after {
+  bottom: 10%;
+  right: -10rem;
+}
+
+[data-ui-variant="8"] main > section {
+  position: relative;
+  z-index: 1;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 20px 50px rgba(31, 27, 24, 0.1);
+}
+
+[data-ui-variant="8"] main > section.editorial-block--dark {
+  background: rgba(31, 27, 24, 0.82);
+}
+
+[data-ui-variant="8"] main > section .max-w-7xl {
+  max-width: 62rem;
+}
+
+/* ─── V9 · Zigzag Timeline — central spine with alternating offsets ─── */
+[data-ui-variant="9"] main {
+  position: relative;
+}
+
+[data-ui-variant="9"] main::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background: var(--c-orange-light);
+  opacity: 0.6;
+  z-index: 0;
+}
+
+[data-ui-variant="9"] main > section {
+  position: relative;
+  z-index: 1;
+}
+
+[data-ui-variant="9"] main > section:not(#home)::before {
+  content: '';
+  position: absolute;
+  top: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 16px;
+  height: 16px;
+  border-radius: 9999px;
+  background: var(--c-orange);
+  border: 3px solid var(--c-cream);
+  box-shadow: 0 0 0 2px var(--c-orange-light);
+  z-index: 2;
+}
+
+[data-ui-variant="9"] main > section:nth-of-type(odd):not(#home) .max-w-7xl {
+  max-width: 46rem;
+  margin-left: 0;
+  margin-right: 52%;
+}
+
+[data-ui-variant="9"] main > section:nth-of-type(even):not(#home) .max-w-7xl {
+  max-width: 46rem;
+  margin-left: 52%;
+  margin-right: 0;
+}
+
+@media (max-width: 900px) {
+  [data-ui-variant="9"] main > section:not(#home) .max-w-7xl {
+    max-width: 90% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+/* ─── V10 · Minimal Zen — hairline rules, no shadows, wide breathing margins ─── */
+[data-ui-variant="10"] main > section {
+  border-radius: 0;
+  box-shadow: none !important;
+  border: none;
+  border-top: 1px solid rgba(31, 27, 24, 0.08);
+  padding-top: clamp(4rem, 9vw, 8rem);
+  padding-bottom: clamp(4rem, 9vw, 8rem);
+}
+
+[data-ui-variant="10"] main > section:first-child {
+  border-top: none;
+}
+
+[data-ui-variant="10"] main > section .max-w-7xl {
+  max-width: 44rem;
+}
+
+[data-ui-variant="10"] .flat-card {
+  box-shadow: none;
+  border: 1px solid rgba(31, 27, 24, 0.08);
+}
+
+[data-ui-variant="10"] .flat-card:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+
+

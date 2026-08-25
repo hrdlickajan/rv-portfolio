@@ -1,27 +1,35 @@
 // PROTOTYPE — throwaway layout switcher, wipe me before shipping.
-// Lets you flip between the shipped layout and 3 alternative section layouts
+// Lets you flip between the shipped layout and 6 alternative section layouts
 // via a `?ui=` query param, without touching any section's copy or colors.
 import { useEffect, useState } from 'react';
 
-export type UIVariant = '0' | '1' | '2' | '3';
+export type UIVariant = '0' | '1' | '2' | '3' | '4' | '5' | '6' | '7' | '8' | '9' | '10';
+const VALID_VARIANTS: UIVariant[] = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'];
 
 const OPTIONS: { id: UIVariant; label: string }[] = [
   { id: '0', label: 'Original' },
   { id: '1', label: 'V1 · Breathing Room' },
   { id: '2', label: 'V2 · Card Journey' },
   { id: '3', label: 'V3 · Vertical Rhythm' },
+  { id: '4', label: 'V4 · Split Diagonal' },
+  { id: '5', label: 'V5 · Bento Overlap' },
+  { id: '6', label: 'V6 · Scrapbook Tilt' },
+  { id: '7', label: 'V7 · Magazine Pull-Quote' },
+  { id: '8', label: 'V8 · Floating Glass' },
+  { id: '9', label: 'V9 · Zigzag Timeline' },
+  { id: '10', label: 'V10 · Minimal Zen' },
 ];
 
 export function useUIVariant(): [UIVariant, (v: UIVariant) => void] {
   const [variant, setVariantState] = useState<UIVariant>(() => {
     const param = new URLSearchParams(window.location.search).get('ui');
-    return (param === '1' || param === '2' || param === '3') ? param : '0';
+    return VALID_VARIANTS.includes(param as UIVariant) ? (param as UIVariant) : '0';
   });
 
   useEffect(() => {
     const onPopState = () => {
       const param = new URLSearchParams(window.location.search).get('ui');
-      setVariantState((param === '1' || param === '2' || param === '3') ? param : '0');
+      setVariantState(VALID_VARIANTS.includes(param as UIVariant) ? (param as UIVariant) : '0');
     };
     window.addEventListener('popstate', onPopState);
     return () => window.removeEventListener('popstate', onPopState);
