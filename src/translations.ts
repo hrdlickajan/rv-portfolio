@@ -11,7 +11,7 @@ export const translations = {
       headlineLine2: 'budovat sílu,',
       headlineLine3: 'která vydrží',
       headlineLine4: 'celý život.',
-      taglineLine1: 'Síla není jen o tom, kolik zvedneš na čince. Je o zdraví, energii,',
+      taglineLine1: 'Síla není jen o tom, jak těžkou činku zvedneš v posilovně. Je o zdraví, energii,',
       taglineLine2: 'sebevědomí a svobodě dělat to, co máš ráda. V každé životní etapě.',
       cta1: 'Mám zájem o spolupráci',
       cta2: 'Zjistit více',
@@ -24,7 +24,7 @@ export const translations = {
       ],
       bottomTexts: [
         'Nevěřím na zázračné proměny za 30 dní.',
-        'Věřím v změny, které mají smysl i za několik let.',
+        'Věřím ve změny, které mají smysl i za několik let.',
       ],
     },
     stuckInCircle: {
@@ -38,10 +38,12 @@ export const translations = {
         'Na sebe ti mezi prací, rodinou a všemi povinnostmi nezbývá energie.',
         'Chceš změnu, která vydrží. Jen nevíš, kde začít.',
       ],
+      headingText1: 'Problém není v tom, že by ti chyběla vůle.',
       closingText1:
         'Možná už jsi to zkoušela změnit. A možná ses pokaždé po čase ocitla zpátky na začátku. Ne proto, že by ti chyběla vůle. Ale protože ses snažila žít podle pravidel, která nebyla vytvořená pro tvůj život.',
+      headingText2: 'Nechci ti dát další univerzální návod',
       closingText2:
-        'Nechci ti dát další univerzální návod. Chci tě naučit přemýšlet o pohybu, výživě a zdraví tak, aby ses jednou dokázala rozhodovat s jistotou sama.',
+        'Chci tě naučit přemýšlet o pohybu, výživě a zdraví tak, aby ses jednou dokázala rozhodovat s jistotou sama.',
     },
     foundations: {
       heading: 'Síla, která vydrží, nestojí na motivaci. Stojí na pevných základech.',
@@ -53,7 +55,7 @@ export const translations = {
           number: '1',
           title: 'Pohyb',
           text:
-            'Silový trénink tvoří základ mého přístupu. Ne proto, abys zvedala co největší váhy, ale aby ses cítila silnější v každodenním životě. Zároveň společně najdeme pohyb, který tě bude bavit a stane se přirozenou součástí tvého života.',
+            'Silový trénink tvoří základ mého přístupu. Ne proto, abys zvedala co největší váhy v posilovně, ale aby ses cítila silnější v každodenním životě. Zároveň společně najdeme pohyb, který tě bude bavit a stane se přirozenou součástí tvého života.',
         },
         {
           number: '2',
@@ -71,11 +73,11 @@ export const translations = {
           number: '4',
           title: 'Návyky',
           text:
-            'Malé kroky. Velká změna. Nepotřebuješ změnit celý život během jednoho týdne. Potřebuješ vytvořit systém, který bude fungovat i za rok.',
+            'Malé kroky postupně vedou k velkým změnám. Nepotřebuješ změnit celý život během jednoho týdne. Potřebuješ si postupně vybudovat systém, který bude fungovat dlouhodobě a na který se budeš moct spolehnout.',
         },
       ],
       closing:
-        'Nechci, aby ses musela spoléhat na motivaci. Chci, abys vybudovala systém, který tě podrží i ve dnech, kdy motivace nebude.',
+        'Nechci, aby ses musela spoléhat na motivaci. Chci, aby sis dokázala vybudovat systém, který tě podrží i ve dnech, kdy ti bude motivace chybět.',
     },
     whyStrength: {
       eyebrow: 'Proč budovat sílu?',
@@ -100,14 +102,14 @@ export const translations = {
         },
         {
           lead: 'Protože chceš žít naplno.',
-          text: 'Ne čekat, až jednou bude čas. Ale budovat život, který si můžeš užívat už teď.',
+          text: 'Nečekat na správný čas nebo ideální podmínky. Ale umět si užívat život takový, jaký je právě teď.',
         },
         {
           lead: 'Protože chceš mít odvahu zkoušet nové věci.',
-          text: 'Protože když věříš svému tělu, mnohem snáz věříš i sama sobě.',
+          text: 'Čím víc věříš svému tělu, tím víc si věříš v životě.',
         },
       ],
-      quote: 'Pro mě síla už dávno není o tom být nejlepší. Je o tom mít svobodu žít život podle svých představ.',
+      quote: 'Pro mě už síla dávno není jen o výkonu. Je o svobodě žít život podle vlastních představ.',
       quoteAttribution: 'Romana Vítková',
     },
     yourJourney: {
@@ -148,7 +150,7 @@ export const translations = {
         },
         {
           title: 'Budování síly',
-          text: 'Síla není cíl sama o sobě. Je prostředkem k životu, který chceš žít.',
+          text: 'Naučím tě, jak trénovat chytře, postupně budovat sílu a mít ve svém tréninku systém, který tě bude dlouhodobě posouvat.',
         },
         {
           title: 'Hubnutí bez extrémů',
@@ -156,11 +158,11 @@ export const translations = {
         },
         {
           title: 'Vztah k pohybu a výživě',
-          text: 'Pomohu ti vytvořit návyky, které budou podporovat tvoje zdraví i každodenní život.',
+          text: 'Zdravý vztah se buduje postupně. Společně najdeme cestu, která ti pomůže vytvořit si k pohybu a výživě vztah na celý život.',
         },
         {
           title: 'Více energie',
-          text: 'Vytvoříme systém, díky kterému budeš mít energii na práci, rodinu i věci, které máš ráda.',
+          text: 'Společně nastavíme pohyb, výživu a regeneraci tak, aby podporovaly tvoji energii v každodenním životě.',
         },
         {
           title: 'Životní změny',
@@ -169,34 +171,66 @@ export const translations = {
       ],
     },
     chooseYourPath: {
-      heading: 'Spolupráce, která se přizpůsobí tobě.',
+      heading: 'Každá z nás potřebuje něco jiného.',
       intro:
         'Každá jsme v jiné životní situaci. Některé potřebujeme pravidelné vedení v posilovně, jiné větší flexibilitu nebo podporu na dálku. Společně najdeme způsob spolupráce, který bude dávat smysl právě tobě.',
       popularBadge: 'Nejoblíbenější',
       paths: [
         {
           title: 'Hybrid coaching',
-          subtitle: 'Pokud hledáš individuální vedení, ale zároveň prostor učit se fungovat samostatně.',
-          text: 'Kombinace osobních tréninků a online coachingu ti poskytne pravidelnou podporu, individuální plán i flexibilitu, aby ses mohla posouvat vlastním tempem.',
-          ideal: 'Ideální, pokud hledáš dlouhodobou spolupráci, která se přizpůsobí tvému životu.',
+          subtitle: 'Komplexní coaching s pravidelným osobním kontaktem.',
+          text: 'Kombinace online coachingu a osobních tréninků ti poskytne individuální vedení, podporu a zároveň prostor učit se trénovat samostatně.',
+          ideal: 'Ideální, pokud chceš mít komplexní podporu, ale zároveň oceníš pravidelný osobní kontakt a vedení při tréninku.',
           popular: true,
         },
         {
           title: 'Online coaching',
-          subtitle: 'Pokud chceš individuální podporu odkudkoliv.',
-          text: 'Získáš tréninkový plán na míru, pravidelné konzultace i průběžnou podporu. Vše přizpůsobené tvým cílům, možnostem a životnímu stylu.',
-          ideal: 'Ideální, pokud nejsi z Prahy nebo preferuješ cvičení podle vlastního rozvrhu.',
+          subtitle: 'Komplexní vedení odkudkoliv.',
+          text: 'Získáš individuální plán, pravidelnou zpětnou vazbu a podporu nejen v tréninku, ale také ve výživě, regeneraci a každodenních návycích.',
+          ideal: 'Ideální, pokud zvládáš trénovat samostatně a chceš mít jasný směr, podporu a vedení.',
         },
         {
           title: 'Personal coaching',
-          subtitle: 'Pokud se chceš cítit jistě v posilovně a oceníš osobní vedení.',
-          text: 'Naučíš se správnou techniku, získáš jistotu při cvičení a společně vybudujeme pevné základy, na kterých můžeš dlouhodobě stavět.',
-          ideal: 'Ideální, pokud začínáš nebo preferuješ osobní kontakt při tréninku.',
+          subtitle: 'Pravidelné tréninky pod mým přímým vedením.',
+          text: 'Společně se zaměříme na správnou techniku, postupný progres a vybudování jistoty v posilovně.',
+          ideal: 'Ideální, pokud s posilováním začínáš nebo jednoduše preferuješ pravidelný osobní kontakt při tréninku.',
         },
       ],
       reassurance: 'Nevíš, která varianta je pro tebe ta pravá?',
       reassuranceSub: 'To vůbec nevadí. Probereme to společně na úvodní konzultaci.',
       cta: 'Mám zájem o spolupráci',
+      comparisonHeading: 'Porovnej jednotlivé možnosti spolupráce',
+      comparisonTable: {
+        columns: ['Hybrid coaching', 'Online coaching', 'Osobní tréninky'],
+        rows: [
+          {
+            label: 'Pro koho',
+            values: [
+              'Chci samostatnost doplnit pravidelným osobním vedením',
+              'Chci trénovat samostatně, ale mít jasný plán a komplexní vedení',
+              'Chci pravidelně trénovat pod přímým vedením trenérky',
+            ],
+          },
+          { label: 'Individuální tréninkový plán', values: ['✓', '✓', '✓'] },
+          { label: 'Osobní tréninky', values: ['1× měsíčně', '—', '1–2× týdně'] },
+          { label: 'Měsíční coaching call', values: ['60 min', '60 min', '—'] },
+          {
+            label: 'Měsíční check-in & vyhodnocení progresu',
+            values: ['✓', '✓', '—'],
+          },
+          {
+            label: 'Výživa, návyky & lifestyle',
+            values: ['Komplexní coaching', 'Komplexní coaching', 'Základní podpora dle potřeby'],
+          },
+          {
+            label: 'Feedback k technice',
+            values: ['Osobně při tréninku', '1× týdně online', 'Osobně při tréninku'],
+          },
+          { label: 'Průběžná podpora', values: ['✓', '✓', 'Omezená'] },
+          { label: 'Minimální délka spolupráce', values: ['3 měsíce', '3 měsíce', '3 měsíce'] },
+          { label: 'Cena', values: ['3 200 Kč / měsíc', '2 500 Kč / měsíc', 'od 4 800 Kč / měsíc'] },
+        ],
+      },
     },
     whyIDoThis: {
       eyebrow: 'Proč tohle dělám',
@@ -208,7 +242,7 @@ export const translations = {
         'Chci, aby moje tělo zvládlo těhotenství, mohla jsem jednou blbnout se svými dětmi – a později i vnoučaty. A chci si život užívat i ve stáří, ne ho jen dožívat.',
       ],
       leftStatement: [
-        'Kdysi jsem si myslela, že síla znamená zvednout těžkou činku.',
+        'Kdysi jsem si myslela, že síla znamená zvednout co nejtěžší činku v posilovně.',
         'Dnes vím, že síla znamená mnohem víc. Znamená pro mě svobodu – v těle i v životě.',
       ],
       rightList: [
@@ -279,7 +313,7 @@ export const translations = {
     closingBanner: {
       heading: 'Každá žena si zaslouží cítit se silná.',
       subline:
-        'Ať už začínáš úplně od nuly, nebo jen hledáš cestu, která bude dlouhodobě fungovat, ráda na té cestě budu tvou partnerkou.',
+        'Ať už začínáš úplně od nuly, nebo hledáš způsob, jak se posunout dál, ráda ti pomůžu najít cestu, která bude fungovat právě pro tebe.',
       cta: 'Mám zájem o spolupráci',
       ctaNote: 'Nejdřív tě čeká krátký vstupní dotazník. Po jeho vyplnění si vybereš termín úvodní konzultace.',
     },
@@ -346,10 +380,12 @@ export const translations = {
         'Na sebe ti mezi prací, rodinou a všemi povinnostmi nezbývá energie.',
         'Chceš změnu, která vydrží. Jen nevíš, kde začít.',
       ],
+      headingText1: 'Problém není v tom, že by ti chyběla vůle.',
       closingText1:
         'Možná už jsi to zkoušela změnit. A možná ses pokaždé po čase ocitla zpátky na začátku. Ne proto, že by ti chyběla vůle. Ale protože ses snažila žít podle pravidel, která nebyla vytvořená pro tvůj život.',
+      headingText2: 'Nechci ti dát další univerzální návod',
       closingText2:
-        'Nechci ti dát další univerzální návod. Chci tě naučit přemýšlet o pohybu, výživě a zdraví tak, aby ses jednou dokázala rozhodovat s jistotou sama.',
+        'Chci tě naučit přemýšlet o pohybu, výživě a zdraví tak, aby ses jednou dokázala rozhodovat s jistotou sama.',
     },
     foundations: {
       heading: 'Síla, která vydrží, nestojí na motivaci. Stojí na pevných základech.',
@@ -505,6 +541,38 @@ export const translations = {
       reassurance: 'Nevíš, která varianta je pro tebe ta pravá?',
       reassuranceSub: 'To vůbec nevadí. Probereme to společně na úvodní konzultaci.',
       cta: 'Mám zájem o spolupráci',
+      comparisonHeading: 'Porovnej jednotlivé možnosti spolupráce',
+      comparisonTable: {
+        columns: ['Hybrid coaching', 'Online coaching', 'Osobní tréninky'],
+        rows: [
+          {
+            label: 'Pro koho',
+            values: [
+              'Chci samostatnost doplnit pravidelným osobním vedením',
+              'Chci trénovat samostatně, ale mít jasný plán a komplexní vedení',
+              'Chci pravidelně trénovat pod přímým vedením trenérky',
+            ],
+          },
+          { label: 'Individuální tréninkový plán', values: ['✓', '✓', '✓'] },
+          { label: 'Osobní tréninky', values: ['1× měsíčně', '—', '1–2× týdně'] },
+          { label: 'Měsíční coaching call', values: ['60 min', '60 min', '—'] },
+          {
+            label: 'Měsíční check-in & vyhodnocení progresu',
+            values: ['✓', '✓', '—'],
+          },
+          {
+            label: 'Výživa, návyky & lifestyle',
+            values: ['Komplexní coaching', 'Komplexní coaching', 'Základní podpora dle potřeby'],
+          },
+          {
+            label: 'Feedback k technice',
+            values: ['Osobně při tréninku', '1× týdně online', 'Osobně při tréninku'],
+          },
+          { label: 'Průběžná podpora', values: ['✓', '✓', 'Omezená'] },
+          { label: 'Minimální délka spolupráce', values: ['3 měsíce', '3 měsíce', '3 měsíce'] },
+          { label: 'Cena', values: ['3 200 Kč / měsíc', '2 500 Kč / měsíc', 'od 4 800 Kč / měsíc'] },
+        ],
+      },
     },
     whyIDoThis: {
       eyebrow: 'Proč tohle dělám',

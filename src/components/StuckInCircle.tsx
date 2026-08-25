@@ -30,7 +30,9 @@ export default function StuckInCircle() {
         </div>
 
         <div className="space-y-6 animate-on-scroll" data-delay="0.2s">
+          <h3 className="font-display text-2xl md:text-3xl leading-snug">{s.headingText1}</h3>
           <p className="text-lg md:text-xl leading-relaxed opacity-90">{s.closingText1}</p>
+          <h3 className="font-display text-2xl md:text-3xl leading-snug pt-4">{s.headingText2}</h3>
           <p className="text-lg md:text-xl leading-relaxed opacity-90">{s.closingText2}</p>
         </div>
       </div>
