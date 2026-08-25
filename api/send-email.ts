@@ -93,6 +93,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         reply_to: email,
         subject: `Nová zpráva z kontaktního formuláře - ${name}`,
         html: `
+          <meta charset="utf-8">
           <div style="font-family: sans-serif; color: #333;">
             <h2>Nová zpráva z kontaktního formuláře</h2>
             <p><strong>Jméno:</strong> ${escapeHtml(name)}</p>

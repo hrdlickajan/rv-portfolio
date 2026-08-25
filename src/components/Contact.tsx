@@ -4,7 +4,7 @@ import ReCAPTCHA from 'react-google-recaptcha';
 import { useLanguage } from '../LanguageContext';
 
 export default function Contact() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [captchaToken, setCaptchaToken] = useState<string | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -115,6 +115,7 @@ export default function Contact() {
             <div className="flex justify-center">
               <ReCAPTCHA
                 sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY || ''}
+                hl={language}
                 onChange={(token) => setCaptchaToken(token)}
                 onExpired={() => setCaptchaToken(null)}
               />
