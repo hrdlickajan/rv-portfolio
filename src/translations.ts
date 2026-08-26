@@ -236,7 +236,7 @@ export const translations = {
     whyIDoThis: {
       eyebrow: 'Proč tohle dělám',
       headingLine1: 'Uvědomuji si, že pokud se o sebe dnes nebudu',
-      headingLine2: 'starat, jednou se bude muset',
+      headingLine2: 'starat, jednou se bude muset',
       headingEmphasis: 'někdo starat o mě.',
       intro: 'A to je pro mě nepředstavitelné.',
       texts: [
@@ -580,7 +580,7 @@ export const translations = {
     whyIDoThis: {
       eyebrow: 'Proč tohle dělám',
       headingLine1: 'Uvědomuji si, že pokud se o sebe dnes nebudu',
-      headingLine2: 'starat, jednou se bude muset',
+      headingLine2: 'starat, jednou se bude muset',
       headingEmphasis: 'někdo starat o mě.',
       intro: 'A to je pro mě nepředstavitelné.',
       texts: [

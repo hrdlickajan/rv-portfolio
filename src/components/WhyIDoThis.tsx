@@ -10,10 +10,10 @@ export default function WhyIDoThis() {
         <div className="animate-on-scroll" data-delay="0s">
           <span className="editorial-eyebrow">{w.eyebrow}</span>
           <h2 className="editorial-heading font-display text-4xl md:text-6xl leading-tight mb-4">
-            {w.headingLine1}
-            <br />
-            {w.headingLine2}
-            <br />
+            {w.headingLine1}{' '}
+            <br className="hidden md:inline" />
+            {w.headingLine2}{' '}
+            <br className="hidden md:inline" />
             <em>{w.headingEmphasis}</em>
           </h2>
           <p className="font-semibold text-orange-500 text-xl md:text-2xl leading-relaxed">{w.intro}</p>
