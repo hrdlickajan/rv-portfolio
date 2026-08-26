@@ -26,6 +26,44 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0;
 }
 
+/* ─── Bento overlap layout ───────────────────────────────────── */
+main {
+  padding: clamp(1.5rem, 4vw, 3rem) clamp(1rem, 5vw, 3.5rem);
+}
+
+main > section {
+  position: relative;
+  border-radius: 2.5rem 2.5rem 0.75rem 2.5rem;
+  overflow: hidden;
+  box-shadow: 0 30px 70px rgba(31, 27, 24, 0.12);
+  border: 1px solid rgba(31, 27, 24, 0.07);
+}
+
+main > section:not(#home) {
+  margin-top: -2.5rem;
+  z-index: 1;
+}
+
+main > section:nth-of-type(3n) {
+  border-radius: 0.75rem 2.5rem 2.5rem 2.5rem;
+}
+
+main > section:nth-of-type(3n + 1):not(#home) {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+main > section:nth-of-type(3n + 2) {
+  max-width: 90%;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+main > section .max-w-7xl {
+  max-width: 60rem;
+}
+
 /* ─── Flat card ──────────────────────────────────────────────── */
 .flat-card {
   background: #FFFFFF;

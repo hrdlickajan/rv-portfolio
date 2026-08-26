@@ -12,7 +12,8 @@ export const translations = {
       headlineLine3: 'která vydrží',
       headlineLine4: 'celý život.',
       taglineLine1: 'Síla není jen o tom, jak těžkou činku zvedneš v posilovně. Je o zdraví, energii,',
-      taglineLine2: 'sebevědomí a svobodě dělat to, co máš ráda. V každé životní etapě.',
+      taglineLine2: 'sebevědomí a svobodě dělat to, co máš ráda.',
+      taglineLine3: 'V každé životní etapě.',
       cta1: 'Mám zájem o spolupráci',
       cta2: 'Zjistit více',
     },
@@ -138,7 +139,7 @@ export const translations = {
         },
       ],
       closing:
-        'Mým cílem není, abys mě potřebovala navždy. Mým cílem je naučit tě rozumět vlastnímu tělu a dělat rozhodnutí, kterým budeš věřit.',
+        'Cílem spolupráce není, abys mě potřebovala navždy. Hlavním cílem je naučit tě porozumět vlastnímu tělu a dělat rozhodnutí, kterým budeš věřit.',
     },
     howICanHelp: {
       eyebrow: 'S čím ti mohu pomoci?',
@@ -234,8 +235,9 @@ export const translations = {
     },
     whyIDoThis: {
       eyebrow: 'Proč tohle dělám',
-      headingLine1: 'Uvědomuji si, že pokud se o sebe dnes nebudu starat,',
-      headingEmphasis: 'jednou se bude muset někdo starat o mě.',
+      headingLine1: 'Uvědomuji si, že pokud se o sebe dnes nebudu',
+      headingLine2: 'starat, jednou se bude muset',
+      headingEmphasis: 'někdo starat o mě.',
       intro: 'A to je pro mě nepředstavitelné.',
       texts: [
         'Mým cílem je žít dlouhý, ale hlavně kvalitní život. Mít dostatek energie dělat věci, které mě baví, cítit se jistě ve svém těle a mít odvahu zkoušet nové věci.',
@@ -354,7 +356,8 @@ export const translations = {
       headlineLine3: 'která vydrží',
       headlineLine4: 'celý život.',
       taglineLine1: 'Síla není jen o tom, kolik zvedneš na čince. Je o zdraví, energii, sebevědomí',
-      taglineLine2: 'a svobodě dělat to, co máš ráda. V každé životní etapě.',
+      taglineLine2: 'a svobodě dělat to, co máš ráda.',
+      taglineLine3: 'V každé životní etapě.',
       cta1: 'Mám zájem o spolupráci',
       cta2: 'Zjistit více',
     },
@@ -480,7 +483,7 @@ export const translations = {
         },
       ],
       closing:
-        'Mým cílem není, abys mě potřebovala navždy. Mým cílem je naučit tě rozumět vlastnímu tělu a dělat rozhodnutí, kterým budeš věřit.',
+        'Cílem spolupráce není, abys mě potřebovala navždy. Hlavním cílem je naučit tě porozumět vlastnímu tělu a dělat rozhodnutí, kterým budeš věřit.',
     },
     howICanHelp: {
       eyebrow: 'S čím ti mohu pomoci?',
@@ -576,8 +579,9 @@ export const translations = {
     },
     whyIDoThis: {
       eyebrow: 'Proč tohle dělám',
-      headingLine1: 'Uvědomuji si, že pokud se o sebe dnes nebudu starat,',
-      headingEmphasis: 'jednou se bude muset někdo starat o mě.',
+      headingLine1: 'Uvědomuji si, že pokud se o sebe dnes nebudu',
+      headingLine2: 'starat, jednou se bude muset',
+      headingEmphasis: 'někdo starat o mě.',
       intro: 'A to je pro mě nepředstavitelné.',
       texts: [
         'Mým cílem je žít dlouhý, ale hlavně kvalitní život. Mít dostatek energie dělat věci, které mě baví, cítit se jistě ve svém těle a mít odvahu zkoušet nové věci.',

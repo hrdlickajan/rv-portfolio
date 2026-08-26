@@ -61,7 +61,7 @@ export default function Header() {
             <a href="#why-i-do-this" className="nav-link text-gray-700 font-semibold">
               {t.header.whyIDoThis}
             </a>
-            <a href="#contact" className="btn-sporty bg-orange-500 text-white px-6 py-2 hover:bg-orange-600">
+            <a href="#contact" className="btn-pill bg-orange-500 text-white px-6 py-2 hover:bg-orange-600">
               {t.header.contact}
             </a>
             {/*
@@ -99,7 +99,7 @@ export default function Header() {
             <a href="#why-i-do-this" onClick={() => setIsMenuOpen(false)} className="block text-gray-700 hover:text-orange-500 transition-colors font-semibold">
               {t.header.whyIDoThis}
             </a>
-            <a href="#contact" onClick={() => setIsMenuOpen(false)} className="block btn-sporty bg-orange-500 text-white px-6 py-2 hover:bg-orange-600 text-center w-fit">
+            <a href="#contact" onClick={() => setIsMenuOpen(false)} className="block btn-pill bg-orange-500 text-white px-6 py-2 hover:bg-orange-600 text-center w-fit">
               {t.header.contact}
             </a>
           </div>

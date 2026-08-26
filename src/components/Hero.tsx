@@ -65,10 +65,12 @@ export default function Hero() {
               <br />
               {t.hero.headlineLine4}
             </h1>
-            <p className="text-sm md:text-sm lg:text-lg text-white/85 md:text-gray-600 mb-6 md:mb-10 leading-relaxed hero-tagline md:max-w-[15rem] lg:max-w-none">
+            <p className="text-sm md:text-sm lg:text-lg text-white/85 md:text-gray-600 mb-6 md:mb-10 leading-relaxed hero-tagline md:max-w-[15rem] lg:max-w-sm">
               {t.hero.taglineLine1}
               <br />
               {t.hero.taglineLine2}
+              <br />
+              {t.hero.taglineLine3}
             </p>
             <div className="flex flex-col gap-3 md:flex-row md:gap-4 hero-ctas">
               <a

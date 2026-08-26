@@ -12,6 +12,8 @@ export default function WhyIDoThis() {
           <h2 className="editorial-heading font-display text-4xl md:text-6xl leading-tight mb-4">
             {w.headingLine1}
             <br />
+            {w.headingLine2}
+            <br />
             <em>{w.headingEmphasis}</em>
           </h2>
           <p className="font-semibold text-orange-500 text-xl md:text-2xl leading-relaxed">{w.intro}</p>
