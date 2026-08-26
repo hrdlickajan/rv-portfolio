@@ -1,20 +1,54 @@
 import { Menu, X } from 'lucide-react';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useLanguage } from '../LanguageContext';
 import LanguageSwitcher from './LanguageSwitcher';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { t } = useLanguage();
+  const mobileMenuRef = useRef<HTMLDivElement>(null);
+  const menuButtonRef = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    if (!isMenuOpen) return;
+
+    const firstLink = mobileMenuRef.current?.querySelector<HTMLElement>('a');
+    firstLink?.focus();
+
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        setIsMenuOpen(false);
+        menuButtonRef.current?.focus();
+        return;
+      }
+
+      if (e.key !== 'Tab' || !mobileMenuRef.current) return;
+
+      const focusable = mobileMenuRef.current.querySelectorAll<HTMLElement>('a, button');
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
+      }
+    };
+
+    document.addEventListener('keydown', handleKeyDown);
+    return () => document.removeEventListener('keydown', handleKeyDown);
+  }, [isMenuOpen]);
 
   return (
     <header className="sticky top-0 z-50 backdrop-blur-md bg-white/90 border-b border-orange-100/60 shadow-[0_2px_24px_rgba(249,115,22,0.07)]">
       <nav aria-label="Main navigation" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
-            <h1 className="font-display xs:text-md sm:text-lg md:text-xl font-bold tracking-widest uppercase bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent leading-none">
+            <p className="font-display xs:text-md sm:text-lg md:text-xl font-bold tracking-widest uppercase bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent leading-none">
               Romana Vítková
-            </h1>
+            </p>
           </div>
 
           <div className="hidden md:flex items-center space-x-8">
@@ -40,6 +74,7 @@ export default function Header() {
             <LanguageSwitcher />
             */}
             <button
+              ref={menuButtonRef}
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               aria-expanded={isMenuOpen}
               aria-controls="mobile-menu"
@@ -54,7 +89,7 @@ export default function Header() {
         </div>
 
         {isMenuOpen && (
-          <div id="mobile-menu" className="md:hidden py-4 space-y-3 border-t border-orange-100 mt-2">
+          <div id="mobile-menu" ref={mobileMenuRef} className="md:hidden py-4 space-y-3 border-t border-orange-100 mt-2">
             <a href="#your-journey" onClick={() => setIsMenuOpen(false)} className="block text-gray-700 hover:text-orange-500 transition-colors font-semibold">
               {t.header.yourJourney}
             </a>

@@ -1,5 +1,5 @@
-import { Instagram, Mail, Phone, MapPin, Send, CheckCircle } from 'lucide-react';
-import { useState } from 'react';
+import { Instagram, Mail, Phone, MapPin, Send, CheckCircle, AlertCircle, MessageCircle } from 'lucide-react';
+import { useRef, useState } from 'react';
 import ReCAPTCHA from 'react-google-recaptcha';
 import { useLanguage } from '../LanguageContext';
 
@@ -9,6 +9,8 @@ export default function Contact() {
   const [captchaToken, setCaptchaToken] = useState<string | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
+  const errorRef = useRef<HTMLDivElement>(null);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -17,12 +19,14 @@ export default function Contact() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (!captchaToken) {
-      alert(t.contact.captchaRequired);
+      setErrorMessage(t.contact.captchaRequired);
+      errorRef.current?.focus();
       return;
     }
 
+    setErrorMessage(null);
     setIsSubmitting(true);
 
     try {
@@ -39,9 +43,14 @@ export default function Contact() {
         setFormData({ name: '', email: '', message: '' });
         setCaptchaToken(null);
         setTimeout(() => setIsSuccess(false), 5000);
+      } else {
+        setErrorMessage(t.contact.errorSending);
+        errorRef.current?.focus();
       }
     } catch (error) {
       console.error('Error sending message:', error);
+      setErrorMessage(t.contact.errorSending);
+      errorRef.current?.focus();
     } finally {
       setIsSubmitting(false);
     }
@@ -130,6 +139,17 @@ export default function Contact() {
                   </p>
                 </div>
               )}
+              {errorMessage && (
+                <div
+                  ref={errorRef}
+                  role="alert"
+                  tabIndex={-1}
+                  className="flex items-center gap-3 p-4 bg-red-50 border border-red-200 rounded-lg focus:outline-none"
+                >
+                  <AlertCircle className="text-red-600 shrink-0" size={20} aria-hidden="true" />
+                  <p className="text-red-700 font-medium">{errorMessage}</p>
+                </div>
+              )}
             </div>
 
             <button
@@ -160,6 +180,17 @@ export default function Contact() {
                   className="text-sm text-gray-600 hover:text-orange-500 transition-colors"
                 >
                   +420 734 113 441
+                </a>
+              </div>
+              <div className="flex items-center gap-3 py-2 border-b border-gray-100">
+                <MessageCircle size={16} className="text-orange-500 shrink-0" />
+                <a
+                  href="https://wa.me/420734113441"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-gray-600 hover:text-orange-500 transition-colors"
+                >
+                  WhatsApp
                 </a>
               </div>
               <div className="flex items-center gap-3 py-2 border-b border-gray-100">

@@ -50,9 +50,12 @@ function App() {
   return (
     <LanguageProvider>
       <div className="min-h-screen flex flex-col" style={{ backgroundColor: 'var(--c-cream)' }}>
+        <a href="#main" className="skip-link">
+          Přeskočit na obsah
+        </a>
         <Header />
 
-        <main className="flex-grow">
+        <main id="main" className="flex-grow">
           <Hero />
           <Manifesto />
           <StuckInCircle />

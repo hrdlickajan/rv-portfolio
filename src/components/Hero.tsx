@@ -30,7 +30,8 @@ export default function Hero() {
         <img
           src="/resources/hero.jpg"
           alt=""
-          aria-hidden="true"
+          fetchPriority="high"
+          loading="eager"
           className="w-full h-full object-cover object-top"
         />
         {/* Dark overlay so white text is readable over the dark photo */}
@@ -43,6 +44,8 @@ export default function Hero() {
           <img
             src="/resources/hero.jpg"
             alt="Romana Vítková, personal fitness coach"
+            fetchPriority="high"
+            loading="eager"
             className="w-full h-full object-cover object-top"
           />
         </div>
