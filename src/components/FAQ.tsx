@@ -43,16 +43,7 @@ export default function FAQ() {
                   }`}
                 >
                   <div className="overflow-hidden">
-                    <p className="text-gray-600 leading-relaxed pb-6">
-                      {item.answer}
-                      {item.answerNote && (
-                        <>
-                          <br />
-                          <br />
-                          <strong className="font-semibold text-gray-900">{item.answerNote}</strong>
-                        </>
-                      )}
-                    </p>
+                    <p className="text-gray-600 leading-relaxed pb-6">{item.answer}</p>
                   </div>
                 </div>
               </div>

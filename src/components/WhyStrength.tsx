@@ -31,7 +31,6 @@ export default function WhyStrength() {
 
         <div className="quote-block animate-on-scroll" data-delay="0.2s">
           <p className="quote-block__text text-2xl md:text-3xl leading-snug mb-6">{w.quote}</p>
-          <span className="quote-block__attribution">— {w.quoteAttribution}</span>
         </div>
       </div>
     </section>
