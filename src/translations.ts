@@ -7,25 +7,23 @@ export const translations = {
       contact: 'Kontakt',
     },
     hero: {
-      headlineLine1: 'Pomáhám ženám',
-      headlineLine2: 'budovat sílu,',
-      headlineLine3: 'která vydrží',
-      headlineLine4: 'celý život.',
-      taglineLine1: 'Síla není jen o tom, jak těžkou činku zvedneš v posilovně. Je o zdraví, energii,',
-      taglineLine2: 'sebevědomí a svobodě dělat to, co máš ráda.',
-      taglineLine3: 'V každé životní etapě.',
-      cta1: 'Mám zájem o spolupráci',
-      cta2: 'Zjistit více',
+      headlineLine1: 'Pomáhám ženám budovat sílu,',
+      headlineLine2: 'která vydrží celý život.',
+      taglineLine1:
+        'Individuální coaching, který propojuje silový trénink, výživu a udržitelné návyky. Pro více energie, zdraví a jistoty ve vlastním těle – v každé životní etapě.',
+      cta1: 'Chci úvodní konzultaci',
+      ctaNote: 'Krátký dotazník a nezávazný 30minutový online hovor',
+      cta2: 'Jak spolupráce probíhá',
     },
     manifesto: {
-      statementLines: ['Věřím v malé kroky,', 'které se časem promění', 've velkou změnu.'],
+      statementLines: ['Věřím v malé kroky,', 'které vedou k velkým změnám.'],
       sideTexts: [
         'Každá žena si zaslouží cítit se silná.',
         'Bez ohledu na věk, zkušenosti nebo to, kde právě začíná.',
       ],
       bottomTexts: [
-        'Nevěřím na zázračné proměny za 30 dní.',
-        'Věřím ve změny, které mají smysl i za několik let.',
+        'Neslibuji zázračné proměny za 30 dní.',
+        'Společně budujeme změny, které budou fungovat i za několik let.',
       ],
     },
     stuckInCircle: {
@@ -33,21 +31,21 @@ export const translations = {
       headingLine1: 'Možná máš pocit, že se',
       headingEmphasis: 'pořád točíš v kruhu…',
       thoughts: [
-        'Začneš cvičit s nadšením, ale po pár týdnech zase skončíš.',
-        'Vyzkoušela jsi už několik přístupů, ale žádný dlouhodobě nefungoval.',
-        'Nevíš, čemu ve světě výživy a cvičení věřit.',
-        'Na sebe ti mezi prací, rodinou a všemi povinnostmi nezbývá energie.',
-        'Chceš změnu, která vydrží. Jen nevíš, kde začít.',
+        'Možná víš, co dělat. Jen se ti to nedaří udržet.',
+        'Začneš cvičit s nadšením, ale po několika týdnech zase skončíš.',
+        'Ve světě výživy a cvičení už nevíš, čemu věřit.',
+        'Mezi prací, rodinou a povinnostmi ti na sebe nezbývá čas ani energie.',
+        'Chceš změnu, která vydrží, ale nevíš, jak ji přizpůsobit svému životu.',
       ],
       headingText1: 'Problém není v tom, že by ti chyběla vůle.',
       closingText1:
-        'Možná už jsi to zkoušela změnit. A možná ses pokaždé po čase ocitla zpátky na začátku. Ne proto, že by ti chyběla vůle. Ale protože ses snažila žít podle pravidel, která nebyla vytvořená pro tvůj život.',
-      headingText2: 'Nechci ti dát další univerzální návod',
+        'Možná už ses několikrát pokusila něco změnit, ale pokaždé ses po čase ocitla zpátky na začátku. Ne proto, že bys selhala. Spíš ses snažila následovat pravidla, která nepočítala s tvými potřebami ani běžným životem.',
+      headingText2: 'Další univerzální návod nepotřebuješ.',
       closingText2:
-        'Chci tě naučit přemýšlet o pohybu, výživě a zdraví tak, aby ses jednou dokázala rozhodovat s jistotou sama.',
+        'Potřebuješ porozumět tomu, co funguje právě pro tebe. Proto společně hledáme způsob, jak pohyb, výživu a péči o zdraví nastavit tak, aby ses v nich postupně dokázala rozhodovat s jistotou sama.',
     },
     foundations: {
-      heading: 'Síla, která vydrží, nestojí na motivaci. Stojí na pevných základech.',
+      heading: 'Síla, která vydrží, stojí na pevných základech.',
       intro:
         'Pevné základy vznikají krok za krokem – způsobem a tempem, které dávají smysl právě tobě.',
       subheading: 'ZDROJE TVÉ SÍLY',
@@ -56,29 +54,29 @@ export const translations = {
           number: '1',
           title: 'Pohyb',
           text:
-            'Pravidelný pohyb je jedním ze základů zdraví, energie a funkčního těla v každé životní etapě. Silový trénink ti pomáhá budovat sílu a odolnost, ale stejně důležitý je i pohyb mimo posilovnu – chůze, sport nebo cokoli, co tě baví a udrží tě aktivní v každodenním životě.',
+            'Silový trénink ti pomáhá budovat sílu, svaly a odolnost. Stejně důležitý je ale i pohyb mimo posilovnu – chůze, sport nebo cokoli, co tě baví a pomáhá ti zůstat aktivní.',
         },
         {
           number: '2',
           title: 'Výživa',
           text:
-            'Jídlo dodává tělu energii a živiny, které potřebuje pro zdraví, výkon i regeneraci. Bez zákazů a extrémů – tak, aby výživa podporovala tvoje cíle a zároveň měla přirozené místo ve tvém životě.',
+            'Jídlo dodává tělu energii a živiny, které potřebuje pro zdraví, výkon i regeneraci. Bez zákazů a extrémů – tak, aby podporovalo tvoje cíle a měla přirozené místo v tvém životě.',
         },
         {
           number: '3',
           title: 'Regenerace',
           text:
-            'Odpočinek není odměna. Je součástí procesu. Kvalitní spánek, zvládání stresu a dostatek regenerace dávají tělu prostor obnovovat síly a pomáhají ti mít energii na to, co je pro tebe důležité.',
+            'Odpočinek není odměna, ale součást procesu. Kvalitní spánek, prostor pro odpočinek a práce se stresem pomáhají tělu obnovovat síly a udržovat energii.',
         },
         {
           number: '4',
           title: 'Návyky',
           text:
-            'To, co děláš pravidelně, má z dlouhodobého hlediska větší vliv než to, co uděláš dokonale jednou za čas. Dobře nastavené návyky dávají zdravému životnímu stylu strukturu a pomáhají ti udržet změny dlouhodobě.',
+            'To, co děláš pravidelně, má větší vliv než to, co uděláš dokonale jednou za čas. Dobře nastavené návyky ti pomohou udržet změny bez neustálého začínání znovu.',
         },
       ],
       closing:
-        'Nemusíš se spoléhat jen na motivaci. Můžeš si vybudovat systém, který tě podrží i ve dnech, kdy ti bude motivace chybět.',
+        'Nemusíš se spoléhat jen na motivaci. Můžeš si vybudovat systém, který tě podrží i ve dnech, kdy ti bude chybět.',
     },
     whyStrength: {
       eyebrow: 'Proč budovat sílu?',
@@ -87,27 +85,27 @@ export const translations = {
       reasons: [
         {
           lead: 'Energie na věci, které miluješ.',
-          text: 'Nejen zvládnout pracovní den, ale mít energii na výlet, běh, cestování nebo obyčejné odpoledne s dětmi.',
+          text: 'Nejen zvládnout pracovní den, ale mít energii i na výlet, sport, cestování nebo čas s rodinou.',
         },
         {
           lead: 'Tělo, které tě podporuje.',
-          text: 'Ne aby tě brzdilo v tom, co máš ráda.',
+          text: 'Tělo, které zvládá nároky každodenního života a nebrání ti dělat to, co máš ráda.',
         },
         {
-          lead: 'Samostatnost.',
-          text: 'Dnes. Za deset let. I v sedmdesáti.',
+          lead: 'Samostatnost v každém věku.',
+          text: 'Unést nákup, zvednout se ze země nebo vyjít schody. Dnes, za deset let i v sedmdesáti.',
         },
         {
-          lead: 'Jistota ve vlastním těle.',
-          text: 'Vědět, že se na něj můžeš spolehnout. A rozumět tomu, co mu prospívá.',
+          lead: 'Investice do budoucího zdraví.',
+          text: 'Silné svaly a kosti ti pomáhají zůstat aktivní, odolná a soběstačná co nejdéle.',
         },
         {
           lead: 'Svoboda žít naplno.',
-          text: 'Nečekat na správný čas nebo ideální podmínky. Ale užívat si život takový, jaký je právě teď.',
+          text: 'Vyrazit na túru, vyzkoušet nový sport nebo přijmout další výzvu bez obav, jestli to tvoje tělo zvládne.',
         },
         {
-          lead: 'Odvaha zkoušet nové věci.',
-          text: 'Čím víc věříš svému tělu, tím víc si věříš i v životě.',
+          lead: 'Důvěra ve vlastní tělo.',
+          text: 'Vědět, co tvoje tělo dokáže, a umět se na něj spolehnout.',
         },
       ],
       quote: 'Pro mě síla už dávno není jen o výkonu. Je o svobodě žít život podle vlastních představ.',
@@ -118,55 +116,39 @@ export const translations = {
       steps: [
         {
           title: 'Poznáme se',
-          text: 'Každá žena přichází s jiným příběhem, zkušenostmi i cíli. Proto nezačínáme plánem, ale rozhovorem.',
+          text: 'Každá žena přichází s jiným příběhem, zkušenostmi a cíli. Proto nezačínáme plánem, ale rozhovorem.',
         },
         {
-          title: 'Najdeme směr',
-          text: 'Neřešíme jen to, čeho chceš dosáhnout. Hledáme způsob, jak toho dosáhnout tak, aby to bylo dlouhodobě udržitelné.',
+          title: 'Ujasníme si směr',
+          text: 'Společně si pojmenujeme, čeho chceš dosáhnout a co potřebuješ, aby pro tebe byla změna dlouhodobě udržitelná.',
         },
         {
-          title: 'Začneme stavět',
-          text: 'Vytvoříme plán, který bude odpovídat tvému životu – ne naopak.',
+          title: 'Vytvoříme plán',
+          text: 'Nastavíme trénink, výživu a návyky tak, aby zapadly do tvého života – ne naopak.',
         },
         {
-          title: 'Učíme se za pochodu',
-          text: 'Trénink i plán se budou vyvíjet společně s tebou. Budeme reagovat na změny, překážky i úspěchy.',
+          title: 'Průběžně ho ladíme',
+          text: 'Sledujeme, co funguje, a plán přizpůsobujeme tvému pokroku, aktuálním možnostem i změnám v životě.',
         },
         {
-          title: 'Vytváříš si vlastní systém',
-          text: 'Postupně se učíš rozumět svému tělu a vytváříš si systém, který funguje právě pro tvůj život.',
+          title: 'Získáš jistotu a samostatnost',
+          text: 'Postupně se naučíš rozumět svému tělu a dělat rozhodnutí, která fungují právě pro tebe.',
         },
       ],
       closing:
-        'Spolupráce ti má dát víc než jen plán. Má ti dát znalosti a jistotu, díky kterým budeš časem vědět, co funguje právě pro tebe – a dokážeš se rozhodovat sama.',
+        'Cílem není, abys plán potřebovala navždy. Ale abys časem věděla, jak se o svou sílu a zdraví starat sama.',
     },
     howICanHelp: {
       eyebrow: 'S čím ti mohu pomoci?',
       heading: 'Ať už začínáš kdekoliv.',
       topics: [
         {
-          title: 'Silový trénink',
-          text: 'Ať už začínáš, nebo už nějakou dobu cvičíš, naučíš se trénovat s jistotou, správnou technikou a plánem, který ti dává smysl a umožní ti se postupně posouvat.',
-        },
-        {
-          title: 'Hubnutí bez extrémů',
-          text: 'Pokud chceš zhubnout, nemusí to znamenat další dietu nebo seznam zákazů. Společně najdeme cestu, která bude respektovat tvoje cíle i život a kterou dokážeš dlouhodobě udržet.',
-        },
-        {
-          title: 'Budování návyků',
-          text: 'Vědět, co dělat, často nestačí. Společně převedeme změny do konkrétních návyků, které zapadnou do tvého běžného života a postupně se stanou jeho přirozenou součástí.',
+          title: 'Více energie',
+          text: 'Společně se podíváme na pohyb, výživu a regeneraci a nastavíme návyky, které budou tvoji energii podporovat, ne ji dál ubírat.',
         },
         {
           title: 'Vztah k pohybu a výživě',
-          text: 'Pohyb ani jídlo nemusí být zdrojem výčitek, tlaku nebo neustálého „začínání znovu“. Můžeš si k nim postupně vytvořit vztah, který bude stát na péči o sebe, ne na snaze být dokonalá.',
-        },
-        {
-          title: 'Více energie',
-          text: 'Pokud máš pocit, že ti na sebe a věci, které máš ráda, nezbývá energie, podíváme se společně na pohyb, výživu i regeneraci a zavedeme návyky, které budou tvoji energii podporovat, ne ji dál ubírat.',
-        },
-        {
-          title: 'Vlastní systém',
-          text: 'Nemusíš celý život následovat cizí plán. Postupně si vytvoříš vlastní systém pohybu, výživy i celkové péče o sebe a získáš jistotu v tom, jak ho přizpůsobovat svému životu.',
+          text: 'Pohyb ani jídlo nemusí být zdrojem výčitek, tlaku nebo neustálého začínání znovu. Můžeš k nim přistupovat jako k péči o sebe, ne jako ke snaze být dokonalá.',
         },
       ],
     },
@@ -212,7 +194,7 @@ export const translations = {
             ],
           },
           { label: 'Individuální tréninkový plán', values: ['✓', '✓', '✓'] },
-          { label: 'Osobní tréninky', values: ['1× měsíčně', '—', '1–2× týdně'] },
+          { label: 'Osobní tréninky', values: ['1–4× měsíčně', '—', '1x měsíčně až 2x týdně'] },
           { label: 'Měsíční coaching call', values: ['60 min', '60 min', '—'] },
           {
             label: 'Měsíční check-in & vyhodnocení progresu',
@@ -228,31 +210,25 @@ export const translations = {
           },
           { label: 'Průběžná podpora', values: ['✓', '✓', 'Omezená'] },
           { label: 'Minimální délka spolupráce', values: ['3 měsíce', '3 měsíce', '3 měsíce'] },
-          { label: 'Cena', values: ['3 200 Kč / měsíc', '2 500 Kč / měsíc', 'od 4 800 Kč / měsíc'] },
+          { label: 'Cena', values: ['od 3 200 Kč / měsíc', '2 500 Kč / měsíc', 'od 2 500 Kč / měsíc'] },
         ],
       },
     },
     whyIDoThis: {
       eyebrow: 'Proč tohle dělám',
-      headingLine1: 'Uvědomuji si, že pokud se o sebe dnes nebudu',
-      headingLine2: 'starat, jednou se bude muset',
-      headingEmphasis: 'někdo starat o mě.',
-      intro: 'A to je pro mě nepředstavitelné.',
+      headingLine1: 'Chci žít dlouhý, ale hlavně',
+      headingLine2: 'kvalitní život.',
       texts: [
-        'Mým cílem je žít dlouhý, ale hlavně kvalitní život. Mít dostatek energie dělat věci, které mě baví, cítit se jistě ve svém těle a mít odvahu zkoušet nové věci.',
-        'Chci, aby moje tělo zvládlo změny, které život přináší – ať už je to těhotenství, mateřství, menopauza nebo přibývající roky. A chci si život užívat co nejdéle, ne ho jen dožívat.',
+        'Chci mít energii na věci, které mě baví, cítit se jistě ve svém těle a zůstat aktivní a samostatná co nejdéle.',
+        'Vím, že moje tělo bude v průběhu života procházet změnami – ať už je to těhotenství, mateřství, menopauza nebo přibývající roky. Chci mu proto už dnes dávat to, co potřebuje, aby mě mohlo podporovat i v budoucnu.',
+        'Proto pro mě síla už dávno není jen o tom, kolik zvednu v posilovně.',
       ],
-      leftStatement: [
-        'Kdysi jsem si myslela, že síla znamená zvednout co nejtěžší činku v posilovně.',
-        'Dnes vím, že síla znamená mnohem víc. Znamená pro mě svobodu – v těle i v životě.',
-      ],
+      leftStatement: ['Kdysi jsem si myslela, že síla znamená zvednout co nejtěžší činku.'],
       rightList: [
-        'Mít energii na věci, které mě baví.',
-        'Vědět, že se na svoje tělo můžu spolehnout.',
-        'Mít odvahu zkoušet nové věci.',
-        'Zůstat co nejdéle aktivní a samostatná.',
+        'Dnes vím, že znamená mnohem víc.',
+        'Znamená mít energii na život, který chci žít. Důvěřovat svému tělu. A vědět, že pro své zdraví a budoucnost dělám něco už dnes.',
       ],
-      closingFinal: 'Právě proto dnes pomáhám ženám budovat sílu, která vydrží celý život.',
+      closingFinal: 'Právě proto pomáhám ženám budovat sílu, která vydrží celý život.',
     },
     movementShared: {
       eyebrow: 'Sdílený pohyb',
@@ -300,7 +276,7 @@ export const translations = {
         {
           question: 'Jak probíhá první konzultace?',
           answer:
-            'Před konzultací vyplníš krátký dotazník, díky kterému se předem seznámím s tvými cíli, zkušenostmi a současnou situací. Na konzultaci pak společně probereme, co od spolupráce očekáváš, s čím bys chtěla pomoct a jaká forma spolupráce by pro tebe dávala největší smysl. Konzultace trvá přibližně 60 minut a k ničemu tě nezavazuje.',
+            'Nejprve vyplníš krátký úvodní dotazník, díky kterému se předem seznámím s tvými cíli, zkušenostmi a současnou situací. Poté se potkáme na přibližně 30minutovém online hovoru přes Google Meet. Probereme, co od spolupráce očekáváš, s čím bys chtěla pomoct a jaká forma spolupráce by pro tebe dávala největší smysl. Podíváme se také na konkrétní časové možnosti a společně zjistíme, jestli si vzájemně sedneme. Konzultace je nezávazná.',
         },
       ],
     },
@@ -309,7 +285,7 @@ export const translations = {
       subline:
         'Ať už začínáš úplně od nuly, nebo hledáš způsob, jak se posunout dál, ráda tě podpořím na cestě k větší síle, jistotě a samostatnosti.',
       cta: 'Mám zájem o spolupráci',
-      ctaNote: 'Nejdřív tě čeká krátký vstupní dotazník. Po jeho vyplnění si vybereš termín úvodní konzultace.',
+      ctaNote: 'Nejdřív tě čeká krátký dotazník. Po jeho vyplnění si vybereš termín úvodní konzultace.',
     },
     footer: {
       followUs: 'Sledujte mě',
@@ -343,25 +319,23 @@ export const translations = {
       contact: 'Contact',
     },
     hero: {
-      headlineLine1: 'Pomáhám ženám',
-      headlineLine2: 'budovat sílu,',
-      headlineLine3: 'která vydrží',
-      headlineLine4: 'celý život.',
-      taglineLine1: 'Síla není jen o tom, kolik zvedneš na čince. Je o zdraví, energii, sebevědomí',
-      taglineLine2: 'a svobodě dělat to, co máš ráda.',
-      taglineLine3: 'V každé životní etapě.',
-      cta1: 'Mám zájem o spolupráci',
-      cta2: 'Zjistit více',
+      headlineLine1: 'Pomáhám ženám budovat sílu,',
+      headlineLine2: 'která vydrží celý život.',
+      taglineLine1:
+        'Individuální coaching, který propojuje silový trénink, výživu a udržitelné návyky. Pro více energie, zdraví a jistoty ve vlastním těle – v každé životní etapě.',
+      cta1: 'Chci úvodní konzultaci',
+      ctaNote: 'Krátký dotazník a nezávazný 30minutový online hovor',
+      cta2: 'Jak spolupráce probíhá',
     },
     manifesto: {
-      statementLines: ['Věřím v malé kroky,', 'které se časem promění', 've velkou změnu.'],
+      statementLines: ['Věřím v malé kroky,', 'které vedou k velkým změnám.'],
       sideTexts: [
         'Každá žena si zaslouží cítit se silná.',
         'Bez ohledu na věk, zkušenosti nebo to, kde právě začíná.',
       ],
       bottomTexts: [
-        'Nevěřím na zázračné proměny za 30 dní.',
-        'Věřím ve změny, které mají smysl i za několik let.',
+        'Neslibuji zázračné proměny za 30 dní.',
+        'Společně budujeme změny, které budou fungovat i za několik let.',
       ],
     },
     stuckInCircle: {
@@ -369,21 +343,21 @@ export const translations = {
       headingLine1: 'Možná máš pocit, že se',
       headingEmphasis: 'pořád točíš v kruhu…',
       thoughts: [
-        'Začneš cvičit s nadšením, ale po pár týdnech zase skončíš.',
-        'Vyzkoušela jsi už několik přístupů, ale žádný dlouhodobě nefungoval.',
-        'Nevíš, čemu ve světě výživy a cvičení věřit.',
-        'Na sebe ti mezi prací, rodinou a všemi povinnostmi nezbývá energie.',
-        'Chceš změnu, která vydrží. Jen nevíš, kde začít.',
+        'Možná víš, co dělat. Jen se ti to nedaří udržet.',
+        'Začneš cvičit s nadšením, ale po několika týdnech zase skončíš.',
+        'Ve světě výživy a cvičení už nevíš, čemu věřit.',
+        'Mezi prací, rodinou a povinnostmi ti na sebe nezbývá čas ani energie.',
+        'Chceš změnu, která vydrží, ale nevíš, jak ji přizpůsobit svému životu.',
       ],
       headingText1: 'Problém není v tom, že by ti chyběla vůle.',
       closingText1:
-        'Možná už jsi to zkoušela změnit. A možná ses pokaždé po čase ocitla zpátky na začátku. Ne proto, že by ti chyběla vůle. Ale protože ses snažila žít podle pravidel, která nebyla vytvořená pro tvůj život.',
-      headingText2: 'Nejspíš nepotřebuješ další univerzální návod.',
+        'Možná už ses několikrát pokusila něco změnit, ale pokaždé ses po čase ocitla zpátky na začátku. Ne proto, že bys selhala. Spíš ses snažila následovat pravidla, která nepočítala s tvými potřebami ani běžným životem.',
+      headingText2: 'Další univerzální návod nepotřebuješ.',
       closingText2:
-        'Možná potřebuješ najít způsob, jak pohyb, výživu a péči o sebe nastavit tak, aby fungovaly v tvém životě – a abys časem dokázala dělat rozhodnutí s jistotou sama.',
+        'Potřebuješ porozumět tomu, co funguje právě pro tebe. Proto společně hledáme způsob, jak pohyb, výživu a péči o zdraví nastavit tak, aby ses v nich postupně dokázala rozhodovat s jistotou sama.',
     },
     foundations: {
-      heading: 'Síla, která vydrží, nestojí na motivaci. Stojí na pevných základech.',
+      heading: 'Síla, která vydrží, stojí na pevných základech.',
       intro:
         'Pevné základy vznikají krok za krokem – způsobem a tempem, které dávají smysl právě tobě.',
       subheading: 'ZDROJE TVÉ SÍLY',
@@ -392,29 +366,29 @@ export const translations = {
           number: '1',
           title: 'Pohyb',
           text:
-            'Pravidelný pohyb je jedním ze základů zdraví, energie a funkčního těla v každé životní etapě. Silový trénink ti pomáhá budovat sílu a odolnost, ale stejně důležitý je i pohyb mimo posilovnu – chůze, sport nebo cokoli, co tě baví a udrží tě aktivní v každodenním životě.',
+            'Silový trénink ti pomáhá budovat sílu, svaly a odolnost. Stejně důležitý je ale i pohyb mimo posilovnu – chůze, sport nebo cokoli, co tě baví a pomáhá ti zůstat aktivní.',
         },
         {
           number: '2',
           title: 'Výživa',
           text:
-            'Jídlo dodává tělu energii a živiny, které potřebuje pro zdraví, výkon i regeneraci. Bez zákazů a extrémů – tak, aby výživa podporovala tvoje cíle a zároveň měla přirozené místo ve tvém životě.',
+            'Jídlo dodává tělu energii a živiny, které potřebuje pro zdraví, výkon i regeneraci. Bez zákazů a extrémů – tak, aby podporovalo tvoje cíle a měla přirozené místo v tvém životě.',
         },
         {
           number: '3',
           title: 'Regenerace',
           text:
-            'Odpočinek není odměna. Je součástí procesu. Kvalitní spánek, zvládání stresu a dostatek regenerace dávají tělu prostor obnovovat síly a pomáhají ti mít energii na to, co je pro tebe důležité.',
+            'Odpočinek není odměna, ale součást procesu. Kvalitní spánek, prostor pro odpočinek a práce se stresem pomáhají tělu obnovovat síly a udržovat energii.',
         },
         {
           number: '4',
           title: 'Návyky',
           text:
-            'To, co děláš pravidelně, má z dlouhodobého hlediska větší vliv než to, co uděláš dokonale jednou za čas. Dobře nastavené návyky dávají zdravému životnímu stylu strukturu a pomáhají ti udržet změny dlouhodobě.',
+            'To, co děláš pravidelně, má větší vliv než to, co uděláš dokonale jednou za čas. Dobře nastavené návyky ti pomohou udržet změny bez neustálého začínání znovu.',
         },
       ],
       closing:
-        'Nemusíš se spoléhat jen na motivaci. Můžeš si vybudovat systém, který tě podrží i ve dnech, kdy ti bude motivace chybět.',
+        'Nemusíš se spoléhat jen na motivaci. Můžeš si vybudovat systém, který tě podrží i ve dnech, kdy ti bude chybět.',
     },
     whyStrength: {
       eyebrow: 'Proč budovat sílu?',
@@ -423,27 +397,27 @@ export const translations = {
       reasons: [
         {
           lead: 'Energie na věci, které miluješ.',
-          text: 'Nejen zvládnout pracovní den, ale mít energii na výlet, běh, cestování nebo obyčejné odpoledne s dětmi.',
+          text: 'Nejen zvládnout pracovní den, ale mít energii i na výlet, sport, cestování nebo čas s rodinou.',
         },
         {
           lead: 'Tělo, které tě podporuje.',
-          text: 'Ne aby tě brzdilo v tom, co máš ráda.',
+          text: 'Tělo, které zvládá nároky každodenního života a nebrání ti dělat to, co máš ráda.',
         },
         {
-          lead: 'Samostatnost.',
-          text: 'Dnes. Za deset let. I v sedmdesáti.',
+          lead: 'Samostatnost v každém věku.',
+          text: 'Unést nákup, zvednout se ze země nebo vyjít schody. Dnes, za deset let i v sedmdesáti.',
         },
         {
-          lead: 'Jistota ve vlastním těle.',
-          text: 'Vědět, že se na něj můžeš spolehnout. A rozumět tomu, co mu prospívá.',
+          lead: 'Investice do budoucího zdraví.',
+          text: 'Silné svaly a kosti ti pomáhají zůstat aktivní, odolná a soběstačná co nejdéle.',
         },
         {
           lead: 'Svoboda žít naplno.',
-          text: 'Nečekat na správný čas nebo ideální podmínky. Ale užívat si život takový, jaký je právě teď.',
+          text: 'Vyrazit na túru, vyzkoušet nový sport nebo přijmout další výzvu bez obav, jestli to tvoje tělo zvládne.',
         },
         {
-          lead: 'Odvaha zkoušet nové věci.',
-          text: 'Čím víc věříš svému tělu, tím víc si věříš i v životě.',
+          lead: 'Důvěra ve vlastní tělo.',
+          text: 'Vědět, co tvoje tělo dokáže, a umět se na něj spolehnout.',
         },
       ],
       quote: 'Pro mě síla už dávno není jen o výkonu. Je o svobodě žít život podle vlastních představ.',
@@ -454,55 +428,39 @@ export const translations = {
       steps: [
         {
           title: 'Poznáme se',
-          text: 'Každá žena přichází s jiným příběhem, zkušenostmi i cíli. Proto nezačínáme plánem, ale rozhovorem.',
+          text: 'Každá žena přichází s jiným příběhem, zkušenostmi a cíli. Proto nezačínáme plánem, ale rozhovorem.',
         },
         {
-          title: 'Najdeme směr',
-          text: 'Neřešíme jen to, čeho chceš dosáhnout. Hledáme způsob, jak toho dosáhnout tak, aby to bylo dlouhodobě udržitelné.',
+          title: 'Ujasníme si směr',
+          text: 'Společně si pojmenujeme, čeho chceš dosáhnout a co potřebuješ, aby pro tebe byla změna dlouhodobě udržitelná.',
         },
         {
-          title: 'Začneme stavět',
-          text: 'Vytvoříme plán, který bude odpovídat tvému životu – ne naopak.',
+          title: 'Vytvoříme plán',
+          text: 'Nastavíme trénink, výživu a návyky tak, aby zapadly do tvého života – ne naopak.',
         },
         {
-          title: 'Učíme se za pochodu',
-          text: 'Trénink i plán se budou vyvíjet společně s tebou. Budeme reagovat na změny, překážky i úspěchy.',
+          title: 'Průběžně ho ladíme',
+          text: 'Sledujeme, co funguje, a plán přizpůsobujeme tvému pokroku, aktuálním možnostem i změnám v životě.',
         },
         {
-          title: 'Vytváříš si vlastní systém',
-          text: 'Postupně se učíš rozumět svému tělu a vytváříš si systém, který funguje právě pro tvůj život.',
+          title: 'Získáš jistotu a samostatnost',
+          text: 'Postupně se naučíš rozumět svému tělu a dělat rozhodnutí, která fungují právě pro tebe.',
         },
       ],
       closing:
-        'Spolupráce ti má dát víc než jen plán. Má ti dát znalosti a jistotu, díky kterým budeš časem vědět, co funguje právě pro tebe – a dokážeš se rozhodovat sama.',
+        'Cílem není, abys plán potřebovala navždy. Ale abys časem věděla, jak se o svou sílu a zdraví starat sama.',
     },
     howICanHelp: {
       eyebrow: 'S čím ti mohu pomoci?',
       heading: 'Ať už začínáš kdekoliv.',
       topics: [
         {
-          title: 'Silový trénink',
-          text: 'Ať už začínáš, nebo už nějakou dobu cvičíš, naučíš se trénovat s jistotou, správnou technikou a plánem, který ti dává smysl a umožní ti se postupně posouvat.',
-        },
-        {
-          title: 'Hubnutí bez extrémů',
-          text: 'Pokud chceš zhubnout, nemusí to znamenat další dietu nebo seznam zákazů. Společně najdeme cestu, která bude respektovat tvoje cíle i život a kterou dokážeš dlouhodobě udržet.',
-        },
-        {
-          title: 'Budování návyků',
-          text: 'Vědět, co dělat, často nestačí. Společně převedeme změny do konkrétních návyků, které zapadnou do tvého běžného života a postupně se stanou jeho přirozenou součástí.',
+          title: 'Více energie',
+          text: 'Společně se podíváme na pohyb, výživu a regeneraci a nastavíme návyky, které budou tvoji energii podporovat, ne ji dál ubírat.',
         },
         {
           title: 'Vztah k pohybu a výživě',
-          text: 'Pohyb ani jídlo nemusí být zdrojem výčitek, tlaku nebo neustálého „začínání znovu“. Můžeš si k nim postupně vytvořit vztah, který bude stát na péči o sebe, ne na snaze být dokonalá.',
-        },
-        {
-          title: 'Více energie',
-          text: 'Pokud máš pocit, že ti na sebe a věci, které máš ráda, nezbývá energie, podíváme se společně na pohyb, výživu i regeneraci a zavedeme návyky, které budou tvoji energii podporovat, ne ji dál ubírat.',
-        },
-        {
-          title: 'Vlastní systém',
-          text: 'Nemusíš celý život následovat cizí plán. Postupně si vytvoříš vlastní systém pohybu, výživy i celkové péče o sebe a získáš jistotu v tom, jak ho přizpůsobovat svému životu.',
+          text: 'Pohyb ani jídlo nemusí být zdrojem výčitek, tlaku nebo neustálého začínání znovu. Můžeš k nim přistupovat jako k péči o sebe, ne jako ke snaze být dokonalá.',
         },
       ],
     },
@@ -548,7 +506,7 @@ export const translations = {
             ],
           },
           { label: 'Individuální tréninkový plán', values: ['✓', '✓', '✓'] },
-          { label: 'Osobní tréninky', values: ['1× měsíčně', '—', '1–2× týdně'] },
+          { label: 'Osobní tréninky', values: ['1–4× měsíčně', '—', '1x měsíčně až 2x týdně'] },
           { label: 'Měsíční coaching call', values: ['60 min', '60 min', '—'] },
           {
             label: 'Měsíční check-in & vyhodnocení progresu',
@@ -564,31 +522,25 @@ export const translations = {
           },
           { label: 'Průběžná podpora', values: ['✓', '✓', 'Omezená'] },
           { label: 'Minimální délka spolupráce', values: ['3 měsíce', '3 měsíce', '3 měsíce'] },
-          { label: 'Cena', values: ['3 200 Kč / měsíc', '2 500 Kč / měsíc', 'od 4 800 Kč / měsíc'] },
+          { label: 'Cena', values: ['od 3 200 Kč / měsíc', '2 500 Kč / měsíc', 'od 2 500 Kč / měsíc'] },
         ],
       },
     },
     whyIDoThis: {
       eyebrow: 'Proč tohle dělám',
-      headingLine1: 'Uvědomuji si, že pokud se o sebe dnes nebudu',
-      headingLine2: 'starat, jednou se bude muset',
-      headingEmphasis: 'někdo starat o mě.',
-      intro: 'A to je pro mě nepředstavitelné.',
+      headingLine1: 'Chci žít dlouhý, ale hlavně',
+      headingLine2: 'kvalitní život.',
       texts: [
-        'Mým cílem je žít dlouhý, ale hlavně kvalitní život. Mít dostatek energie dělat věci, které mě baví, cítit se jistě ve svém těle a mít odvahu zkoušet nové věci.',
-        'Chci, aby moje tělo zvládlo změny, které život přináší – ať už je to těhotenství, mateřství, menopauza nebo přibývající roky. A chci si život užívat co nejdéle, ne ho jen dožívat.',
+        'Chci mít energii na věci, které mě baví, cítit se jistě ve svém těle a zůstat aktivní a samostatná co nejdéle.',
+        'Vím, že moje tělo bude v průběhu života procházet změnami – ať už je to těhotenství, mateřství, menopauza nebo přibývající roky. Chci mu proto už dnes dávat to, co potřebuje, aby mě mohlo podporovat i v budoucnu.',
+        'Proto pro mě síla už dávno není jen o tom, kolik zvednu v posilovně.',
       ],
-      leftStatement: [
-        'Kdysi jsem si myslela, že síla znamená zvednout těžkou činku.',
-        'Dnes vím, že síla znamená mnohem víc. Znamená pro mě svobodu – v těle i v životě.',
-      ],
+      leftStatement: ['Kdysi jsem si myslela, že síla znamená zvednout co nejtěžší činku.'],
       rightList: [
-        'Mít energii na věci, které mě baví.',
-        'Vědět, že se na svoje tělo můžu spolehnout.',
-        'Mít odvahu zkoušet nové věci.',
-        'Zůstat co nejdéle aktivní a samostatná.',
+        'Dnes vím, že znamená mnohem víc.',
+        'Znamená mít energii na život, který chci žít. Důvěřovat svému tělu. A vědět, že pro své zdraví a budoucnost dělám něco už dnes.',
       ],
-      closingFinal: 'Právě proto dnes pomáhám ženám budovat sílu, která vydrží celý život.',
+      closingFinal: 'Právě proto pomáhám ženám budovat sílu, která vydrží celý život.',
     },
     movementShared: {
       eyebrow: 'Sdílený pohyb',
@@ -636,7 +588,7 @@ export const translations = {
         {
           question: 'Jak probíhá první konzultace?',
           answer:
-            'Před konzultací vyplníš krátký dotazník, díky kterému se předem seznámím s tvými cíli, zkušenostmi a současnou situací. Na konzultaci pak společně probereme, co od spolupráce očekáváš, s čím bys chtěla pomoct a jaká forma spolupráce by pro tebe dávala největší smysl. Konzultace trvá přibližně 60 minut a k ničemu tě nezavazuje.',
+            'Nejprve vyplníš krátký úvodní dotazník, díky kterému se předem seznámím s tvými cíli, zkušenostmi a současnou situací. Poté se potkáme na přibližně 30minutovém online hovoru přes Google Meet. Probereme, co od spolupráce očekáváš, s čím bys chtěla pomoct a jaká forma spolupráce by pro tebe dávala největší smysl. Podíváme se také na konkrétní časové možnosti a společně zjistíme, jestli si vzájemně sedneme. Konzultace je nezávazná.',
         },
       ],
     },
@@ -645,7 +597,7 @@ export const translations = {
       subline:
         'Ať už začínáš úplně od nuly, nebo hledáš způsob, jak se posunout dál, ráda tě podpořím na cestě k větší síle, jistotě a samostatnosti.',
       cta: 'Mám zájem o spolupráci',
-      ctaNote: 'Nejdřív tě čeká krátký vstupní dotazník. Po jeho vyplnění si vybereš termín úvodní konzultace.',
+      ctaNote: 'Nejdřív tě čeká krátký dotazník. Po jeho vyplnění si vybereš termín úvodní konzultace.',
     },
     footer: {
       followUs: 'Follow Me',

@@ -1,7 +1,7 @@
-import { Footprints, Dumbbell, Scale, Heart, Zap, Sparkles } from 'lucide-react';
+import { Heart, Zap } from 'lucide-react';
 import { useLanguage } from '../LanguageContext';
 
-const icons = [Footprints, Dumbbell, Scale, Heart, Zap, Sparkles];
+const icons = [Zap, Heart];
 
 export default function HowICanHelp() {
   const { t } = useLanguage();
