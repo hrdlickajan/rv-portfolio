@@ -60,29 +60,28 @@ export default function Hero() {
               {t.hero.headlineLine1}
               <br />
               {t.hero.headlineLine2}
-              <br />
-              {t.hero.headlineLine3}
-              <br />
-              {t.hero.headlineLine4}
             </h1>
-            <p className="text-sm md:text-sm lg:text-lg text-white/85 md:text-gray-600 mb-6 md:mb-10 leading-relaxed hero-tagline md:max-w-[15rem] lg:max-w-sm">
+            <p className="text-sm md:text-sm lg:text-lg text-white/85 md:text-gray-600 mb-4 md:mb-6 leading-relaxed hero-tagline md:max-w-[15rem] lg:max-w-sm">
               {t.hero.taglineLine1}
               <br />
               {t.hero.taglineLine2}
-              <br />
-              {t.hero.taglineLine3}
             </p>
-            <div className="flex flex-col gap-3 md:flex-row md:gap-4 hero-ctas">
+            <div className="flex flex-col gap-3 md:flex-row md:gap-4 hero-ctas items-start">
+              <div className="flex flex-col gap-1.5 items-center">
+                <a
+                  href={INTAKE_FORM_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-pill bg-orange-500 text-white px-6 py-2.5 md:px-8 md:py-3 hover:bg-orange-600 text-center"
+                >
+                  {t.hero.cta1}
+                </a>
+                <p className="text-xs text-white/70 md:text-gray-500 max-w-[13rem] text-center hero-cta-note">
+                  {t.hero.ctaNote}
+                </p>
+              </div>
               <a
-                href={INTAKE_FORM_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-pill bg-orange-500 text-white px-6 py-2.5 md:px-8 md:py-3 hover:bg-orange-600 text-center"
-              >
-                {t.hero.cta1}
-              </a>
-              <a
-                href="#stuck-in-circle"
+                href="#your-journey"
                 className="btn-pill text-gray-800 px-6 py-2.5 md:px-8 md:py-3 hover:bg-orange-50 border border-orange-400 text-center"
                 style={{ backgroundColor: 'var(--c-cream)' }}
               >
