@@ -44,7 +44,7 @@
         'Potřebuješ porozumět tomu, co funguje právě pro tebe. Proto společně hledáme způsob, jak pohyb, výživu a péči o zdraví nastavit tak, aby ses v nich postupně dokázala rozhodovat s jistotou sama.',
     },
     foundations: {
-      heading: 'Síla, která vydrží, nestojí na motivaci. Stojí na pevných základech.',
+      heading: 'Síla, která vydrží, stojí na pevných základech.',
       intro:
         'Pevné základy vznikají krok za krokem – způsobem a tempem, které dávají smysl právě tobě.',
       subheading: 'ZDROJE TVÉ SÍLY',
@@ -435,6 +435,7 @@
         },
       ],
       quote: 'Pro mě síla už dávno není jen o výkonu. Je o svobodě žít život podle vlastních představ.',
+      quoteAuthor: 'Romana Vítková',
     },
     yourJourney: {
       eyebrow: 'Jak bude vypadat tvoje cesta',
