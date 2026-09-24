@@ -16,19 +16,18 @@ export default function WhyIDoThis() {
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-2 md:items-stretch gap-10 md:gap-16 mb-16 md:mb-20">
-          <div
-            className="relative rounded-2xl overflow-hidden animate-on-scroll isolate"
-            style={{ transform: 'translateZ(0)' }}
-            data-delay="0.1s"
-          >
-            <img
-              src="/resources/padel.png"
-              alt="Romana Vítková"
-              loading="lazy"
-              className="w-full h-full min-h-[24rem] rounded-2xl object-cover"
-            />
-            <div className="absolute inset-0 rounded-2xl why-i-do-this-photo-fade" />
+        <div className="grid md:grid-cols-2 md:items-stretch gap-10 md:gap-0 mb-16 md:mb-20">
+          {/* Outer wrapper owns the rounded clip; inner wrapper owns the entrance transform, keeps them from fighting */}
+          <div className="rounded-2xl overflow-hidden">
+            <div className="relative h-full animate-on-scroll" data-delay="0.1s">
+              <img
+                src="/resources/padel.png"
+                alt="Romana Vítková"
+                loading="lazy"
+                className="w-full h-full min-h-[24rem] object-cover"
+              />
+              <div className="absolute inset-0 why-i-do-this-photo-fade" />
+            </div>
           </div>
           <div className="space-y-4 animate-on-scroll" data-delay="0.2s">
             {w.bio.map((paragraph, index) => (
