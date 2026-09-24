@@ -11,18 +11,24 @@ export default function WhyIDoThis() {
           <span className="editorial-eyebrow">{w.eyebrow}</span>
           <h2 className="editorial-heading font-display text-4xl md:text-6xl leading-tight mb-16 md:mb-24">
             {w.heading}
+            <br />
+            <em className="italic">{w.headingItalic}</em>
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-2 items-center gap-10 md:gap-16 mb-16 md:mb-20">
-          <div className="relative rounded-2xl overflow-hidden animate-on-scroll" data-delay="0.1s">
+        <div className="grid md:grid-cols-2 md:items-stretch gap-10 md:gap-16 mb-16 md:mb-20">
+          <div
+            className="relative rounded-2xl overflow-hidden animate-on-scroll isolate"
+            style={{ transform: 'translateZ(0)' }}
+            data-delay="0.1s"
+          >
             <img
               src="/resources/padel.png"
               alt="Romana Vítková"
               loading="lazy"
-              className="w-full h-full object-cover"
+              className="w-full h-full min-h-[24rem] rounded-2xl object-cover"
             />
-            <div className="absolute inset-0 why-i-do-this-photo-fade" />
+            <div className="absolute inset-0 rounded-2xl why-i-do-this-photo-fade" />
           </div>
           <div className="space-y-4 animate-on-scroll" data-delay="0.2s">
             {w.bio.map((paragraph, index) => (

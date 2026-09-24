@@ -19,13 +19,13 @@ export default function WhyStrength() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 divide-x divide-y divide-white/10">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-px bg-white/10">
           {w.reasons.map((reason, index) => {
             const Icon = icons[index];
             return (
               <div
                 key={reason.lead}
-                className="flex flex-col items-center text-center gap-3 p-6 md:p-8 animate-on-scroll"
+                className="flex flex-col items-center text-center gap-3 p-6 md:p-8 animate-on-scroll bg-[var(--c-dark)]"
                 data-delay={`${0.1 + index * 0.1}s`}
               >
                 <Icon size={24} className="text-orange-500" />

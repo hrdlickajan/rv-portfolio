@@ -144,7 +144,7 @@ main > section .max-w-7xl {
 
 /* ─── WhyIDoThis photo soft right-edge fade into dark background ─── */
 .why-i-do-this-photo-fade {
-  background: linear-gradient(to right, transparent 48%, rgba(31, 27, 24, 0.7) 78%, var(--c-dark) 100%);
+  background: linear-gradient(to right, transparent 70%, rgba(31, 27, 24, 0.75) 92%, var(--c-dark) 100%);
   pointer-events: none;
 }
 

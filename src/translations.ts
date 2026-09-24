@@ -40,7 +40,7 @@ export const translations = {
       headingText1: 'Problém není v tom, že by ti chyběla vůle.',
       closingText1:
         'Možná už ses několikrát pokusila něco změnit, ale pokaždé ses po čase ocitla zpátky na začátku. Ne proto, že bys selhala. Spíš ses snažila následovat pravidla, která nepočítala s tvými potřebami ani běžným životem.',
-      headingText2: 'Další univerzální návod nepotřebuješ.',
+      headingText2: 'Ani nepotřebuješ další univerzální návod.',
       closingText2:
         'Potřebuješ porozumět tomu, co funguje právě pro tebe. Proto společně hledáme způsob, jak pohyb, výživu a péči o zdraví nastavit tak, aby ses v nich postupně dokázala rozhodovat s jistotou sama.',
     },
@@ -215,7 +215,8 @@ export const translations = {
     },
     whyIDoThis: {
       eyebrow: 'Proč tohle dělám',
-      heading: 'Chci žít dlouhý, ale hlavně kvalitní život.',
+      heading: 'Chci žít dlouhý, ale hlavně',
+      headingItalic: 'kvalitní život.',
       bio: [
         'Jsem Romana, osobní trenérka a nutriční koučka. Pomáhám ženám budovat sílu, osvojit si zdravé návyky a získat větší jistotu ve vlastním těle.',
         'Sama nechci jen dlouho žít. Chci mít dostatek energie na věci, které mě baví, cítit se ve svém těle dobře a mít odvahu zkoušet nové věci. Chci, aby mě moje tělo podporovalo i během změn, které život přináší – ať už jde o těhotenství, mateřství, menopauzu nebo přibývající roky.',
