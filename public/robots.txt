@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://rv-portfolio-sigma.vercel.app/sitemap.xml
+Sitemap: https://www.romanavitkova.cz/sitemap.xml

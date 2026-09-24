@@ -38,7 +38,7 @@ export default function Foundations() {
         </div>
 
         <p
-          className="closing-statement text-xl md:text-2xl max-w-xl mx-auto animate-on-scroll"
+          className="closing-statement text-xl md:text-2xl max-w-3xl mx-auto animate-on-scroll"
           data-delay="0.1s"
         >
           {f.closing}

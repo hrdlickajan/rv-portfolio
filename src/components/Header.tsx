@@ -42,7 +42,7 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 backdrop-blur-md bg-white/90 border-b border-orange-100/60 shadow-[0_2px_24px_rgba(249,115,22,0.07)]">
-      <nav aria-label="Main navigation" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav aria-label="Hlavní navigace" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
             <p className="font-display xs:text-md sm:text-lg md:text-xl font-bold tracking-widest uppercase bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent leading-none">
@@ -71,7 +71,7 @@ export default function Header() {
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               aria-expanded={isMenuOpen}
               aria-controls="mobile-menu"
-              aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
+              aria-label={isMenuOpen ? 'Zavřít menu' : 'Otevřít menu'}
               className="text-gray-700 hover:text-orange-500 transition-colors"
             >
               <span aria-hidden="true">

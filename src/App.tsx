@@ -61,10 +61,10 @@ function App() {
           <StuckInCircle />
           <Foundations />
           <WhyStrength />
-          <YourJourney />
           <HowICanHelp />
-          <ChooseYourPath />
           <WhyIDoThis />
+          <YourJourney />
+          <ChooseYourPath />
           <MovementShared />
           <FAQ />
           <Contact />

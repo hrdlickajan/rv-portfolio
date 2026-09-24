@@ -43,7 +43,7 @@ export default function Hero() {
         <div ref={photoRef} className="absolute -top-[10%] -bottom-[10%] left-0 right-0" style={{ willChange: 'transform' }}>
           <img
             src="/resources/hero.jpg"
-            alt="Romana Vítková, personal fitness coach"
+            alt="Romana Vítková, osobní trenérka a nutriční koučka"
             fetchPriority="high"
             loading="eager"
             className="w-full h-full object-cover object-top"
@@ -60,6 +60,8 @@ export default function Hero() {
               {t.hero.headlineLine1}
               <br />
               {t.hero.headlineLine2}
+              <br />
+              {t.hero.headlineLine3}
             </h1>
             <p className="text-sm md:text-sm lg:text-lg text-white/85 md:text-gray-600 mb-4 md:mb-6 leading-relaxed hero-tagline md:max-w-[15rem] lg:max-w-sm">
               {t.hero.taglineLine1}
@@ -81,7 +83,7 @@ export default function Hero() {
                 </p>
               </div>
               <a
-                href="#your-journey"
+                href="#choose-your-path"
                 className="btn-pill text-gray-800 px-6 py-2.5 md:px-8 md:py-3 hover:bg-orange-50 border border-orange-400 text-center"
                 style={{ backgroundColor: 'var(--c-cream)' }}
               >

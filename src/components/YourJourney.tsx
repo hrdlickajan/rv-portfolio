@@ -1,4 +1,5 @@
 import { useLanguage } from '../LanguageContext';
+import { INTAKE_FORM_URL } from '../constants';
 
 export default function YourJourney() {
   const { t } = useLanguage();
@@ -32,11 +33,22 @@ export default function YourJourney() {
         </div>
 
         <p
-          className="closing-statement text-xl md:text-2xl max-w-xl mx-auto animate-on-scroll"
+          className="closing-statement text-xl md:text-2xl max-w-3xl mx-auto mb-10 animate-on-scroll"
           data-delay="0.1s"
         >
           {j.closing}
         </p>
+
+        <div className="text-center animate-on-scroll" data-delay="0.15s">
+          <a
+            href={INTAKE_FORM_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-pill inline-flex bg-orange-500 text-white px-8 py-3.5 hover:bg-orange-600"
+          >
+            {j.cta}
+          </a>
+        </div>
       </div>
     </section>
   );

@@ -142,6 +142,12 @@ main > section .max-w-7xl {
   pointer-events: none;
 }
 
+/* ─── WhyIDoThis photo soft right-edge fade into dark background ─── */
+.why-i-do-this-photo-fade {
+  background: linear-gradient(to right, transparent 48%, rgba(31, 27, 24, 0.7) 78%, var(--c-dark) 100%);
+  pointer-events: none;
+}
+
 /* ─── Scroll reveal ──────────────────────────────────────────── */
 @keyframes fadeInUp {
   from {
@@ -217,53 +223,6 @@ main > section .max-w-7xl {
   }
 }
 
-/* ─── Scroll reveal ──────────────────────────────────────────── */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(38px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.animate-on-scroll {
-  opacity: 0;
-  transform: translateY(38px);
-}
-
-.animate-on-scroll.is-visible {
-  animation: fadeInUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-}
-
-/* ─── Nav link hover — blue underline sweep ──────────────────── */
-.nav-link {
-  position: relative;
-  transition: color var(--transition-smooth);
-}
-
-.nav-link::after {
-  content: '';
-  position: absolute;
-  bottom: -3px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: var(--c-blue);
-  border-radius: 1px;
-  transition: width var(--transition-smooth);
-}
-
-.nav-link:hover::after {
-  width: 100%;
-}
-
-.nav-link:hover {
-  color: var(--c-blue) !important;
-}
-
 /* ─── Icon box micro-interaction ─────────────────────────────── */
 .icon-box {
   transition: transform var(--transition-smooth);
@@ -272,22 +231,6 @@ main > section .max-w-7xl {
 
 .icon-box:hover {
   transform: rotate(-8deg) scale(1.1);
-}
-
-/* ─── Input focus blue ring ──────────────────────────────────── */
-.input-field:focus {
-  outline: none;
-  border-color: var(--c-blue) !important;
-  box-shadow: 0 0 0 3px var(--c-blue-glow);
-}
-
-/* ─── Qualification item hover ───────────────────────────────── */
-.qual-item {
-  transition: transform var(--transition-smooth);
-}
-
-.qual-item:hover {
-  transform: translateX(5px);
 }
 
 /* ─── Focus visible styles ───────────────────────────────────── */

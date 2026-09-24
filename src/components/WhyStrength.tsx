@@ -1,4 +1,7 @@
+import { Zap, HeartPulse, UserCheck, ShieldCheck, Sparkles, Compass } from 'lucide-react';
 import { useLanguage } from '../LanguageContext';
+
+const icons = [Zap, HeartPulse, UserCheck, ShieldCheck, Sparkles, Compass];
 
 export default function WhyStrength() {
   const { t } = useLanguage();
@@ -7,35 +10,29 @@ export default function WhyStrength() {
   return (
     <section id="why-strength" className="editorial-block editorial-block--dark py-20 md:py-32">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="animate-on-scroll" data-delay="0s">
-          <span className="editorial-eyebrow">{w.eyebrow}</span>
-          <h2 className="editorial-heading font-display text-4xl md:text-6xl leading-tight mb-20 md:mb-28">
+        <div className="animate-on-scroll text-center" data-delay="0s">
+          <span className="editorial-eyebrow justify-center flex">{w.eyebrow}</span>
+          <h2 className="editorial-heading font-display text-4xl md:text-6xl leading-tight mb-16 md:mb-20">
             {w.headingLine1}
             <br />
             <em>{w.headingEmphasis}</em>
           </h2>
         </div>
 
-        <div className="grid sm:grid-cols-2 gap-x-10 gap-y-14 md:gap-y-16 mb-24 md:mb-32">
-          {w.reasons.map((reason, index) => (
-            <div
-              key={index}
-              className="animate-on-scroll"
-              data-delay={`${0.1 + index * 0.1}s`}
-            >
-              <p className="editorial-thought text-xl md:text-2xl leading-relaxed mb-2">{reason.lead}</p>
-              <p className="text-lg leading-relaxed opacity-90">{reason.text}</p>
-            </div>
-          ))}
-        </div>
-
-        <div className="quote-block animate-on-scroll" data-delay="0.2s">
-          <p className="quote-block__text text-2xl md:text-3xl leading-snug mb-6">{w.quote}</p>
-          {w.quoteAuthor && (
-            <p className="quote-block__author text-sm tracking-wide uppercase opacity-70">
-              — {w.quoteAuthor}
-            </p>
-          )}
+        <div className="grid grid-cols-2 md:grid-cols-3 divide-x divide-y divide-white/10">
+          {w.reasons.map((reason, index) => {
+            const Icon = icons[index];
+            return (
+              <div
+                key={reason.lead}
+                className="flex flex-col items-center text-center gap-3 p-6 md:p-8 animate-on-scroll"
+                data-delay={`${0.1 + index * 0.1}s`}
+              >
+                <Icon size={24} className="text-orange-500" />
+                <p className="font-display text-lg md:text-xl leading-snug">{reason.lead}</p>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

@@ -113,7 +113,7 @@ POST /api/send-email
 4. Send email via Resend to `romana.vitkova.coach@gmail.com`, reply-to = user email
 5. Returns 400 on validation failure, 500 on server error
 
-**CORS**: Locked to production domain (`https://rv-portfolio-sigma.vercel.app`)
+**CORS**: Allowlisted origins (`https://www.romanavitkova.cz`, `https://romanavitkova.cz`, `https://rv-portfolio-sigma.vercel.app`)
 
 ---
 

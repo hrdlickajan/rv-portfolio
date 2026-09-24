@@ -1,4 +1,4 @@
-import { Zap, Globe, Users } from 'lucide-react';
+import { Zap, Globe, Users, MapPin } from 'lucide-react';
 import { useLanguage } from '../LanguageContext';
 import { INTAKE_FORM_URL } from '../constants';
 
@@ -29,11 +29,6 @@ export default function ChooseYourPath() {
                 }`}
                 data-delay={`${index * 0.1}s`}
               >
-                {path.popular && (
-                  <span className="absolute -top-3 left-8 bg-orange-500 text-white text-xs font-semibold tracking-wide uppercase px-3 py-1 rounded-full">
-                    {c.popularBadge}
-                  </span>
-                )}
                 <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center mb-4">
                   <Icon size={20} className="text-orange-500" />
                 </div>
@@ -41,6 +36,12 @@ export default function ChooseYourPath() {
                 <p className="text-sm font-medium text-gray-500 mb-4">{path.subtitle}</p>
                 <p className="text-gray-600 leading-relaxed mb-4">{path.text}</p>
                 <p className="text-sm text-orange-500 font-medium italic">{path.ideal}</p>
+                {path.location && (
+                  <p className="flex items-center gap-1.5 text-sm text-gray-500 mt-4">
+                    <MapPin size={16} className="text-orange-500 flex-shrink-0" />
+                    {path.location}
+                  </p>
+                )}
               </div>
             );
           })}
