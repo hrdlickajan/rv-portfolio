@@ -1,6 +1,7 @@
 # RV Portfolio
 
-Marketing/portfolio site for Romana Vítková, a women's fitness coach. Single-page site with bilingual (cs/en) copy.
+Marketing/portfolio site for Romana Vítková, a women's fitness coach. Single-page site, CZ-only for now.
+_Note_: EN translations exist in code but are not user-reachable (no language switcher, no browser-language detection). Kept for future reuse.
 
 ## Language
 

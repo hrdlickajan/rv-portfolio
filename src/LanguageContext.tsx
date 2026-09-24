@@ -1,5 +1,5 @@
 import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
-import { Language, getBrowserLanguage, translations } from './translations';
+import { Language, translations } from './translations';
 
 interface LanguageContextType {
   language: Language;
@@ -9,14 +9,11 @@ interface LanguageContextType {
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
+// Site is CZ-only for now; EN translations stay in code for future reuse.
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [language, setLanguageState] = useState<Language>(() => {
-    const saved = localStorage.getItem('language') as Language | null;
-    return saved || getBrowserLanguage();
-  });
+  const [language, setLanguageState] = useState<Language>('cs');
 
   useEffect(() => {
-    localStorage.setItem('language', language);
     document.documentElement.lang = language;
   }, [language]);
 
