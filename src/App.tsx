@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Footer from './components/Footer';
@@ -73,6 +74,7 @@ function App() {
 
         <Footer />
       </div>
+      <Analytics />
     </LanguageProvider>
   );
 }
